@@ -147,7 +147,9 @@ section {
 	padding-left: 50px;
 	padding-right: 50px;
 }
-
+#logo img{
+	margin-bottom: 5em;
+}
 
 /* Navbar brand (logo) */
 .navbar-brand {
@@ -718,7 +720,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 
 
 /* ===== Begin partners ===== */
-#partners-section {
+#sponsors-section {
 	padding: 80px 0;
 }
 .partners {
@@ -875,7 +877,7 @@ ul.contact-address li i {
 
 /* ===== Begin footer ===== */
 .footer-top {
-	padding: 60px 0 35px;
+	padding: 20px 0 20px;
 }
 .footer-top .col-md-4 {
 	margin-bottom: 25px;
