@@ -147,8 +147,8 @@ section {
 	padding-left: 50px;
 	padding-right: 50px;
 }
-#logo img{
-	margin-bottom: 5em;
+#logo p{
+	margin-bottom: 10em;
 }
 
 /* Navbar brand (logo) */
@@ -1143,3 +1143,11 @@ p.subtitle {
 	transform: rotate(-45deg);
 }
 /* ===== End buttons ===== */
+
+
+/* ===== Begin tables ===== */
+table {
+	border: solid;
+	border-width: .25em;
+}
+/* ===== End tables ===== */
