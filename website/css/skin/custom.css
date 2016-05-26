@@ -120,10 +120,13 @@ a, a:hover, a:focus {
 
 
 /* === Rotate Box === */
-.rotate-box-1.square-icon .rotate-box-icon, .rotate-box-2.square-icon .rotate-box-icon {
+.blue .rotate-box-1.square-icon .rotate-box-icon, .rotate-box-2.square-icon .rotate-box-icon{
 	background-color: #4E7AC7;
 }
 
+.red .rotate-box-1.square-icon .rotate-box-icon, .rotate-box-2.square-icon .rotate-box-icon{
+	background-color: #CC3333;
+}
 
 
 /* === Progress Bar === */
@@ -156,7 +159,7 @@ a, a:hover, a:focus {
 
 /* === Team === */
 .team-hover {
-	background: none repeat scroll 0 0 rgba( 78, 122, 199, 0.9);
+	background: none repeat scroll 0 0 rgba( 102, 51, 102, 0.9);
 }
 
 

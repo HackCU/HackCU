@@ -71,7 +71,7 @@ h5 {
 	font-size: 18px;
 }
 p {
-	font: 14px/1.5em "Roboto";
+	font: 14px/2em "Roboto";
 }
 .navbar-nav > li > a {
 	font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -482,7 +482,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 }
 
 .testimonial .cover {
-	background-color: rgba(0, 7, 11, 0.87);
+	background-color: rgba(36, 68, 121, 0.7);
 }
 .testimonial-inner {
 	position: relative;
@@ -633,7 +633,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 	padding: 80px 0 50px 0;
 }
 .counter-up .cover {
-	background-color: rgba(0, 7, 11, 0.8);
+	background-color: rgba(121, 51, 121, 0.8);
 }
 .counter-up .fact {
 }
@@ -724,6 +724,10 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 /* ===== Begin partners ===== */
 #sponsors-section {
 	padding: 80px 0;
+}
+
+#sponsors-section h2 {
+
 }
 .partners {
 	background-color: #252320;
@@ -1058,8 +1062,8 @@ p.subtitle {
 
 /* Button blank */
 .btn-blank {
-	border: 2px solid #fff;
-	color: #fff;
+	border: 2px solid #CC3333;
+	color: #CC3333;
 	padding: 8px 12px;
 	display: inline-block;
 	vertical-align: middle;
@@ -1083,7 +1087,7 @@ p.subtitle {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #fff;
+	background: #CC3333;
 	-webkit-transform: scaleY(0);
 	transform: scaleY(0);
 	-webkit-transform-origin: 50% 100%;
@@ -1096,7 +1100,7 @@ p.subtitle {
 	transition-timing-function: ease-out;
 }
 .btn-blank:hover, .btn-blank:focus, .btn-blank:active {
-	color: #333;
+	color: #fff;
 }
 .btn-blank:hover:before, .btn-blank:focus:before, .btn-blank:active:before {
 	-webkit-transform: scaleY(1);
