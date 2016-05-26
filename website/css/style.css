@@ -148,7 +148,11 @@ section {
 	padding-right: 50px;
 }
 #logo p{
-	margin-bottom: 10em;
+	/*margin-bottom: 10em;*/
+}
+#logo img{
+	width: 35%;
+	position: static;
 }
 
 /* Navbar brand (logo) */
@@ -298,7 +302,7 @@ section {
 /* ===== End intro ===== */
 
 
-/* ===== Begin roatet boxes ===== */
+/* ===== Begin rotate boxes ===== */
 /* Begin rotate box-1 */
 .rotate-box-1, .rotate-box-2 {
 	display: inline-block;
@@ -1146,8 +1150,8 @@ p.subtitle {
 
 
 /* ===== Begin tables ===== */
-table {
-	border: solid;
-	border-width: .25em;
+td {
+	padding-right: 4em;
+	padding-bottom: 2em;
 }
 /* ===== End tables ===== */

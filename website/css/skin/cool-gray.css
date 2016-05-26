@@ -215,9 +215,11 @@ a, a:hover, a:focus {
 	background: #363940;
 	color: #fff;
 }
+
 .btn-default:hover {
-	color: #fff;
-	background: #676D75;
+	background: #fff;
+	color: #676D75;
+
 }
 .btn-primary, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
 	background-color: #3078B3;
