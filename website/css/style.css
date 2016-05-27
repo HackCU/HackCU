@@ -150,6 +150,7 @@ section {
 
 #logo img{
 	width: 35%;
+	margin-top: 3em;
 	position: static;
 }
 
@@ -482,7 +483,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 }
 
 .testimonial .cover {
-	background-color: rgba(36, 68, 121, 0.7);
+	background-color: rgba(254,192,81, 0.7);
 }
 .testimonial-inner {
 	position: relative;
@@ -633,7 +634,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 	padding: 80px 0 50px 0;
 }
 .counter-up .cover {
-	background-color: rgba(121, 51, 121, 0.8);
+	background-color: rgba(254, 192, 81, 0.8);
 }
 .counter-up .fact {
 }
@@ -1062,8 +1063,8 @@ p.subtitle {
 
 /* Button blank */
 .btn-blank {
-	border: 2px solid #CC3333;
-	color: #CC3333;
+	border: 2px solid #fec051;
+	color: #fec051;
 	padding: 8px 12px;
 	display: inline-block;
 	vertical-align: middle;
@@ -1087,7 +1088,7 @@ p.subtitle {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #CC3333;
+	background: #fec051;
 	-webkit-transform: scaleY(0);
 	transform: scaleY(0);
 	-webkit-transform-origin: 50% 100%;

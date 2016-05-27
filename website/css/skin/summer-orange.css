@@ -5,13 +5,13 @@ a, a:hover, a:focus {
 
 /* === Navbar === */
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:focus {
-	color: #F28F38;
+	color: #fec051;
 }
 .navbar-default .navbar-brand:hover {
 	color: #9f3a00;
 }
 .navbar-default, .navbar-default.navbar-fixed-top.navbar-shrink {
-  background-color: #F26B1D;
+  background-color: #fec051;
 }
 .navbar-default .navbar-nav > li > a {
 	color: #fde1d1;
@@ -121,18 +121,18 @@ a, a:hover, a:focus {
 
 /* === Rotate Box === */
 .rotate-box-1.square-icon .rotate-box-icon, .rotate-box-2.square-icon .rotate-box-icon {
-	background-color: #F26B1D;
+	background-color: #fec051;
 }
 
 
 
 /* === Progress Bar === */
 .progress {
-	border: 3px solid #F26B1D;
+	border: 3px solid #fec051;
 	background-color: transparent;
 }
 .progress-bar {
-	background-color: #F28F38;
+	background-color: #fec051;
 }
 
 
@@ -193,13 +193,13 @@ a, a:hover, a:focus {
 
 /* === Footer === */
 .footer-top {
-	background-color: #F26B1D;
+	background-color: #fec051;
 }
 .footer {
 	background-color: #2d3035;
 }
 #subscribe > button[type="submit"] {
-    background: none repeat scroll 0 0 #F28F38;
+    background: none repeat scroll 0 0 #fec051;
 }
 #subscribe > button[type="submit"]:hover {
     background: none repeat scroll 0 0 #9f3a00;
@@ -212,12 +212,12 @@ a, a:hover, a:focus {
 
 /* === Buttons === */
 .btn-default, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active { 
-	background: #F26B1D;
+	background: #fec051;
 	color: #fff;
 }
 .btn-default:hover {
 	color: #fff;
-	background: #F28F38;
+	background: #fec051;
 }
 .btn-primary, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
 	background-color: #3078B3;
