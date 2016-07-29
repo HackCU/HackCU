@@ -148,10 +148,12 @@ section {
 	padding-right: 50px;
 }
 
-#logo img{
-	width: 35%;
-	margin-top: 3em;
-	position: static;
+#logo {
+	margin-top: 1em;
+	/*position: static;*/
+}
+#logo .btn{
+	margin: 2em;
 }
 
 /* Navbar brand (logo) */
@@ -483,7 +485,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 }
 
 .testimonial .cover {
-	background-color: rgba(254,192,81, 0.7);
+	background-color: rgba(255,153,51, 0.7);
 }
 .testimonial-inner {
 	position: relative;
