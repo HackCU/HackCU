@@ -1,0 +1,61 @@
+div#main{
+    width: 830px;
+    height:650px;
+    margin:0 auto;
+    font-family:'Roboto',sans-serif
+}
+div#form_sample{
+    background-color: #fff;
+    text-align:center;
+    border:1px solid #ccc;
+    width:800px;
+    padding:0 50px 15px;
+    margin-top:20px;
+    box-shadow:0 0 15px;
+    border-radius:6px;
+    float:left
+}
+#main h1{
+    margin-top:40px
+}
+hr{
+    margin-top:-5px
+}
+label{
+    float:left;
+    font-size:16px
+}
+input[type="text"]{
+    width:100%;
+    margin-top:10px;
+    height:35px;
+    margin-bottom:25px;
+    padding:10px;
+    border:3px solid #F28F38
+}
+textarea{
+    width:100%;
+    border:3px solid #F28F38;
+    padding:10px;
+    margin-bottom:25px;
+    margin-top:10px;
+    height:100px;
+    resize:none
+}
+input[type="submit"]{
+    width:100%;
+    padding:10px 45px;
+    background-color:#F28F38;
+    border:none;
+    color:#fff;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    font-family:'Roboto',sans-serif
+}
+/* -------------------------------------
+CSS for Sidebar (optional)
+---------------------------------------- */
+div#fugo{
+    float:right
+}

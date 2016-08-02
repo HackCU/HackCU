@@ -7,65 +7,7 @@
         Version:	1.0	
 -->
 <html lang="en-US">
-    <head>
-
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>HackCU</title>
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-
-        <meta property="og:title" content="Local Hack Day 2016"/>
-        <meta property="og:image" content="screen.png"/>
-        <meta property="og:url" content="HackCU.org"/>
-        <meta name="twitter:image" content="screen.png"/>
-
-
-        <meta name="description"
-              content="Join HackCU for Local Hack Day in the Fall of 2016 at the University of Colorado Boulder.">
-        <meta name="keywords"
-              content="Hackathon, HackCU, Boulder, Colorado"/>
-        <meta name="author" content="HackCU">
-
-        <!-- Mobile Metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Google Fonts  -->
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
-        <!-- Body font -->
-        <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-        <!-- Navbar font -->
-
-        <!-- Libs and Plugins CSS -->
-        <link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="inc/animations/css/animate.min.css">
-        <link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css"> <!-- Font Icons -->
-        <link rel="stylesheet" href="inc/owl-carousel/css/owl.carousel.css">
-        <link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css">
-
-        <!-- Theme CSS -->
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/mobile.css">
-
-        <!-- Skin CSS -->
-        <!--<link rel="stylesheet" href="css/skin/cool-gray.css">-->
-        <!--<link rel="stylesheet" href="css/skin/custom.css">-->
-        <link rel="stylesheet" href="css/skin/summer-orange.css">
-        <!-- <link rel="stylesheet" href="css/skin/fresh-lime.css"> -->
-        <!-- <link rel="stylesheet" href="css/skin/night-purple.css"> -->
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-    </head>
-
+    <?php include('head.php'); ?>
     <body data-spy="scroll" data-target="#main-navbar">
         <div class="page-loader"></div>  <!-- Display loading image while page loads -->
         <div class="body">
@@ -692,33 +634,6 @@
 
 
             <?php include('footer.php'); ?>
-
-
-
-        <!--</div> body ends -->
-
-        <!-- Plugins JS -->
-        <script src="inc/jquery/jquery-1.11.1.min.js"></script>
-        <script src="inc/bootstrap/js/bootstrap.min.js"></script>
-        <script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
-        <script src="inc/stellar/js/jquery.stellar.min.js"></script>
-        <script src="inc/animations/js/wow.min.js"></script>
-        <script src="inc/waypoints.min.js"></script>
-        <script src="inc/isotope.pkgd.min.js"></script>
-        <script src="inc/classie.js"></script>
-        <script src="inc/jquery.easing.min.js"></script>
-        <script src="inc/jquery.counterup.min.js"></script>
-        <script src="inc/smoothscroll.js"></script>
-
-
-        <!-- Theme JS -->
-        <script src="js/theme.js"></script>
-        
-        <!-- Custom JS -->
-        <script src="js/countdown.js"></script>
-
-
+            <?php include('includes.php'); ?>
     </body>
-
-
 </html>
