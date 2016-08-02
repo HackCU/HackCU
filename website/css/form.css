@@ -8,14 +8,15 @@ div#form_sample{
     background-color: #fff;
     text-align:center;
     border:1px solid #ccc;
+    z-index: -1000;
     width:800px;
     padding:0 50px 15px;
-    margin-top:20px;
+    margin:20px;
     box-shadow:0 0 15px;
     border-radius:6px;
     float:left
 }
-#main h1{
+#main h2{
     margin-top:40px
 }
 hr{
