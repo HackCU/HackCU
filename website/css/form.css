@@ -1,8 +1,6 @@
 div#main{
-    width: 830px;
-    height:650px;
-    margin:0 auto;
-    font-family:'Roboto',sans-serif
+    font-family:'Roboto',sans-serif;
+    clear: both;
 }
 div#form_sample{
     background-color: #fff;
@@ -15,6 +13,7 @@ div#form_sample{
     box-shadow:0 0 15px;
     border-radius:6px;
     float:left
+    
 }
 #main h2{
     margin-top:40px
@@ -53,10 +52,4 @@ input[type="submit"]{
     font-weight:700;
     cursor:pointer;
     font-family:'Roboto',sans-serif
-}
-/* -------------------------------------
-CSS for Sidebar (optional)
----------------------------------------- */
-div#fugo{
-    float:right
 }
