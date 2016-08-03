@@ -23,8 +23,8 @@
 
                         <div id="logo" class="logo">
                             <img class="logo" src="img/logo/sitelogo.png" alt="HackCU logo"/>
-                            <h1 class="modal-title">Local Hack Day</h1>
-                            <h1 class="modal-title">Dec. 3, 2016</h1>
+                            <h1>Local Hack Day</h1>
+                            <h1>Dec. 3, 2016</h1>
                             <a class="btn btn-lg btn-blank" href="" role="button">Applications Coming Soon</a>
                             <div class="extra-space-l"></div>
                             <!--<a class="btn btn-blank page-scroll" href="#about-section" role="button"><i class="fa fa-arrow-down"></i></a>-->
