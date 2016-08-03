@@ -114,7 +114,7 @@ a, a:hover, a:focus {
 
 /* === Text Carousel === */
 #text-carousel-intro-section {
-    background-color: #25282a;
+    background-color: #fff;
 }
 
 
@@ -310,10 +310,21 @@ h2 {
     .imp-links {
         text-align: center;
     }
+    td {
+        margin-left: 2em;
+    }
 }
 
 @media only screen and (max-width: 500px) {
 .imp-links {
         text-align: center;
     }
+}
+
+.intro {
+    background-image: url("/img/maincover2b.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
 }

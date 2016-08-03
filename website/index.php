@@ -15,9 +15,7 @@
             <?php include('header.php'); ?>
 
 
-            <section id="text-carousel-intro-section" data-stellar-background-ratio="0.5"
-                     style="background-image: url(img/maincover2b.png); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;
-                     -webkit-background-size: cover;">
+            <section id="text-carousel-intro-section" class="intro" data-stellar-background-ratio="0.5">
                 <div class="container">
                     <div class="caption text-center" data-stellar-ratio="0.7">
 
