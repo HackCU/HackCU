@@ -277,3 +277,15 @@ a, a:hover, a:focus {
 h2 {
     font-size: 2em;
 }
+
+@media only screen and (min-width : 1900px) {
+
+    .logo img{
+        width: 20%;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+}
