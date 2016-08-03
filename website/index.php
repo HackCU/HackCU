@@ -15,14 +15,14 @@
             <?php include('header.php'); ?>
 
 
-            <section id="text-carousel-intro-section" class="" data-stellar-background-ratio="0.5"
+            <section id="text-carousel-intro-section" data-stellar-background-ratio="0.5"
                      style="background-image: url(img/maincover2b.png); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;
                      -webkit-background-size: cover;">
                 <div class="container">
                     <div class="caption text-center" data-stellar-ratio="0.7">
 
                         <div id="logo" class="logo">
-                            <img class="logo" src="img/logo/sitelogo.png" alt="HackCU logo"/>
+                            <!--<img class="logo" src="img/logo/sitelogo.png" alt="HackCU logo"/>-->
                             <h1>HackCU</h1>
                             <h2>Local Hack Day</h2>
                             <h2>Dec. 3, 2016</h2>

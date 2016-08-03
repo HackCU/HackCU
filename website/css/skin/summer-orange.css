@@ -289,3 +289,26 @@ h2 {
     }
 
 }
+
+@media only screen and (max-width: 767px) {
+
+    
+    .logo img {
+        width: 35%;
+    }
+    
+    .text-carousel-intro-section {
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .btn-lg {
+        text-align: center;
+	font-size: 1em;
+	padding: 5px 5px;
+    }
+    
+    .imp-links {
+        text-align: center;
+    }
+}

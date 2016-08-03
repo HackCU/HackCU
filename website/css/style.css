@@ -12,12 +12,14 @@ Master Stylesheet
 
 html {
 	height: 100% !important;
+        background-color: #fff;
 }
 body {
 	position: relative;
 	height: 100%;
 	font-size: 14px;
 	color: #363940;
+	background-color: #fff;
 }
 body .body {
 	height: 100%;
@@ -290,7 +292,7 @@ section {
 }
 #text-carousel-intro-section .caption h1 {
 	margin-top: 0;
-	margin-bottom: 5px;
+	/*margin-bottom: 5px;*/
 	font-size: 60px;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
@@ -636,7 +638,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 	padding: 80px 0 50px 0;
 }
 .counter-up .cover {
-	background-color: rgba(254, 192, 81, 0.8);
+	background-color: rgba(255,153,51, 0.7);
 }
 .counter-up .fact {
 }

@@ -30,11 +30,12 @@
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-4 text-right">
-
+                   
                     <ul class="imp-links">
                         <li><a target="_blank" href="mailto:contact@hackcu.org">Email Us</a></li>
                         <li><a href="https://2016.hackcu.org/">HackCU Fall 2016</a></li>
                     </ul>
+                    
                 </div>
             </div>
         </div>
