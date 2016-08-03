@@ -353,14 +353,14 @@
                             <div class="devider"></div>
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <a href="http://www.colorado.edu/engineering/home-page" target="_blank"><img src="img/partners/engineering.png"></a>
+                                    <img src="img/partners/engineering.png">
 
                                 </div>
                                 <div class="col-lg-4">
-                                    <a href="https://www.kindsnacks.com/" target="_blank"><img src="img/partners/kind.png"></a>
+                                    <img src="img/partners/kind.png">
                                 </div>
                                 <div class="col-lg-4">
-                                    <a href="http://www.colorado.edu/business/" target="_blank"><img src="img/partners/leeds.png"></a>
+                                    <img src="img/partners/leeds.png">
                                 </div>
                             </div>
                         </div>
