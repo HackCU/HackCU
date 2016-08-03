@@ -42,8 +42,7 @@
                             <h2>About HackCU</h2>
                             <div class="devider"></div>
                             <p class="subtitle">Join HackCU for Local Hack Day December 3rd, 2016 at the
-                                University of Colorado, Boulder! Local Hack Day is a national event sponsored by MLH (Major League Hacking) and is aimed
-                                at bringing students local to your area together for just 12 hours of building anything you set your mind to. HackCU provides the space and the
+                                University of Colorado, Boulder! Local Hack Day is a worldwide event aimed at bringing students local to your area together for just 12 hours of building anything you set your mind to. HackCU provides the space and the
                                 resources for you to express your creativity, ingenuity, and determination to create anything. Any and all students are welcome
                                 to join, and we especially encourage students not in engineering to come!</p>
                         </div>
