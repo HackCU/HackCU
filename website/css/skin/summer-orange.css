@@ -291,7 +291,6 @@ h2 {
 }
 
 @media only screen and (max-width: 767px) {
-
     
     .logo img {
         width: 35%;
@@ -309,6 +308,12 @@ h2 {
     }
     
     .imp-links {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+.imp-links {
         text-align: center;
     }
 }
