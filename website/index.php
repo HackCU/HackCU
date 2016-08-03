@@ -28,7 +28,7 @@
                             <h1>HackCU</h1>
                             <h2>Local Hack Day</h2>
                             <h2>Dec. 3, 2016</h2>
-                            <a class="btn btn-lg btn-blank" href="" role="button">Applications Coming Soon</a>
+                            <center><a class="btn btn-lg btn-blank" href="" role="button">Applications Coming Soon</a></center>
                             <div class="extra-space-l"></div>
                             <!--<a class="btn btn-blank page-scroll" href="#about-section" role="button"><i class="fa fa-arrow-down"></i></a>-->
                         </div>
