@@ -60,7 +60,7 @@ var cbpAnimatedHeader = (function() {
 $('body').scrollspy({
     target: '.navbar',
     offset: 65
-})
+});
 
 
 
@@ -88,7 +88,7 @@ $("#owl-intro-text").owlCarousel({
     navigation : false,
     navigationText : false,
     pagination : true
-})
+});
 
 
 // Partner carousel
@@ -100,14 +100,14 @@ $("#owl-partners").owlCarousel({
     autoPlay : 5000,
     stopOnHover : true,
     pagination : false
-})
+});
 
 // Testimonials carousel
 $("#owl-testimonial").owlCarousel({
     singleItem : true,
     pagination : true,
     autoHeight : true
-})
+});
 
 
 ////////////////////////////////////////////////////////////////////
@@ -117,7 +117,7 @@ $("#owl-testimonial").owlCarousel({
 $.stellar({
     // Set scrolling to be in either one or both directions
     horizontalScrolling: false,
-    verticalScrolling: true,
+    verticalScrolling: true
 });
 
 

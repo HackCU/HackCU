@@ -302,9 +302,12 @@ h2 {
     }
     
     .btn-lg {
-        text-align: center;
 	font-size: 1em;
-	padding: 5px 5px;
+	padding: 5px;
+    }
+    
+    .btn-blank {
+        padding: 5px;
     }
     
     .imp-links {
@@ -313,18 +316,24 @@ h2 {
     td {
         margin-left: 2em;
     }
-}
-
-@media only screen and (max-width: 500px) {
-.imp-links {
-        text-align: center;
+    img {
+        max-width: 320px;
+    }
+    #sponsors-section img{
+        margin-top: 3em;
     }
 }
 
-.intro {
+/*@media only screen and (max-width: 500px) {
+.imp-links {
+        text-align: center;
+    }
+}*/
+
+/*.intro {
     background-image: url("/img/maincover2b.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
-}
+}*/
