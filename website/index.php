@@ -21,7 +21,8 @@
                 <div class="container">
                     <div class="caption text-center" data-stellar-ratio="0.7">
 
-                        <div id="logo">
+                        <div id="logo" class="logo">
+                            <img class="logo" src="img/logo/sitelogo.png" alt="HackCU logo"/>
                             <h1 class="modal-title">Local Hack Day</h1>
                             <h1 class="modal-title">Dec. 3, 2016</h1>
                             <a class="btn btn-lg btn-blank" href="" role="button">Applications Coming Soon</a>
@@ -351,12 +352,15 @@
                             <h2>Our Partners</h2>
                             <div class="devider"></div>
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <a href="http://www.colorado.edu/engineering/home-page" target="_blank"><img src="img/partners/cu.png"></a>
+                                <div class="col-lg-4">
+                                    <a href="http://www.colorado.edu/engineering/home-page" target="_blank"><img src="img/partners/engineering.png"></a>
 
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-4">
                                     <a href="https://www.kindsnacks.com/" target="_blank"><img src="img/partners/kind.png"></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="http://www.colorado.edu/business/" target="_blank"><img src="img/partners/leeds.png"></a>
                                 </div>
                             </div>
                         </div>
