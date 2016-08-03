@@ -273,3 +273,7 @@ a, a:hover, a:focus {
 .logo img{
     width: 10%;
 }
+
+h2 {
+    font-size: 2em;
+}
