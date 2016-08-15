@@ -344,12 +344,12 @@
                         <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
                             <h2>Our Sponsors</h2>
                             <div class="devider"></div>
-                            <p class="subtitle">Coming Soon.</p>
-                            <!--<div class="row">-->
-                                <!--<div class="col-lg-12">-->
-                                    <!--<img src="img/sponsors/twitter.png">-->
-                                <!--</div>-->
-                            <!--</div>-->
+                            <!--<p class="subtitle">Coming Soon.</p>-->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <img src="img/sponsors/twitter.png">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
