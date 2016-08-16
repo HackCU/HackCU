@@ -359,6 +359,11 @@
                             <h2>Our Partners</h2>
                             <div class="devider"></div>
                             <div class="row">
+                                <div class="col-lg-12">
+                                    <img src="img/partners/spark.png">
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-lg-4">
                                     <img src="img/partners/engineering.png">
 
