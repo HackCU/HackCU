@@ -8,9 +8,9 @@
 
 
         <meta property="og:title" content="Local Hack Day 2016"/>
-        <meta property="og:image" content="/img/screen.png" />
+        <meta property="og:image" content="/img/screen.gif" />
         <meta property="og:url" content="HackCU.org"/>
-        <meta name="twitter:image" content="/img/screen.png"/>
+        <meta name="twitter:image" content="/img/screen.gif"/>
 
 
         <meta name="description"

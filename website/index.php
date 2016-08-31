@@ -15,7 +15,7 @@
             <?php include('header.php'); ?>
 
 
-            <section id="text-carousel-intro-section" class="" data-stellar-background-ratio="0.5" style="background-image: url(img/maincover2b.png);
+            <section id="text-carousel-intro-section" class="" data-stellar-background-ratio="0.5" style="background-image: url(img/maincover2b.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -183,7 +183,7 @@
             <!-- APPLY SECTION -->
             <section id="apply-section">
                 <div id="" class="testimonial text-white parallax" data-stellar-background-ratio="0.5"
-                     style="background-image: url(img/smallcover.png);">
+                     style="background-image: url(img/smallcover.jpg);">
                     <div class="cover"></div>
 
                     <div class="page-header-wrapper">
