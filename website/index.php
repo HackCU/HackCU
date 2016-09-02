@@ -25,10 +25,10 @@
 
                         <div id="logo" class="logo">
                             <!--<img class="logo" src="img/logo/sitelogo.png" alt="HackCU logo"/>-->
-                            <h1>HackCU</h1>
-                            <h2>Local Hack Day</h2>
-                            <h2>Dec. 3, 2016</h2>
-                            <center><a class="btn btn-lg btn-blank" href="" role="button">Applications Coming Soon</a></center>
+                            <h1 class="wow fadeInUp" data-wow-delay="0.1s">HackCU</h1>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.3s">Local Hack Day</h2>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.5s">Dec. 3, 2016</h2>
+                            <center><a class="btn btn-lg btn-blank wow fadeInUp" data-wow-delay="0.7s" href="https://localhackday.mlh.io/" role="button">Register!</a></center>
                             <div class="extra-space-l"></div>
                             <!--<a class="btn btn-blank page-scroll" href="#about-section" role="button"><i class="fa fa-arrow-down"></i></a>-->
                         </div>
@@ -191,10 +191,10 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                                        <h2>Apply for Local Hack Day</h2>
+                                        <h2>Register for Local Hack Day</h2>
                                         <div class="devider"></div>
-                                        <p class="subtitle" style="font-size: large;">Applications coming soon.</p>
-                                        <p style="font-size: large;">Stay tuned for our other event, <a style="color: #fff; font-size: large;" target="_blank" href="https://hackcu.org/">HackCU 2017</a>!</p>
+                                        <a class="btn btn-blank" href="https://localhackday.mlh.io/" target="_blank" role="button">Register!</a>
+                                        <p style="font-size: large;">Stay tuned for our other event, HackCU 2017!</p>
                                     </div>
                                 </div>
                             </div>

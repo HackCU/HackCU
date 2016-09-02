@@ -273,9 +273,17 @@ a, a:hover, a:focus {
 .logo img{
     width: 10%;
 }
+#logo {
+    margin-top: 5em;
+}
 
 h2 {
     font-size: 2em;
+}
+
+#apply-section a{
+    background-color: #fff;
+    margin: 2em;
 }
 
 @media only screen and (min-width : 1900px) {
