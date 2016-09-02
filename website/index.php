@@ -505,7 +505,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <!--Simon Hewat-->
                                 <div class="col-md-2">
                                     <div class="team-container wow bounceIn" data-wow-delay="0.7s">
@@ -600,13 +600,30 @@
                                                     <img src="img/organizers/krish.jpg" alt="Krish Dholakiya"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Krish Dholakiya</p>
+                                                        <a href="google.com"><p>Krish Dholakiya</p></a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!--Shubha Swamy-->
+                                <!--<div class="col-md-2">-->
+                                    <!--<div class="team-container wow bounceIn" data-wow-delay="0.8s">-->
+                                        <!--<div class="team-item">-->
+                                            <!--<div class="team-triangle">-->
+                                                <!--<div class="content">-->
+                                                    <!--<img src="img/organizers/shubha.jpg" alt="Shubha Swamy"/>-->
+                                                    <!--<div class="team-hover text-center">-->
+                                                        <!--<i class="fa fa-gears"></i>-->
+                                                        <!--<p>Shubha Swamy</p>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
 
                             </div>
                         </div>
