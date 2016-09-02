@@ -455,16 +455,16 @@
                                     </div>
                                 </div>
 
-                                <!--Austin Holler-->
+                                <!--Conor Parrish-->
                                 <div class="col-md-2">
                                     <div class="team-container wow bounceIn" data-wow-delay="0.8s">
                                         <div class="team-item">
                                             <div class="team-triangle">
                                                 <div class="content">
-                                                    <img src="img/organizers/holler.jpg" alt="Austin Holler"/>
+                                                    <img src="img/organizers/conor.jpg" alt="Conor Parrish"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Austin Holler</p>
+                                                        <p>Conor Parrish</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -489,23 +489,6 @@
                                     </div>
                                 </div>
 
-                                <!--Simon Hewat-->
-                                <div class="col-md-2">
-                                    <div class="team-container wow bounceIn" data-wow-delay="0.7s">
-                                        <div class="team-item">
-                                            <div class="team-triangle">
-                                                <div class="content">
-                                                    <img src="img/organizers/hewat.jpg" alt="Simon Hewat"/>
-                                                    <div class="team-hover text-center">
-                                                        <i class="fa fa-gears"></i>
-                                                        <p>Simon Hewat</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <!--MICHAEL SWISHER-->
                                 <div class="col-md-2">
                                     <div class="team-container wow bounceIn" data-wow-delay="0.4s">
@@ -516,6 +499,23 @@
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
                                                         <p>Michael Swisher</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--Simon Hewat-->
+                                <div class="col-md-2">
+                                    <div class="team-container wow bounceIn" data-wow-delay="0.7s">
+                                        <div class="team-item">
+                                            <div class="team-triangle">
+                                                <div class="content">
+                                                    <img src="img/organizers/hewat.jpg" alt="Simon Hewat"/>
+                                                    <div class="team-hover text-center">
+                                                        <i class="fa fa-gears"></i>
+                                                        <p>Simon Hewat</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -540,16 +540,16 @@
                                     </div>
                                 </div>
 
-                                <!--Conor Parrish-->
+                                <!--Austin Holler-->
                                 <div class="col-md-2">
                                     <div class="team-container wow bounceIn" data-wow-delay="0.8s">
                                         <div class="team-item">
                                             <div class="team-triangle">
                                                 <div class="content">
-                                                    <img src="img/organizers/conor.jpg" alt="Conor Parrish"/>
+                                                    <img src="img/organizers/holler.jpg" alt="Austin Holler"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Conor Parrish</p>
+                                                        <p>Austin Holler</p>
                                                     </div>
                                                 </div>
                                             </div>
