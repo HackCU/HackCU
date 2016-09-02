@@ -36,13 +36,14 @@
         <link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css">
 
         <!-- Theme CSS -->
-        <link rel="stylesheet" href="css/skin/summer-orange.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/mobile.css">
         <link rel="stylesheet" href="css/form.css">
-
+        
+        
         <!-- Skin CSS -->
+        <link rel="stylesheet" href="css/skin/summer-orange.css">
         <!--<link rel="stylesheet" href="css/skin/cool-gray.css">-->
         <!--<link rel="stylesheet" href="css/skin/custom.css">-->
         
