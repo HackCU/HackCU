@@ -224,7 +224,7 @@
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td>7:30am</td>
+                                        <td>8:00am</td>
                                         <td>Arrival and Check-in</td>
                                     </tr>
                                     <tr>
@@ -364,14 +364,14 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="img/partners/engineering.png">
+                                <!--<div class="col-lg-4">-->
+                                    <!--<img src="img/partners/engineering.png">-->
 
-                                </div>
-                                <div class="col-lg-4">
+                                <!--</div>-->
+                                <div class="col-lg-6">
                                     <img src="img/partners/kind.png">
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-6">
                                     <img src="img/partners/leeds.png">
                                 </div>
                             </div>
@@ -540,16 +540,16 @@
                                     </div>
                                 </div>
 
-                                <!--Carlos Herraro-->
+                                <!--Conor Parrish-->
                                 <div class="col-md-2">
                                     <div class="team-container wow bounceIn" data-wow-delay="0.8s">
                                         <div class="team-item">
                                             <div class="team-triangle">
                                                 <div class="content">
-                                                    <img src="img/organizers/herrero.jpg" alt="Carlos Herrero"/>
+                                                    <img src="img/organizers/conor.jpg" alt="Conor Parrish"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Carlos Herrero</p>
+                                                        <p>Conor Parrish</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -584,6 +584,23 @@
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
                                                         <p>Michael Sihavong</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Krish Dholakiya-->
+                                <div class="col-md-2">
+                                    <div class="team-container wow bounceIn" data-wow-delay="0.8s">
+                                        <div class="team-item">
+                                            <div class="team-triangle">
+                                                <div class="content">
+                                                    <img src="img/organizers/krish.jpg" alt="Krish Dholakiya"/>
+                                                    <div class="team-hover text-center">
+                                                        <i class="fa fa-gears"></i>
+                                                        <p>Krish Dholakiya</p>
                                                     </div>
                                                 </div>
                                             </div>
