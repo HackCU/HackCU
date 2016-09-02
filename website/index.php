@@ -359,12 +359,12 @@
                             <h2>Our Partners</h2>
                             <div class="devider"></div>
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-12">
                                     <img src="img/partners/spark.png">
                                 </div>
-                                <div class="col-lg-6">
-                                    <img src="img/partners/mlh-logo.png">
-                                </div>
+<!--                                <div class="col-lg-6">-->
+<!--                                    <img src="img/partners/mlh-logo.png">-->
+<!--                                </div>-->
                             </div>
                             <div class="row">
                                 <!--<div class="col-lg-4">-->
