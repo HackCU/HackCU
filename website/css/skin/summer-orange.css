@@ -264,6 +264,7 @@ a, a:hover, a:focus {
 
 #sponsors-section img{
     opacity: 0.5;
+    max-width: 200px;
 }
 
 #sponsors-section img:hover {
