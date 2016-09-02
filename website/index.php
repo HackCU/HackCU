@@ -413,7 +413,7 @@
                                                     <img src="img/organizers/alexw.jpg" alt="Alex Walling"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Alex Walling</p>
+                                                        <a href="http://alexwalling.com/" target="_blank"><p>Alex Walling</p></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -430,7 +430,7 @@
                                                     <img src="img/organizers/jessie.jpg" alt="Jessie Albarian"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Jessie Albarian</p>
+                                                        <a href="http://jessiealbarian.com/" target="_blank"><p>Jessie Albarian</p></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -447,7 +447,7 @@
                                                     <img src="img/organizers/luo.jpg" alt="Alex Luo"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Alex Luo</p>
+                                                        <a href="https://github.com/Alex-Luo" target="_blank"><p>Alex Luo</p></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -464,7 +464,7 @@
                                                     <img src="img/organizers/conor.jpg" alt="Conor Parrish"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Conor Parrish</p>
+                                                        <a href="https://github.com/conorjp" target="_blank"><p>Conor Parrish</p></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -481,7 +481,7 @@
                                                     <img src="img/organizers/casner.jpg" alt="Drew Casner"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Drew Casner</p>
+                                                        <a href="https://github.com/Andrew-Casner" target="_blank"><p>Drew Casner</p></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -498,7 +498,7 @@
                                                     <img src="img/organizers/swisher.jpg" alt="Michael Swisher"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Michael Swisher</p>
+                                                        <a href="https://github.com/misw9423" target="_blank"><p>Michael Swisher</p></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -549,7 +549,7 @@
                                                     <img src="img/organizers/holler.jpg" alt="Austin Holler"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Austin Holler</p>
+                                                        <a href="https://www.linkedin.com/in/austin-holler-45399017" target="_blank"><p>Austin Holler</p></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -583,7 +583,7 @@
                                                     <img src="img/organizers/michael.jpg" alt="Michael Sihavong"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Michael Sihavong</p>
+                                                        <a href="https://www.linkedin.com/in/msihavong" target="_blank"><p>Michael Sihavong</p></a>
                                                     </div>
                                                 </div>
                                             </div>
