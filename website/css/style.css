@@ -820,7 +820,7 @@ ul.social-list {
 }
 ul.social-list li{
 	display: inline-block;
-	margin-right: 20px;
+	margin: 20px;
 }
 ul.social-list li .rotate-box-1 {
 	margin: 0;

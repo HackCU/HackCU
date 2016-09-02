@@ -155,7 +155,7 @@
                 <div class="extra-space-l"></div>
                 <div class="col-sm-12 col-md-12">
                     <div class="container">
-                        <ul class="social-list red">
+                        <ul class="social-list">
                             <li><a target="_blank" href="https://www.facebook.com/letsHackCU/"
                                    class="rotate-box-1 square-icon text-center wow zoomIn"
                                    data-wow-delay="0.3s"><span class="rotate-box-icon"><i
