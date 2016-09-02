@@ -565,7 +565,7 @@
                                                     <img src="img/organizers/carl.jpg" alt="Carl Cortright"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Carl Cortright</p>
+                                                        <a href="http://carlcortright.me/" target="_blank"><p>Carl Cortright</p></a>
                                                     </div>
                                                 </div>
                                             </div>
