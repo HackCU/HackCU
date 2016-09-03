@@ -514,7 +514,7 @@
                                                     <img src="img/organizers/hewat.jpg" alt="Simon Hewat"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <p>Simon Hewat</p>
+                                                        <a href="https://www.linkedin.com/in/sahewat" target="_blank"><p>Simon Hewat</p></a>
                                                     </div>
                                                 </div>
                                             </div>
