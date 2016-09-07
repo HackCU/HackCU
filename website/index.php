@@ -599,7 +599,7 @@
                                                     <img src="img/organizers/krish.jpg" alt="Krish Dholakiya"/>
                                                     <div class="team-hover text-center">
                                                         <i class="fa fa-gears"></i>
-                                                        <a href="google.com"><p>Krish Dholakiya</p></a>
+                                                        <a href="http://itskrish.co"><p>Krish Dholakiya</p></a>
                                                     </div>
                                                 </div>
                                             </div>
