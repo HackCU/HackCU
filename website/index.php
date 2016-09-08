@@ -28,7 +28,7 @@
                             <h1 class="wow fadeInUp" data-wow-delay="0.1s">HackCU</h1>
                             <h2 class="wow fadeInUp" data-wow-delay="0.3s">Local Hack Day</h2>
                             <h2 class="wow fadeInUp" data-wow-delay="0.5s">Dec. 3, 2016</h2>
-                            <center><a class="btn btn-lg btn-blank wow fadeInUp" data-wow-delay="0.7s" href="https://localhackday.mlh.io/" target="_blank" role="button">Register!</a></center>
+                            <center><a class="btn btn-lg btn-blank wow fadeInUp" data-wow-delay="0.7s" href="https://localhackday.mlh.io/find-an-event/" target="_blank" role="button">Register!</a></center>
                             <div class="extra-space-l"></div>
                             <!--<a class="btn btn-blank page-scroll" href="#about-section" role="button"><i class="fa fa-arrow-down"></i></a>-->
                         </div>
@@ -193,7 +193,7 @@
                                     <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
                                         <h2>Register for Local Hack Day</h2>
                                         <div class="devider"></div>
-                                        <a class="btn btn-blank" href="https://localhackday.mlh.io/" target="_blank" role="button">Register!</a>
+                                        <a class="btn btn-blank" href="https://localhackday.mlh.io/find-an-event/" target="_blank" role="button">Register!</a>
                                         <p style="font-size: large;">Stay tuned for our other event, HackCU 2017!</p>
                                     </div>
                                 </div>

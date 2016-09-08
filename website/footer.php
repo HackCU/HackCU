@@ -8,7 +8,7 @@
                         <ul class="imp-links">
                             <li><a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of
                                     Conduct</a></li>
-                            <li><a href="">Apply</a></li>
+                            <li><a href="https://localhackday.mlh.io/find-an-event/">Apply</a></li>
                         </ul>
                     </div>
                 </div>
