@@ -624,6 +624,23 @@
                                     </div>
                                 </div>
 
+                                <!--Will Dickinson-->
+                                <!--<div class="col-md-2">-->
+                                    <!--<div class="team-container wow bounceIn" data-wow-delay="0.8s">-->
+                                        <!--<div class="team-item">-->
+                                            <!--<div class="team-triangle">-->
+                                                <!--<div class="content">-->
+                                                    <!--<img src="img/organizers/will.jpg" alt="Will Dickinson"/>-->
+                                                    <!--<div class="team-hover text-center">-->
+                                                        <!--<i class="fa fa-gears"></i>-->
+                                                        <!--<a href="https://www.linkedin.com/in/williamjdickinson" target="_blank"><p>Will Dickinson</p></a>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
                             </div>
                         </div>
                     </div>
