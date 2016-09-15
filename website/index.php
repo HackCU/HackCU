@@ -346,9 +346,12 @@
                             <div class="devider"></div>
                             <!--<p class="subtitle">Coming Soon.</p>-->
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-6">
                                     <img src="img/sponsors/twitter.png">
                                 </div>
+				<div class="col-lg-6">
+				    <img src="img/sponsors/sparkfun.png">
+				</div>
                             </div>
                         </div>
                     </div>
