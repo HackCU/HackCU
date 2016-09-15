@@ -347,10 +347,14 @@
                             <!--<p class="subtitle">Coming Soon.</p>-->
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="img/sponsors/twitter.png">
+				    <a href="https://twitter.com/" target="_blank">
+                                    	<img src="img/sponsors/twitter.png">
+				    </a>
                                 </div>
 				<div class="col-lg-6">
-				    <img src="img/sponsors/sparkfun.png">
+				    <a href="https://www.sparkfun.com/" target="_blank">
+				    	<img src="img/sponsors/sparkfun.png">
+				    </a>
 				</div>
                             </div>
                         </div>
@@ -363,18 +367,26 @@
                             <div class="devider"></div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <img src="img/partners/spark.png">
+				    <a href="http://sparkboulder.com/" target="_blank">
+                                    	<img src="img/partners/spark.png">
+				    </a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="img/partners/mlh-logo.png">
+				    <a href="https://mlh.io/" target="_blank">
+                                    	<img src="img/partners/mlh-logo.png">
+				    </a>
                                 </div>
                                 <div class="col-lg-4">
-                                    <img src="img/partners/kind.png">
+				    <a href="http://www.kindsnacks.com/" target="_blank">
+                                    	<img src="img/partners/kind.png">
+				    </a>
                                 </div>
                                 <div class="col-lg-4">
-                                    <img src="img/partners/leeds.png">
+				    <a href="http://www.colorado.edu/business/" target="_blank">
+                                    	<img src="img/partners/leeds.png">
+				    </a>
                                 </div>
                             </div>
                         </div>
