@@ -351,17 +351,19 @@
                     <div class="devider"></div>
                     <!--<p class="subtitle">Coming Soon.</p>-->
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-12">
                             <a href="https://twitter.com/" target="_blank">
                                 <img src="img/sponsors/twitter.png">
                             </a>
                         </div>
-                        <div class="col-lg-4">
+                        </div>
+                    <div class="row">
+                        <div class="col-lg-6">
                             <a href="https://www.sparkfun.com/" target="_blank">
                                 <img src="img/sponsors/sparkfun.png">
                             </a>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <a href="https://www.wowza.com/" target="_blank">
                                 <img src="img/sponsors/wowza.png">
                             </a>
