@@ -346,3 +346,7 @@ h2 {
     background-attachment: fixed;
     -webkit-background-size: cover;
 }*/
+
+.mar {
+    margin: 2em;
+}

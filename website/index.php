@@ -402,10 +402,10 @@
                         </div>
 
                     </div>
-                    <div class="row">
+                    <div class="row mar">
                         <div class="col-lg-12">
                             <a href="https://www.soylent.com/" target="_blank">
-                                <img src="img/sponsors/soylent.png">
+                                <img src="img/partners/soylent.png">
                             </a>
                         </div>
                     </div>
