@@ -358,14 +358,19 @@
                         </div>
                         </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <a href="https://www.sparkfun.com/" target="_blank">
                                 <img src="img/sponsors/sparkfun.png">
                             </a>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             <a href="https://www.wowza.com/" target="_blank">
                                 <img src="img/sponsors/wowza.png">
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="https://www.soylent.com/" target="_blank">
+                                <img src="img/sponsors/soylent.png">
                             </a>
                         </div>
                     </div>
