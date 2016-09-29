@@ -402,8 +402,8 @@
                         </div>
 
                     </div>
-                    <div class="row mar">
-                        <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12 mar">
                             <a href="https://www.soylent.com/" target="_blank">
                                 <img src="img/partners/soylent.png">
                             </a>
