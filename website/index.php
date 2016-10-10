@@ -546,24 +546,6 @@
                             </div>
                         </div>
 
-                        <!--Simon Hewat-->
-                        <div class="col-md-2">
-                            <div class="team-container wow bounceIn" data-wow-delay="0.7s">
-                                <div class="team-item">
-                                    <div class="team-triangle">
-                                        <div class="content">
-                                            <img src="img/organizers/hewat.jpg" alt="Simon Hewat"/>
-                                            <div class="team-hover text-center">
-                                                <i class="fa fa-gears"></i>
-                                                <a href="https://www.linkedin.com/in/sahewat" target="_blank"><p>Simon
-                                                        Hewat</p></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <!--Spencer Hanson-->
                         <div class="col-md-2">
                             <div class="team-container wow bounceIn" data-wow-delay="0.6s">
@@ -574,24 +556,6 @@
                                             <div class="team-hover text-center">
                                                 <i class="fa fa-gears"></i>
                                                 <p>Spencer Hanson</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Austin Holler-->
-                        <div class="col-md-2">
-                            <div class="team-container wow bounceIn" data-wow-delay="0.8s">
-                                <div class="team-item">
-                                    <div class="team-triangle">
-                                        <div class="content">
-                                            <img src="img/organizers/holler.jpg" alt="Austin Holler"/>
-                                            <div class="team-hover text-center">
-                                                <i class="fa fa-gears"></i>
-                                                <a href="https://www.linkedin.com/in/austin-holler-45399017"
-                                                   target="_blank"><p>Austin Holler</p></a>
                                             </div>
                                         </div>
                                     </div>
