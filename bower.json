@@ -1,0 +1,23 @@
+{
+  "name": "HackCU2017",
+  "homepage": "https://github.com/HackCU/HackCU2017",
+  "authors": [
+    "HackCU"
+  ],
+  "description": "Website for HackCU 2017 event",
+  "main": "index.html",
+  "keywords": [
+    "hackathon"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
