@@ -3,3 +3,5 @@ workspace.xml
 *.swp
 Thumbs.db
 .idea/*
+
+/bower_components
