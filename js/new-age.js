@@ -28,4 +28,10 @@
         }
     })
 
+    // Counter-Up (requires jQuery waypoints.js plugin): https://github.com/bfintal/Counter-Up
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+
 })(jQuery); // End of use strict
