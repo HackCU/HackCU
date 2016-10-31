@@ -453,3 +453,11 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+#contact {
+ background: #fff;
+ color: black;
+}
+#about {
+ background: white;
+ color: black;
+}
