@@ -1,0 +1,6 @@
+.devider {
+	width: 100%;
+	height: 23px;
+	background: url('../images/devider.png') no-repeat center center;
+	margin: 5px 0 10px;
+}
