@@ -215,7 +215,10 @@ header .device-container .screen img {
 }
 @media (min-width: 992px) {
   header .header-content .header-content-inner h1 {
-    font-size: 50px;
+    font-size: 4.5em;
+  }
+  header .header-content .header-content-inner p {
+    font-size: 2em;
   }
 }
 section {
