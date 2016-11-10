@@ -1,0 +1,99 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.sponsors {
+  margin-left: -10%;
+}
+
+.sponsors li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.sponsors li img {
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  width: 300px;
+}
+
+.sponsors li img:hover {
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  width: 310px;
+}
+
+.team {
+  margin-left: -2%;
+  width: 100%;
+}
+
+.team li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 20px;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.team li a {
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  background: url('/images/button-bg.png');
+  background-attachment: fixed;
+  font-size: 0.9em;
+  box-shadow: none;
+}
+
+.team li a:hover {
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+  background: #fff;
+  color: rgba(0,0,0,.7);
+  text-decoration: none;
+  box-shadow: 1px 1px 3px 1px rgba(0,0,0,.1);
+}
+
+.team li img {
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .1);
+  width:120px;
+  display:block;
+  margin: 10px auto;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -mozfilter: grayscale(0%);
+}
+
+.team li img:hover {
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  cursor: pointer;
+  filter: grayscale(25%);
+  -webkit-filter: grayscale(25%);
+  -mozfilter: grayscale(25%);
+}
+
+.faq {
+  margin-bottom: -180px;
+}
+
+div.col-md-8.col-md-offset-2 {
+  width: 100% !important;
+  margin-left:0 !important;
+}
