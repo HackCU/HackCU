@@ -97,3 +97,9 @@ div.col-md-8.col-md-offset-2 {
   width: 100% !important;
   margin-left:0 !important;
 }
+
+@media screen and (max-width: 480px) {
+  #map {
+    width: 100%;
+  }
+}
