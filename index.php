@@ -28,9 +28,10 @@
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/simple-line-icons/css/simple-line-icons.css">
 
-    <!-- Theme CSS -->
-    <link href="css/new-age.css" rel="stylesheet">
+    <!-- Theme & Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/new-age.css" rel="stylesheet">
+
 
 
 </head>
