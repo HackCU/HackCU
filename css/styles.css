@@ -90,7 +90,10 @@ body {
 }
 
 .faq {
-  margin-bottom: -180px;
+  /*margin-bottom: -180px;*/
+}
+.faq p,h3 {
+  text-align: left;
 }
 
 div.col-md-8.col-md-offset-2 {
@@ -103,3 +106,5 @@ div.col-md-8.col-md-offset-2 {
     width: 100%;
   }
 }
+
+
