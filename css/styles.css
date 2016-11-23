@@ -89,16 +89,21 @@ body {
   -mozfilter: grayscale(25%);
 }
 
-.faq {
-  /*margin-bottom: -180px;*/
-}
 .faq p,h3 {
   text-align: left;
+}
+
+ul{
+  list-style-type: none;
 }
 
 div.col-md-8.col-md-offset-2 {
   width: 100% !important;
   margin-left:0 !important;
+}
+
+footer a{
+  font-size: 2em;
 }
 
 @media screen and (max-width: 480px) {

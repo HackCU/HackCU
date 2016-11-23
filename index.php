@@ -143,15 +143,32 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2017 HackCU. All Rights Reserved.</p>
-            <ul class="list-inline">
-                <li>
-                    <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code</a>
-                </li>
-                <li>
-                    <a href="#">Terms</a>
-                </li>
-            </ul>
+
+            <p>Made with <i class="fa fa-heart"></i> by HackCU</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <ul>
+                        <li>
+                            <a href="#">Apply</a>
+                        </li>
+                        <li>
+                            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
+                    <ul>
+                        <li>
+                            <a href="https://hackcu.org/">Local Hack Day</a>
+                        </li>
+                        <li>
+                            <a href="https://startups2students.hackcu.org/">Startup2Students</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 
