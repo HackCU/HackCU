@@ -17,7 +17,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -30,7 +30,7 @@
 
     <!-- Theme CSS -->
     <link href="css/new-age.css" rel="stylesheet">
-
+    <link href="css/styles.css" rel="stylesheet">
 
 
 </head>
