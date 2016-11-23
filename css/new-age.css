@@ -357,10 +357,10 @@ section.contact ul.list-social {
 }
 section.contact ul.list-social li a {
   display: block;
-  height: 80px;
-  width: 80px;
-  line-height: 80px;
-  font-size: 40px;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  font-size: 30px;
   border-radius: 100%;
   color: white;
 }
@@ -389,14 +389,14 @@ footer {
   text-align: center;
 }
 footer p {
-  font-size: 12px;
+  font-size: 1em;
   margin: 0;
 }
 footer ul {
   margin-bottom: 0;
 }
 footer ul li a {
-  font-size: 12px;
+  font-size: 1em;
   color: rgba(255, 255, 255, 0.3);
 }
 footer ul li a:hover,
@@ -404,6 +404,9 @@ footer ul li a:focus,
 footer ul li a:active,
 footer ul li a.active {
   text-decoration: none;
+}
+footer i {
+  color: red;
 }
 .bg-primary {
   background: #F9AD36;
