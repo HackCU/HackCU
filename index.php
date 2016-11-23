@@ -105,23 +105,41 @@
         </div>
     </header>
 
-    <section id="about" ng-include="'sections/about.html'" class="text-center"></section>
+    <section id="about" class="text-center">
+	<?php include('sections/about.html'); ?> 
+    </section>
 
-    <section id="event" ng-include="'sections/event.html'" class="bg-primary text-center"></section>
+    <section id="event" class="bg-primary text-center">
+	<?php include('sections/event.html'); ?>
+    </section>
 
-    <section id="schedule" ng-include="'sections/schedule.html'" class="text-center"></section>
+    <section id="schedule" class="text-center">
+	<?php include('sections/schedule.html'); ?>
+    </section>
 
-    <section id="apply" ng-include="'sections/apply.html'" class="cta"></section>
+    <section id="apply" class="cta">
+	<?php include('sections/apply.html'); ?>
+    </section>
 
-    <section id="faq" ng-include="'sections/faq.html'" class="faq"></section>
+    <section id="faq" class="faq">
+	<?php include('sections/faq.html'); ?>
+    </section>
 
-    <section id="location" ng-include="'sections/location.html'" class="bg-primary text-center"></section>
+    <section id="location" ng-include="'sections/location.html'" class="bg-primary text-center">
+	<?php /* include('sections/location.html'); */ ?>
+    </section>
 
-    <section id="sponsors" ng-include="'sections/sponsors.html'" class="text-center"></section>
+    <section id="sponsors" class="text-center">
+	<?php include('sections/sponsors.html'); ?>
+    </section>
 
-    <section id="team" ng-include="'sections/team.html'" class="bg-primary text-center"></section>
+    <section id="team" class="bg-primary text-center">
+	<?php include('sections/team.html'); ?>
+    </section>
 
-    <section id="contact" ng-include="'sections/contact.html'" class="contact"></section>
+    <section id="contact" class="contact">
+	<?php include('sections/contact.html'); ?>
+    </section>
 
     <footer>
         <div class="container">
