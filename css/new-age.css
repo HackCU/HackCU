@@ -145,6 +145,16 @@ p {
   .navbar-default.affix .nav > li > a:focus:hover {
     color: #fdcc52;
   }
+  #mlh-trust-badge{
+    padding-top:0px;
+    right:0px;
+    top:0px;
+  }
+}
+@media (max-width: 767px){
+  #mlh-trust-badge{
+    right:0px;
+  }
 }
 header {
   position: relative;
