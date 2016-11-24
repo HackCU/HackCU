@@ -6,13 +6,16 @@
               You need to check-in at 8:30 AM at the Mathematics Building <br>
               Once the opening ceremony gets over at 10:30 AM, you will be moved to the Wolf Law building<br>
             </p>
-            <iframe
-                id="map"
-                width="600"
-                height="450"
-                frameborder="0" style="border:0"
-                src="#" allowfullscreen>
-            </iframe>
+            <!--div class="overlay" onclick="style.pointerEvents='none'"></div-->
+            <div class="overlay">
+              <iframe
+                  id="map"
+                  width="600"
+                  height="450"
+                  frameborder="0" style="border:0"
+                  src="#" allowfullscreen>
+              </iframe>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -22,6 +25,15 @@
     </div>
 
     <script>
+
+      //Disable mouse events before interacting with map
+      $('.overlay').click( function() {
+        $('.overlay iframe').css("pointer-events", "auto");
+      });
+
+      $('.overlay').mouseleave(function () {
+        $('.overlay iframe').css("pointer-events", "none");
+      });
 
       // Need to protect API Key - How??
       var APIKey = "AIzaSyBF59zIMAxSx94ze66lke-r4KJFngmJKn0";
