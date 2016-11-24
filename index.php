@@ -90,27 +90,49 @@
     </nav>
 
     <header>
-        <div class="container" ng-controller="HeaderCtrl">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="header-content ">
-                        <div class="header-content-inner text-center">
-                            <h1>HackCU Episode III</h1>
-                            <p>University of Colorado Boulder</p>
-                            <p>April 8th-April 9th 2017</p>
-                            <a href="#about" class="btn btn-outline btn-xl page-scroll">Learn More</a>
+
+
+        <div class="keyart" id="nonparallax">
+            <div class="container" ng-controller="HeaderCtrl">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="header-content ">
+                            <div class="header-content-inner text-center">
+                                <h1>HackCU Episode III</h1>
+                                <p class="smallMar">University of Colorado Boulder</p>
+                                <p>April 8<sup>th</sup> to April 9<sup>th</sup> 2017</p>
+                                <a href="#about" class="btn btn-outline btn-xl page-scroll">Learn More</a>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="keyart" id="parallax">
+            <div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>		<!-- 00.0 -->
+            <div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>	<!-- 12.5 -->
+            <div class="keyart_layer parallax" id="keyart-2" data-speed="11"></div>		<!-- 25.0 -->
+            <div class="keyart_layer parallax" id="keyart-3" data-speed="100"></div>	<!-- 37.5 -->
+<!--            <div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>		<!-- 50.0 -->-->
+<!--            <div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>	<!-- 62.5 -->-->
+<!--            <div class="keyart_layer parallax" id="keyart-6" data-speed="49"></div>		<!-- 75.0 -->-->
+            <div class="keyart_layer" id="keyart-scrim"></div>
+<!--            <div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>		<!-- 87.5 -->-->
+<!--            <div class="keyart_layer" id="keyart-8" data-speed="100"></div>		<!-- 100. -->-->
+        </div>
     </header>
 
-    <section id="about" class="text-center">
+    <section id="about" class="text-center about">
 	<?php include('sections/about.html'); ?> 
     </section>
 
-    <section id="event" class="bg-primary text-center">
+    <section id="apply" class="">
+        <?php include('sections/apply.html'); ?>
+    </section>
+
+    <section id="event" class="text-center">
 	<?php include('sections/event.html'); ?>
     </section>
 
@@ -118,15 +140,13 @@
 	<?php include('sections/schedule.html'); ?>
     </section>
 
-    <section id="apply" class="cta">
-	<?php include('sections/apply.html'); ?>
-    </section>
+
 
     <section id="faq" class="faq">
 	<?php include('sections/faq.html'); ?>
     </section>
 
-    <section id="location" ng-include="'sections/location.html'" class="bg-primary text-center">
+    <section id="location" ng-include="'sections/location.html'" class="text-center">
 	<?php /* include('sections/location.html'); */ ?>
     </section>
 
@@ -134,7 +154,7 @@
 	<?php include('sections/sponsors.html'); ?>
     </section>
 
-    <section id="team" class="bg-primary text-center">
+    <section id="team" class="text-center">
 	<?php include('sections/team.html'); ?>
     </section>
 
@@ -195,6 +215,7 @@
     <!-- External JS -->
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/parallax.js"></script>
 
 </body>
 

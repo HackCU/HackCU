@@ -161,12 +161,13 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../images/bg-pattern.png"), #943A24;
-  /* fallback for old browsers */
-  background: url("../images/bg-pattern.png"), -webkit-linear-gradient(to left, #F9AD36, #943A24);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../images/bg-pattern.png"), linear-gradient(to left, #F9AD36, #943A24);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #FAAE17;
+  /*background: url("../images/bg-pattern.png"), #943A24;*/
+  /*!* fallback for old browsers *!*/
+  /*background: url("../images/bg-pattern.png"), -webkit-linear-gradient(to left, #F9AD36, #943A24);*/
+  /*!* Chrome 10-25, Safari 5.1-6 *!*/
+  /*background: url("../images/bg-pattern.png"), linear-gradient(to left, #F9AD36, #943A24);*/
+  /*!* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
   color: white;
 }
 header .header-content {
@@ -181,7 +182,7 @@ header .header-content .header-content-inner {
 }
 header .header-content .header-content-inner h1 {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-size: 30px;
 }
 header .header-content .header-content-inner .list-badges {
@@ -211,7 +212,7 @@ header .device-container .screen img {
     max-width: none;
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
   }
   header .header-content .header-content-inner h1 {
@@ -315,12 +316,20 @@ section.cta {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../images/hackers.jpg');
+  /*background-image: url('../images/hackers.jpg');*/
+  background: url("../images/bg-pattern.png"), #943A24;
+  /* fallback for old browsers */
+  background: url("../images/bg-pattern.png"), -webkit-linear-gradient(to left, #F9AD36, #943A24);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: url("../images/bg-pattern.png"), linear-gradient(to left, #F9AD36, #943A24);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 250px 0;
+  text-align: center;
 }
 section.cta .cta-content {
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 section.cta .cta-content h2 {
   margin-top: 0;
@@ -328,10 +337,12 @@ section.cta .cta-content h2 {
   color: white;
   max-width: 450px;
   font-size: 50px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   section.cta .cta-content h2 {
     font-size: 80px;
+    text-align: center;
   }
 }
 section.cta .overlay {
@@ -409,9 +420,9 @@ footer i {
   color: red;
 }
 .bg-primary {
-  background: #F9AD36;
-  background: -webkit-linear-gradient(#F9AD36, #EB8331);
-  background: linear-gradient(#F9AD36, #EB8331);
+  background: #963A20;
+  background: -webkit-linear-gradient(#963A20, #FAAE17);
+  background: linear-gradient(#963A20, #FAAE17);
 }
 
 .bg-white {
@@ -468,4 +479,114 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+
+.smallMar{
+  margin: 0em;
+}
+
+/* PARALLAX */
+
+.keyart, .keyart_layer {
+  height: 1000px;
+}
+
+#parallax {
+  display: none;
+}
+#nonparallax {
+  display: block;
+}
+
+#nonparallax {
+  background-image: url("../images/parallax/nonparallax.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.keyart {
+  position: relative;
+  z-index: 10;
+}
+
+.keyart_layer {
+  background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+}
+.keyart_layer.parallax {
+  position: fixed;
+}
+#keyart-0 {
+  background-image: url("../images/parallax/parallax1.png");
+  background-color: #FAAE17;
+}
+#keyart-1 {
+  background-image: url("../images/parallax/parallax2.png");
+}
+#keyart-2 {
+  background-image: url("../images/parallax/parallax3.png");
+}
+#keyart-3 {
+  background-image: url("../images/parallax/parallax4.png");
+}
+
+#keyart-scrim {
+  background-color: #FAAE17;
+  opacity: 0;
+}
+
+/*@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){*/
+  /*#keyart-0 {*/
+    /*background-image: url('http://www.firewatchgame.com/images/parallax/parallax0@2x.png');*/
+    /*background-color: #ffaf1b;*/
+  /*}*/
+  /*#keyart-1 {*/
+    /*background-image: url('http://www.firewatchgame.com/images/parallax/parallax1@2x.png');*/
+  /*}*/
+  /*#keyart-2 {*/
+    /*background-image: url('http://www.firewatchgame.com/images/parallax/parallax2@2x.png');*/
+  /*}*/
+  /*#keyart-3 {*/
+    /*background-image: url('http://www.firewatchgame.com/images/parallax/parallax3@2x.png');*/
+  /*}*/
+
+/*}*/
+
+#schedule {
+  background-color: #EB8223;
+  color: #fff;
+}
+
+#about {
+  background-color: #220B0D;
+  color: #F4C976;
+  padding: 6em;
+}
+
+#apply {
+  text-align: center;
+  background-color: #963A20;
+  color: #fff;
+}
+
+#location {
+  background-color: #FAAE17;
+  color: #fff;
+}
+
+#team {
+  background-color: #F4C976;
+  color: #fff;
+}
+
+#event {
+  color: #220B0D;
+}
+
+#faq {
+  color: #220B0D;
 }

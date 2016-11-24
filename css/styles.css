@@ -43,14 +43,15 @@ body {
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
-  color: #fff;
+  color: #000;
   display: block;
   padding: 10px 20px;
   border-radius: 25px;
   border: 2px solid #fff;
-  background: url('/images/button-bg.png');
-  background-attachment: fixed;
-  font-size: 0.9em;
+  background-color: #fff;
+  /*background: url('/images/button-bg.png');*/
+  /*background-attachment: fixed;*/
+  font-size: 0.7em;
   box-shadow: none;
 }
 
