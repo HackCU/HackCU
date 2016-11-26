@@ -107,10 +107,12 @@ footer ul li a {
   font-size: 2em;
 }
 
+.overlay iframe {
+  pointer-events: none;
+}
+
 @media screen and (max-width: 480px) {
   #map {
     width: 100%;
   }
 }
-
-
