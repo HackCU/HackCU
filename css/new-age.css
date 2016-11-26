@@ -355,13 +355,20 @@ section.cta .overlay {
 }
 section.contact {
   text-align: center;
+  height: auto;
+  background-color: #FAAE17;
+  padding-bottomn: 150px;
+  padding-top: 150px;
 }
 section.contact h2 {
-  margin-top: 0;
+  margin-top: 300px;
   margin-bottom: 25px;
 }
 section.contact h2 i {
   color: #dd4b39;
+}
+section.contact a {
+  color: white;
 }
 section.contact ul.list-social {
   margin-bottom: 0;
