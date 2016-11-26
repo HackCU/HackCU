@@ -615,12 +615,11 @@ body {
   color: #fff;
   background-image: url("../images/contactus.png");
   background-color: #FAAE17;
-  background-position: center;
+  background-position: bottom center;
   width: auto;
   height : auto;
   max-height: 100%;
   max-width: 100%;
-  /*position: absolute;*/
 }
 
 #hero {
