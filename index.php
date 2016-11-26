@@ -97,11 +97,10 @@
 
 
 <!--            <div class="keyart" id="nonparallax">-->
-    <div id="hero">
-    <div class="container" ng-controller="HeaderCtrl">
+    <div id="hero" ng-controller="HeaderCtrl">
         <div class="row">
-            <div class="col-xs-12">
-                <div class="header-content">
+            <div class="col-xs-12 container">
+                <div class="header-content" style="z-index: 100;">
                     <div class="header-content-inner text-center">
 
                         <h1>HackCU Episode III</h1>
@@ -115,14 +114,15 @@
                 </div>
 
             </div>
+            <div class="layer layer-05"></div>
+            <div class="layer layer-01" data-type="parallax" data-depth="0.10"></div>
+            <div class="layer layer-02" data-type="parallax" data-depth="0.20"></div>
+            <div class="layer layer-03" data-type="parallax" data-depth="0.50"></div>
 
+            <div class="layer layer-04 layer01" data-type="parallax" data-depth="1.00"></div>
         </div>
 
-    </div>
-        <div class="layer layer-01" data-type="parallax" data-depth="0.10"></div>
-        <div class="layer layer-02" data-type="parallax" data-depth="0.20"></div>
-        <div class="layer layer-03" data-type="parallax" data-depth="0.50"></div>
-        <div class="layer layer-04" data-type="parallax" data-depth="1.00"></div>
+
     </div>
     <!--        </div>-->
 
