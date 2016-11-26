@@ -85,9 +85,9 @@ body {
   -webkit-transition: .3s;
   -moz-transition: .3s;
   cursor: pointer;
-  filter: grayscale(25%);
-  -webkit-filter: grayscale(25%);
-  -mozfilter: grayscale(25%);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -mozfilter: grayscale(100%);
 }
 
 .faq p,h3 {
