@@ -519,7 +519,7 @@ body {
 
 .keyart_layer {
   background-position: bottom center;
-  background-size: auto 1038px;
+  /*background-size: auto 1038px;*/
   background-repeat: repeat-x;
   width: 100%;
   position: absolute;
