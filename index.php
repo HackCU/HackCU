@@ -146,9 +146,9 @@
 	<?php include('sections/faq.html'); ?>
     </section>
 
-    <section id="location" ng-include="'sections/location.html'" class="text-center">
-	<?php /* include('sections/location.html'); */ ?>
-    </section>
+<!--    <section id="location" ng-include="'sections/location.html'" class="text-center">-->
+<!--	--><?php ///* include('sections/location.html'); */ ?>
+<!--    </section>-->
 
     <section id="sponsors" class="text-center">
 	<?php include('sections/sponsors.html'); ?>

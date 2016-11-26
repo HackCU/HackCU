@@ -43,12 +43,12 @@ body {
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
-  color: #000;
+  color: #fff;
   display: block;
   padding: 10px 20px;
   border-radius: 25px;
   border: 2px solid #fff;
-  background-color: #fff;
+  background-color: #EB8223;
   /*background: url('/images/button-bg.png');*/
   /*background-attachment: fixed;*/
   font-size: 0.7em;
@@ -59,8 +59,8 @@ body {
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
-  background: #fff;
-  color: rgba(0,0,0,.7);
+  background: #EB8223;
+  color: #fff;
   text-decoration: none;
   box-shadow: 1px 1px 3px 1px rgba(0,0,0,.1);
 }

@@ -579,7 +579,12 @@ body {
 }
 
 #team {
-  background-color: #F4C976;
+  background-color: #fff;
+  color: #fff;
+}
+
+#sponsors {
+  background-color: #EB8223;
   color: #fff;
 }
 
