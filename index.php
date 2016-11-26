@@ -63,9 +63,9 @@
                 <li>
                     <a class="page-scroll" href="#faq">FAQ</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#location">Location</a>
-                </li>
+<!--                <li>-->
+<!--                    <a class="page-scroll" href="#location">Location</a>-->
+<!--                </li>-->
                 <li>
                     <a class="page-scroll" href="#sponsors">Sponsors</a>
                 </li>
