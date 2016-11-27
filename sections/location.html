@@ -1,19 +1,18 @@
-<div class="container">
+<div class="container" id="location">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <h2 class="section-heading">Location</h2>
+            <h2>Location</h2>
             <p>
               You need to check-in at 8:30 AM at the Mathematics Building <br>
               Once the opening ceremony gets over at 10:30 AM, you will be moved to the Wolf Law building<br>
             </p>
-            <!--div class="overlay" onclick="style.pointerEvents='none'"></div-->
-            <div class="overlay">
+            <div class="overlay" onClick="document.getElementById('map').style.pointerEvents='auto'">
               <iframe
                   id="map"
                   width="600"
                   height="450"
                   frameborder="0" style="border:0"
-                  src="#" allowfullscreen>
+                  src="about:blank">
               </iframe>
             </div>
         </div>
@@ -26,16 +25,6 @@
 
     <script>
 
-      //Disable mouse events before interacting with map
-      $('.overlay').click( function() {
-        $('.overlay iframe').css("pointer-events", "auto");
-      });
-
-      $('.overlay').mouseleave(function () {
-        $('.overlay iframe').css("pointer-events", "none");
-      });
-
-      // Need to protect API Key - How??
       var APIKey = "AIzaSyBF59zIMAxSx94ze66lke-r4KJFngmJKn0";
       var mathLoc = "Mathematics+Building,Boulder+CO";
       var wolfLoc = "Wolf+Law+Building,2450+Kittredge+Loop+Dr,Boulder+CO";
@@ -45,42 +34,34 @@
       var otherButt = "Where is Wolf Law?";
       var pressed = false;
 
-      $("#map").attr("src", initMapSrcUrl);
-      $("#butt").html(initButt);
+      window.onload = function(){
+        $("#map").attr("src", initMapSrcUrl);
+        $("#butt").html(initButt);
+      };
 
       function getRoute(){
-
         if (pressed == false){
-
           if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
-
               var userLat = position.coords.latitude;
               var userLng = position.coords.longitude;
-
               var mapSrcUrl = "https://www.google.com/maps/embed/v1/directions?key=" + APIKey + "&origin=" + userLat + "," + userLng + "&destination=" + mathLoc;
               $("#map").attr("src", mapSrcUrl);
-
               $("#butt").html(otherButt);
-
             }, function() {
               handleLocationError(true, infoWindow, map.getCenter());
             });
-
             pressed = !pressed;
           }
-
           else {
             alert("Your browser doesn't support GeoLocation :(");
           }
         }
-
         else {
           $("#map").attr("src", initMapSrcUrl);
           $("#butt").html(initButt);
           pressed = false;
         }
-
       };
 
     </script>
