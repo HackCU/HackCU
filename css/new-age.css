@@ -590,18 +590,18 @@ body {
 }
 
 #location {
-  background-color: #FAAE17;
+  background-color: #EB8223;
   color: #fff;
 }
 
 #team {
-  background-color: #fff;
+  background-color: #FAAE17;
   color: #fff;
 }
 
 #sponsors {
-  background-color: #EB8223;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 #event {
@@ -638,6 +638,10 @@ body {
   z-index: 1;
 }
 
-.layer01 {
+#sponsors img {
+  opacity: 0.5;
+}
 
+#sponsors img:hover {
+  opacity: 1;
 }
