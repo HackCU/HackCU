@@ -114,12 +114,14 @@
                 </div>
 
             </div>
-            <div class="layer layer-05"></div>
+            <div class="layer layer-07"></div>
             <div class="layer layer-01" data-type="parallax" data-depth="0.10"></div>
             <div class="layer layer-02" data-type="parallax" data-depth="0.20"></div>
-            <div class="layer layer-03" data-type="parallax" data-depth="0.50"></div>
-
-            <div class="layer layer-04 layer01" data-type="parallax" data-depth="1.00"></div>
+            <div class="layer layer-03" data-type="parallax" data-depth="0.40"></div>
+            <div class="layer layer-04" data-type="parallax" data-depth="0.55"></div>
+            <div class="layer layer-05" data-type="parallax" data-depth="0.68"></div>
+            <div class="layer layer-06" data-type="parallax" data-depth="0.80"></div>
+            <div class="layer layer-06 layer01" data-type="parallax" data-depth="1.00"></div>
         </div>
 
 

@@ -531,25 +531,30 @@ body {
 .keyart_layer.parallax {
   position: fixed;
 }
-.layer-05 {
-  background-image: url("../images/parallax/parallax5.png");
+.layer-07 {
+  background-image: url("../images/parallax/background.png");
 
 }
-.layer-04 {
+.layer-06 {
   background-image: url("../images/parallax/parallax1.png");
   padding-top: 1500px;
   background-position: top center;
 }
-.layer-03 {
+.layer-05 {
   background-image: url("../images/parallax/parallax2.png");
 }
-.layer-02 {
+.layer-04 {
   background-image: url("../images/parallax/parallax3.png");
 }
-.layer-01 {
+.layer-03 {
   background-image: url("../images/parallax/parallax4.png");
 }
-
+.layer-02 {
+  background-image: url("../images/parallax/parallax5.png");
+}
+.layer-01 {
+  background-image: url("../images/parallax/parallax6.png");
+}
 #keyart-scrim {
   background-color: #FAAE17;
   opacity: 0;
