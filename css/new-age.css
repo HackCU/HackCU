@@ -535,27 +535,33 @@ body {
 }
 .layer-07 {
   background-image: url("../images/parallax/background.png");
-
+  width: 100%;
 }
 .layer-06 {
   background-image: url("../images/parallax/parallax1.png");
   padding-top: 1500px;
   background-position: top center;
+  width: 100%;
 }
 .layer-05 {
   background-image: url("../images/parallax/parallax2.png");
+  width: 100%;
 }
 .layer-04 {
   background-image: url("../images/parallax/parallax3.png");
+  width: 100%;
 }
 .layer-03 {
   background-image: url("../images/parallax/parallax4.png");
+  width: 100%;
 }
 .layer-02 {
   background-image: url("../images/parallax/parallax5.png");
+  width: 100%;
 }
 .layer-01 {
   background-image: url("../images/parallax/parallax6.png");
+  width: 100%;
 }
 #keyart-scrim {
   background-color: #FAAE17;
@@ -634,6 +640,7 @@ body {
   background-image: url("../images/contactus.png");
   background-color: #FAAE17;
   background-position: bottom center;
+  background-repeat: no-repeat;
   width: auto;
   height : auto;
   max-height: 100%;
