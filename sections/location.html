@@ -12,14 +12,14 @@
                   width="600"
                   height="450"
                   frameborder="0" style="border:0"
-                  src="about:blank">
+                  src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBF59zIMAxSx94ze66lke-r4KJFngmJKn0&origin=Mathematics+Building,Boulder+CO&destination=Wolf+Law+Building,2450+Kittredge+Loop+Dr,Boulder+CO&mode=walking">
               </iframe>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <button class="btn btn-primary" id="butt" onclick="getRoute()"></button>
+          <button class="btn btn-primary" id="butt" onclick="getRoute()">Calculate Route to HackCU</button>
         </div>
     </div>
 
@@ -33,11 +33,6 @@
       var initButt = "Calculate Route to HackCU";
       var otherButt = "Where is Wolf Law?";
       var pressed = false;
-
-      window.onload = function(){
-        $("#map").attr("src", initMapSrcUrl);
-        $("#butt").html(initButt);
-      };
 
       function getRoute(){
         if (pressed == false){
