@@ -96,10 +96,10 @@
 <header>
 
 
-<!--            <div class="keyart" id="nonparallax">-->
+    <!--            <div class="keyart" id="nonparallax">-->
     <div id="hero" ng-controller="HeaderCtrl">
         <div class="row">
-            <div class="col-xs-12 container">
+            <div class="col-md-12 container">
                 <div class="header-content" style="z-index: 100;">
                     <div class="header-content-inner text-center">
 
@@ -109,30 +109,25 @@
                         <a href="#about" class="btn btn-outline btn-xl page-scroll">Learn More</a>
 
                     </div>
-
-
                 </div>
 
             </div>
-            <div class="layer layer-07"></div>
+
+<!--            Shows nonparallax image-->
+<!--            <div class="layer layer-07"></div>-->
+
             <div class="layer layer-01" data-type="parallax" data-depth="0.10"></div>
             <div class="layer layer-02" data-type="parallax" data-depth="0.20"></div>
             <div class="layer layer-03" data-type="parallax" data-depth="0.40"></div>
             <div class="layer layer-04" data-type="parallax" data-depth="0.55"></div>
             <div class="layer layer-05" data-type="parallax" data-depth="0.68"></div>
-            <div class="layer layer-06" data-type="parallax" data-depth="0.80"></div>
-            <div class="layer layer-06 layer01" data-type="parallax" data-depth="1.00"></div>
+            <div class="layer layer-06" data-type="parallax" data-depth="1.00"></div>
+<!--            <div class="layer layer-06 " data-type="parallax" data-depth="1.00"></div>-->
         </div>
-
-
     </div>
-    <!--        </div>-->
-
-<!--    <div id="hero">-->
-
-<!--    </div>-->
-
 </header>
+
+
 
 <section id="about" class="text-center about">
     <?php include('sections/about.html'); ?>
@@ -156,7 +151,7 @@
 </section>
 
 <section id="location" class="text-center">
-	  <?php include('sections/location.html'); ?>
+    <?php include('sections/location.html'); ?>
 </section>
 
 <section id="sponsors" class="text-center">
@@ -204,7 +199,7 @@
 
 <script>
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         var depth, i, layer, layers, len, movement, topDistance, translate3d;
         topDistance = this.pageYOffset;
         layers = document.querySelectorAll("[data-type='parallax']");
@@ -222,27 +217,27 @@
             layer.style.transform = translate3d;
         }
     });
-//    window.addEventListener('scroll', function (event) {
-//        var layers, topDistance;
-//        topDistance = this.pageYOffset;
-//        layers = document.querySelectorAll("[data-type='parallax']");
-//
-//        var depth, i, layer, len, movement, translate3d;
-//
-//        for (i = 0, len = layers.length; i < len; i++) {
-//            console.log("in");
-//            layer = layers[i];
-//            depth = layer.getAttribute('data - depth’);
-//            movement = -(topDistance * depth);
-//            translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-//            layer.style['-webkit-transform'] = translate3d;
-//            layer.style['-moz-transform'] = translate3d;
-//            layer.style['-ms-transform'] = translate3d;
-//            layer.style['-o-transform'] = translate3d;
-//            layer.style.transform = translate3d;
-//        }
-//        return layers = document.querySelectorAll("[data-type='parallax']");
-//    });
+    //    window.addEventListener('scroll', function (event) {
+    //        var layers, topDistance;
+    //        topDistance = this.pageYOffset;
+    //        layers = document.querySelectorAll("[data-type='parallax']");
+    //
+    //        var depth, i, layer, len, movement, translate3d;
+    //
+    //        for (i = 0, len = layers.length; i < len; i++) {
+    //            console.log("in");
+    //            layer = layers[i];
+    //            depth = layer.getAttribute('data - depth’);
+    //            movement = -(topDistance * depth);
+    //            translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+    //            layer.style['-webkit-transform'] = translate3d;
+    //            layer.style['-moz-transform'] = translate3d;
+    //            layer.style['-ms-transform'] = translate3d;
+    //            layer.style['-o-transform'] = translate3d;
+    //            layer.style.transform = translate3d;
+    //        }
+    //        return layers = document.querySelectorAll("[data-type='parallax']");
+    //    });
 
 </script>
 <!-- jQuery -->

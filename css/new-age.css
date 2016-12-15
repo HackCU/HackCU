@@ -511,7 +511,7 @@ body {
 }
 
 #nonparallax {
-  background-image: url("../images/parallax/nonparallax.png");
+  background-image: url("../images/parallax_uhd/nonparallax.png");
   background-position: center;
   background-repeat: no-repeat;
   /*background-size: auto 100%;*/
@@ -533,36 +533,7 @@ body {
 .keyart_layer.parallax {
   position: fixed;
 }
-.layer-07 {
-  background-image: url("../images/parallax/background.png");
-  width: 100%;
-}
-.layer-06 {
-  background-image: url("../images/parallax/parallax1.png");
-  padding-top: 1500px;
-  background-position: top center;
-  width: 100%;
-}
-.layer-05 {
-  background-image: url("../images/parallax/parallax2.png");
-  width: 100%;
-}
-.layer-04 {
-  background-image: url("../images/parallax/parallax3.png");
-  width: 100%;
-}
-.layer-03 {
-  background-image: url("../images/parallax/parallax4.png");
-  width: 100%;
-}
-.layer-02 {
-  background-image: url("../images/parallax/parallax5.png");
-  width: 100%;
-}
-.layer-01 {
-  background-image: url("../images/parallax/parallax6.png");
-  width: 100%;
-}
+
 #keyart-scrim {
   background-color: #FAAE17;
   opacity: 0;
@@ -570,8 +541,9 @@ body {
 
 /*@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){*/
 
+/*Small screen images*/
 @media (max-width: 785px) {
-.layer-01 {
+  .layer-01 {
     background-image: url("../images/parallax_smallscreen/smallscreen6.png");
     /*background-color: #ffaf1b;*/
   }
@@ -589,13 +561,173 @@ body {
   }
   .layer-06 {
     background-image: url("../images/parallax_smallscreen/smallscreen1.png");
+    background-color: #FAAE17;
   }
   .layer-07 {
     background-image: url("../images/parallax_smallscreen/smallscreenbackground.png");
-  }
 
+  }
 }
 
+/*Mobile screen images*/
+@media (max-width: 460px) {
+  .layer-01 {
+    background-image: url("../images/parallax_mobile/mini6.png");
+    /*background-color: #ffaf1b;*/
+  }
+  .layer-02 {
+    background-image: url("../images/parallax_mobile/mini5.png");
+  }
+  .layer-03 {
+    background-image: url("../images/parallax_mobile/mini4.png");
+  }
+  .layer-04 {
+    background-image: url("../images/parallax_mobile/mini3.png");
+  }
+  .layer-05 {
+    background-image: url("../images/parallax_mobile/mini2.png");
+  }
+  .layer-06 {
+    background-image: url("../images/parallax_mobile/mini1.png");
+    /*background-color: #FAAE17;*/
+  }
+
+  .layer-07 {
+    background-image: url("../images/parallax_smallscreen/smallscreenbackground.png");
+  }
+}
+
+
+
+
+
+
+/*Large screen images*/
+@media (min-width: 786px) {
+  .layer-07 {
+    background-image: url("../images/parallax/background.png");
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .layer-06 {
+    background-image: url("../images/parallax/parallax1.png");
+    padding-top: 138em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+  }
+  .layer-05 {
+    background-image: url("../images/parallax/parallax2.png");
+    padding-top: 80em;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .layer-04 {
+    background-image: url("../images/parallax/parallax3.png");
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .layer-03 {
+    background-image: url("../images/parallax/parallax4.png");
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .layer-02 {
+    background-image: url("../images/parallax/parallax5.png");
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .layer-01 {
+    background-image: url("../images/parallax/parallax6.png");
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #FAAE17;
+  }
+}
+
+
+/*Ultra HD screen images*/
+@media (min-width: 1921px) {
+  .layer-07 {
+    background-image: url("../images/parallax_uhd/nonparallax.png");
+  }
+
+  .layer-06 {
+    padding-top: 300em;
+    background: url("../images/parallax_uhd/layer1.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+  }
+
+  .layer-05 {
+    background-image: url("../images/parallax_uhd/layer2.png");
+    padding-top: 150em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .layer-04 {
+    background-image: url("../images/parallax_uhd/layer3.png");
+    padding-top: 150em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .layer-03 {
+    background-image: url("../images/parallax_uhd/layer4.png");
+    padding-top: 150em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .layer-02 {
+    background-image: url("../images/parallax_uhd/layer5.png");
+    padding-top: 160em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .layer-01 {
+    background-image: url("../images/parallax_uhd/layer6.png");
+    padding-top: 150em;
+    background-color: #FAAE17;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
 #schedule {
   background-color: #EB8223;
   color: #fff;
