@@ -55,10 +55,10 @@
                     <a class="page-scroll" href="#about">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#schedule">Schedule</a>
+                    <a class="page-scroll" href="#apply">Apply</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#apply">Apply</a>
+                    <a class="page-scroll" href="#schedule">Schedule</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#faq">FAQ</a>
