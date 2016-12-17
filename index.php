@@ -106,7 +106,7 @@
                         <h1>HackCU Episode III</h1>
                         <p class="smallMar">University of Colorado Boulder</p>
                         <p>April 8<sup>th</sup> to April 9<sup>th</sup> 2017</p>
-                        <a href="#about" class="btn btn-outline btn-xl page-scroll">Learn More</a>
+                        <a href="application.html" target="_blank" class="btn btn-outline btn-xl page-scroll">Apply for 2017</a>
 
                     </div>
                 </div>
@@ -174,10 +174,10 @@
             <div class="col-lg-4">
                 <ul>
                     <li>
-                        <a href="#">Apply</a>
+                        <a href="application.html" target="_blank">Apply</a>
                     </li>
                     <li>
-                        <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code</a>
+                        <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code</a>
                     </li>
                 </ul>
             </div>
@@ -186,11 +186,18 @@
             <div class="col-lg-4">
                 <ul>
                     <li>
-                        <a href="https://hackcu.org/">Local Hack Day</a>
+                        <a href="https://localday2016.hackcu.org/" target="_blank" >Local Hack Day 2016</a>
                     </li>
                     <li>
-                        <a href="https://startups2students.hackcu.org/">Startup2Students</a>
+                        <a href="https://2016.hackcu.org/" target="_blank">HackCU 2016</a>
                     </li>
+                    <li>
+                        <a href="https://localday2015.hackcu.org/" target="_blank" >Local Hack Day 2015</a>
+                    </li>
+                    <li>
+                        <a href="https://startups2students.hackcu.org/" target="_blank">Startup2Students</a>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -217,27 +224,7 @@
             layer.style.transform = translate3d;
         }
     });
-    //    window.addEventListener('scroll', function (event) {
-    //        var layers, topDistance;
-    //        topDistance = this.pageYOffset;
-    //        layers = document.querySelectorAll("[data-type='parallax']");
-    //
-    //        var depth, i, layer, len, movement, translate3d;
-    //
-    //        for (i = 0, len = layers.length; i < len; i++) {
-    //            console.log("in");
-    //            layer = layers[i];
-    //            depth = layer.getAttribute('data - depth’);
-    //            movement = -(topDistance * depth);
-    //            translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-    //            layer.style['-webkit-transform'] = translate3d;
-    //            layer.style['-moz-transform'] = translate3d;
-    //            layer.style['-ms-transform'] = translate3d;
-    //            layer.style['-o-transform'] = translate3d;
-    //            layer.style.transform = translate3d;
-    //        }
-    //        return layers = document.querySelectorAll("[data-type='parallax']");
-    //    });
+
 
 </script>
 <!-- jQuery -->
