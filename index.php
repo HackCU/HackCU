@@ -212,7 +212,6 @@
         layers = document.querySelectorAll("[data-type='parallax']");
 
         for (i = 0, len = layers.length; i < len; i++) {
-            console.log(i);
             layer = layers[i];
             depth = layer.getAttribute('data-depth');
             movement = -(topDistance * depth);

@@ -27,7 +27,7 @@ function castParallax() {
     window.addEventListener("scroll", function(event){
 
         var top = this.pageYOffset;
-        console.log("meoooowwwwww");
+        console.log("meow");
         var layers = document.getElementsByClassName("parallax");
         var layer, speed;
         for (var i = 0; i < layers.length; i++) {
