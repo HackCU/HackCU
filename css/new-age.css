@@ -546,10 +546,10 @@ body {
   #contact {
     color: #fff;
     background: #FAAE17 url("../images/smallscreen_images/smallscreencontact.png") no-repeat bottom center;
-    width: auto;
-    height : auto;
-    max-height: 100%;
-    max-width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   .layer-01 {
     background-image: url("../images/smallscreen_images/smallscreen6.png");
@@ -580,7 +580,7 @@ body {
 /*Mobile screen images*/
 @media (max-width: 460px) {
   section.contact {
-    height: 2000px;
+    height: 100vh;
   }
   #contact {
     color: #fff;
@@ -622,6 +622,9 @@ body {
 
 /*Large screen images*/
 @media (min-width: 786px) {
+  section.contact {
+    height: 100vh;
+  }
   #contact {
     color: #fff;
     background-image: url("../images/regularscreen_images/contactus.png");
@@ -698,6 +701,9 @@ body {
 
 /*Ultra HD screen images*/
 @media (min-width: 1921px) {
+  section.contact {
+    height: 100vh;
+  }
   #contact {
     color: #fff;
     background-image: url("../images/uhd_images/uhdcontact.png");
