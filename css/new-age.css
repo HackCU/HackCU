@@ -357,7 +357,7 @@ section.cta .overlay {
 }
 section.contact {
   text-align: center;
-  height: auto;
+  height: 1000px;
   background-color: #FAAE17;
   padding-bottomn: 150px;
   padding-top: 150px;
@@ -511,7 +511,7 @@ body {
 }
 
 #nonparallax {
-  background-image: url("../images/parallax_uhd/nonparallax.png");
+  background-image: url("../images/uhd_images/nonparallax.png");
   background-position: center;
   background-repeat: no-repeat;
   /*background-size: auto 100%;*/
@@ -543,57 +543,75 @@ body {
 
 /*Small screen images*/
 @media (max-width: 785px) {
+  #contact {
+    color: #fff;
+    background: #FAAE17 url("../images/smallscreen_images/smallscreencontact.png") no-repeat bottom center;
+    width: auto;
+    height : auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
   .layer-01 {
-    background-image: url("../images/parallax_smallscreen/smallscreen6.png");
+    background-image: url("../images/smallscreen_images/smallscreen6.png");
     /*background-color: #ffaf1b;*/
   }
   .layer-02 {
-    background-image: url("../images/parallax_smallscreen/smallscreen5.png");
+    background-image: url("../images/smallscreen_images/smallscreen5.png");
   }
   .layer-03 {
-    background-image: url("../images/parallax_smallscreen/smallscreen4.png");
+    background-image: url("../images/smallscreen_images/smallscreen4.png");
   }
   .layer-04 {
-    background-image: url("../images/parallax_smallscreen/smallscreen3.png");
+    background-image: url("../images/smallscreen_images/smallscreen3.png");
   }
   .layer-05 {
-    background-image: url("../images/parallax_smallscreen/smallscreen2.png");
+    background-image: url("../images/smallscreen_images/smallscreen2.png");
   }
   .layer-06 {
-    background-image: url("../images/parallax_smallscreen/smallscreen1.png");
+    background-image: url("../images/smallscreen_images/smallscreen1.png");
     background-color: #FAAE17;
   }
   .layer-07 {
-    background-image: url("../images/parallax_smallscreen/smallscreenbackground.png");
+    background-image: url("../images/smallscreen_images/smallscreenbackground.png");
 
   }
 }
 
 /*Mobile screen images*/
 @media (max-width: 460px) {
+  section.contact {
+    height: 2000px;
+  }
+  #contact {
+    color: #fff;
+    background: #FAAE17 url("../images/mobile_images/contactmini.png") no-repeat bottom center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   .layer-01 {
-    background-image: url("../images/parallax_mobile/mini6.png");
+    background-image: url("../images/mobile_images/mini6.png");
     /*background-color: #ffaf1b;*/
   }
   .layer-02 {
-    background-image: url("../images/parallax_mobile/mini5.png");
+    background-image: url("../images/mobile_images/mini5.png");
   }
   .layer-03 {
-    background-image: url("../images/parallax_mobile/mini4.png");
+    background-image: url("../images/mobile_images/mini4.png");
   }
   .layer-04 {
-    background-image: url("../images/parallax_mobile/mini3.png");
+    background-image: url("../images/mobile_images/mini3.png");
   }
   .layer-05 {
-    background-image: url("../images/parallax_mobile/mini2.png");
+    background-image: url("../images/mobile_images/mini2.png");
   }
   .layer-06 {
-    background-image: url("../images/parallax_mobile/mini1.png");
+    background-image: url("../images/mobile_images/mini1.png");
     /*background-color: #FAAE17;*/
   }
-
   .layer-07 {
-    background-image: url("../images/parallax_smallscreen/smallscreenbackground.png");
+    background-image: url("../images/smallscreen_images/smallscreenbackground.png");
   }
 }
 
@@ -604,8 +622,20 @@ body {
 
 /*Large screen images*/
 @media (min-width: 786px) {
+  #contact {
+    color: #fff;
+    background-image: url("../images/regularscreen_images/contactus.png");
+    background-color: #FAAE17;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
   .layer-07 {
-    background-image: url("../images/parallax/background.png");
+    background-image: url("../images/regularscreen_images/background.png");
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -613,7 +643,7 @@ body {
     background-size: cover;
   }
   .layer-06 {
-    background-image: url("../images/parallax/parallax1.png");
+    background-image: url("../images/regularscreen_images/parallax1.png");
     padding-top: 138em;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -622,7 +652,7 @@ body {
     width: 100%;
   }
   .layer-05 {
-    background-image: url("../images/parallax/parallax2.png");
+    background-image: url("../images/regularscreen_images/parallax2.png");
     padding-top: 80em;
     width: 100%;
     -webkit-background-size: cover;
@@ -631,7 +661,7 @@ body {
     background-size: cover;
   }
   .layer-04 {
-    background-image: url("../images/parallax/parallax3.png");
+    background-image: url("../images/regularscreen_images/parallax3.png");
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -639,7 +669,7 @@ body {
     background-size: cover;
   }
   .layer-03 {
-    background-image: url("../images/parallax/parallax4.png");
+    background-image: url("../images/regularscreen_images/parallax4.png");
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -647,7 +677,7 @@ body {
     background-size: cover;
   }
   .layer-02 {
-    background-image: url("../images/parallax/parallax5.png");
+    background-image: url("../images/regularscreen_images/parallax5.png");
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -655,7 +685,7 @@ body {
     background-size: cover;
   }
   .layer-01 {
-    background-image: url("../images/parallax/parallax6.png");
+    background-image: url("../images/regularscreen_images/parallax6.png");
     width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -668,13 +698,24 @@ body {
 
 /*Ultra HD screen images*/
 @media (min-width: 1921px) {
+  #contact {
+    color: #fff;
+    background-image: url("../images/uhd_images/uhdcontact.png");
+    background-color: #FAAE17;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   .layer-07 {
-    background-image: url("../images/parallax_uhd/nonparallax.png");
+    background-image: url("../images/uhd_images/nonparallax.png");
   }
 
   .layer-06 {
     padding-top: 300em;
-    background: url("../images/parallax_uhd/layer1.png");
+    background: url("../images/uhd_images/layer1.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -683,7 +724,7 @@ body {
   }
 
   .layer-05 {
-    background-image: url("../images/parallax_uhd/layer2.png");
+    background-image: url("../images/uhd_images/layer2.png");
     padding-top: 150em;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -692,7 +733,7 @@ body {
   }
 
   .layer-04 {
-    background-image: url("../images/parallax_uhd/layer3.png");
+    background-image: url("../images/uhd_images/layer3.png");
     padding-top: 150em;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -701,7 +742,7 @@ body {
   }
 
   .layer-03 {
-    background-image: url("../images/parallax_uhd/layer4.png");
+    background-image: url("../images/uhd_images/layer4.png");
     padding-top: 150em;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -710,7 +751,7 @@ body {
   }
 
   .layer-02 {
-    background-image: url("../images/parallax_uhd/layer5.png");
+    background-image: url("../images/uhd_images/layer5.png");
     padding-top: 160em;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -719,7 +760,7 @@ body {
   }
 
   .layer-01 {
-    background-image: url("../images/parallax_uhd/layer6.png");
+    background-image: url("../images/uhd_images/layer6.png");
     padding-top: 150em;
     background-color: #FAAE17;
     -webkit-background-size: cover;
@@ -766,17 +807,6 @@ body {
 
 #faq {
   color: #220B0D;
-}
-#contact {
-  color: #fff;
-  background-image: url("../images/contactus.png");
-  background-color: #FAAE17;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  width: auto;
-  height : auto;
-  max-height: 100%;
-  max-width: 100%;
 }
 
 #hero {

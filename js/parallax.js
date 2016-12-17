@@ -9,7 +9,7 @@ function castParallax() {
      $(window).scroll(function(){
      var windowScroll = $(window).scrollTop();
 
-     $('.keyart_layer.parallax').each(function(){
+     $('.keyart_layer.regularscreen_images').each(function(){
      var $layer = $(this);
      var yPos = -(windowScroll * $layer.data('speed') / 100);
      $layer.css({
@@ -44,7 +44,7 @@ function castParallax() {
 
 function dispelParallax() {
     $("#nonparallax").css('display','block');
-    $("#parallax").css('display','none');
+    $("#regularscreen_images").css('display','none');
 }
 
 function castSmoothScroll() {
