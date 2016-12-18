@@ -45,7 +45,7 @@
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">HackCU 2017</a>
+            <a class="navbar-brand page-scroll" id="brand-text" href="#page-top">HackCU 2017</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -85,7 +85,7 @@
         <!-- /.navbar-collapse -->
 
         <a id="mlh-trust-badge"
-           style="display:block;max-width:100px;min-width:60px;position:fixed;width:10%;z-index:10000;"
+           style="display:block;max-width:100px;min-width:60px;position:absolute;width:10%;z-index:10000;left:0"
            href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white"
            target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg"
                                 alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
