@@ -116,3 +116,9 @@ footer ul li a {
     width: 100%;
   }
 }
+
+@media screen and (min-width: 770px) {
+  #brand-text {
+    text-indent: 70px;
+  }
+}
