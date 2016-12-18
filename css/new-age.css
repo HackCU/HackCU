@@ -3,6 +3,19 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+.counter-number {
+    font-size: 600%;
+    background: -webkit-linear-gradient(to left, #F9AD36,#943A24);
+    background: linear-gradient(to left, #F9AD36,#943A24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.counter-subtext {
+    text-align:center !important;
+    font-size:160%;
+}
+
 .heading-font {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;

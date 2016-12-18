@@ -137,8 +137,8 @@
     <?php include('sections/apply.html'); ?>
 </section>
 
-<section id="event" class="text-center">
-    <?php include('sections/event.html'); ?>
+<section id="goals" class="faq">
+    <?php include('sections/goals.html'); ?>
 </section>
 
 <section id="schedule" class="text-center">
