@@ -123,3 +123,11 @@ footer ul li a {
     display: inline-block;
   }
 }
+
+#travel {
+  color: #F4C976;
+}
+
+.location h2, h1{
+  color: #fff;
+}

@@ -510,6 +510,10 @@ body {
   margin: 0em;
 }
 
+.largeMar {
+  margin: 5em;
+}
+
 /* PARALLAX */
 
 .keyart, .keyart_layer {
