@@ -148,6 +148,10 @@
                                 <p>We love international participants! Unfortunately, HackCU cannot provide assistance for international travel or visa paperwork. However, if you do make
                                     it to HackCU, send us an email at contact[at]hackcu.org with the subject line: "International Participant" and we can put in a request for reimbursement.</p>
                             </div>
+                            <div class="col-lg-4">
+                                <h2>Questions?</h2>
+                                <p>Have any questions that were not answered here? Feel free to contact us <a href="contact.html">here</a> or email us at contact[at]hackcu.org.</p>
+                            </div>
                         </div>
                     </div>
 
