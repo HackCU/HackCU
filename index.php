@@ -73,7 +73,7 @@
                     <a class="page-scroll" href="#team">Team</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="contact.html">Contact</a>
+                    <a class="page-scroll" href="#contact">Contact</a>
                 </li>
                 <!--
                     <li>
