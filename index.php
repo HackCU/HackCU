@@ -73,7 +73,7 @@
                     <a class="page-scroll" href="#team">Team</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="contact.html">Contact</a>
                 </li>
                 <!--
                     <li>
@@ -175,6 +175,9 @@
                 <ul>
                     <li>
                         <a href="application.html" target="_blank">Apply</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" target="_blank">Contact Us</a>
                     </li>
                     <li>
                         <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code</a>
