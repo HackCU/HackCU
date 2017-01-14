@@ -63,9 +63,9 @@
                 <li>
                     <a class="page-scroll" href="#faq">FAQ</a>
                 </li>
-                <li>
+                <!--<li>
                     <a class="page-scroll" href="#location">Location</a>
-                </li>
+                </li>-->
                 <li>
                     <a class="page-scroll" href="#sponsors">Sponsors</a>
                 </li>
@@ -150,9 +150,9 @@
     <?php include('sections/faq.html'); ?>
 </section>
 
-<section id="location" class="text-center">
-    <?php include('sections/location.html'); ?>
-</section>
+<!--<section id="location" class="text-center">-->
+    <!--?php //include('sections/location.html'); ?-->
+<!--/section>-->
 
 <section id="sponsors" class="text-center">
     <?php include('sections/sponsors.html'); ?>
