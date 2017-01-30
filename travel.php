@@ -90,8 +90,8 @@
 
 
 
-<div class="container text-center largeMar" id="travel">
-    <div class="row">
+<div class="container text-center largeMar travelContainer" id="travel">
+    <div class="row travelQuestion">
         <div class="col-md-6 col-md-offset-3 col-sm-12" style="margin-top: 10em;">
             <h1>HackCU 2017 Travel</h1>
             <p class="smallMar">How do you get to HackCU?</p>
