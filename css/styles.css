@@ -134,10 +134,13 @@ footer ul li a {
   color: #fff;
 }
 
-.travelContainer p, li{
+.travelContainer li{
   text-align: left;
 }
 
+.travelContainer p{
+  text-align: left;
+}
 .travelQuestion p{
   text-align: center;
 }
