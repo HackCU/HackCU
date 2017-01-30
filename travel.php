@@ -35,7 +35,7 @@
 
 </head>
 
-<body id="page-top" ng-app="hackcu2017" style="background-color: #54190C;">
+<body id="page-top" ng-app="hackcu2017" style="background-color: #220B0D;">
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -45,7 +45,7 @@
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" id="brand-text" href="#page-top">HackCU 2017</a>
+            <a class="navbar-brand page-scroll" id="brand-text" href="index.php">HackCU 2017</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -92,7 +92,7 @@
 
 <div class="container text-center largeMar" id="travel">
     <div class="row">
-        <div class="col-md-6 col-md-offset-3 col-sm-12">
+        <div class="col-md-6 col-md-offset-3 col-sm-12" style="margin-top: 10em;">
             <h1>HackCU 2017 Travel</h1>
             <p class="smallMar">How do you get to HackCU?</p>
         </div>
