@@ -126,8 +126,10 @@ footer ul li a {
 
 #travel {
   color: #F4C976;
+  /*background-color: #963A20;*/
 }
 
-.location h2, h1{
+#travel h2, h1{
   color: #fff;
 }
+

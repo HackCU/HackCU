@@ -174,7 +174,6 @@ p {
 header {
   position: relative;
   width: 100%;
-  min-height: auto;
   overflow-y: hidden;
   background-color: #220B0D;
   /*background: url("../images/bg-pattern.png"), #943A24;*/

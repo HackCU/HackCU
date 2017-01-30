@@ -35,7 +35,7 @@
 
 </head>
 
-<body id="page-top" ng-app="hackcu2017">
+<body id="page-top" ng-app="hackcu2017" style="background-color: #54190C;">
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -88,121 +88,76 @@
     <!-- /.container-fluid -->
 </nav>
 
-<header>
 
 
-    <!--            <div class="keyart" id="nonparallax">-->
-    <div id="travel" ng-controller="HeaderCtrl">
-        <div class="row">
-            <div class="col-md-12 container">
-                <div class="header-content" style="z-index: 100;">
-                    <div class="header-content-inner text-center location" style="bottom: 0;">
-<!--                        <img src="images/hackculogo.png" alt="logo" />-->
-                        <h1>HackCU 2017 Travel</h1>
-                        <p class="smallMar">How do you get to HackCU?</p>
-<!--                        <p class="smallMar">April 8<sup>th</sup> to April 9<sup>th</sup> 2017</p>-->
-<!--                        <p>University of Colorado Boulder</p>-->
-
-                        <div class="row largeMar">
-                            <div class="col-lg-4">
-                                <h2>Location and Parking</h2>
-                                <p>Check-in will be in the Math building in room MATH 100. This is located at:
-                                    <b><br>184 UCB
-                                    <br>Boulder, CO 80309</b>
-                                    <br>The rest of the event
-                                    will be located in the Wolf Law building at:
-                                    <br><b>2450 Kittredge Loop Dr.
-                                        <br>Boulder, CO 80305</b></p>
-                                <p>Parking will be available in the parking lot outside of Wolf Law on Kittredge Loop Dr. Be sure to follow directions on the signs to make sure you are not in permit only parking.</p>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <h2>Coming From the Airport</h2>
-                                <p>If you take an Uber or Lyft from DIA (Denver International Airport), use the code HACKCU to get a $5 discount! Save your receipts to be used for your travel reimbursement if you were approved.</p>
-                                <p>There is a bus, the RTD AB line, that runs from DIA to our university campus. Get off at the Euclid and Broadway stop.</p>
-
-                            </div>
-
-                            <div class="col-lg-4">
-                                <h2>Grant Amounts</h2>
-                                <p>If you are traveling farther then 25 miles from the University of Colorado Boulder, you are eligible for travel reimbursement. To receive reimbursement, you must:</p>
-                                <ol>
-                                    <li>RSVP to the link via email.</li>
-                                    <li>Be approved by the HackCU admin team for reimbursement. You will receive an email.</li>
-                                    <li>Provide receipts to the travel reimbursement station on Sunday at the event.</li>
-                                    <li>Submit a project at the end of the hackathon.</li>
-                                </ol>
-                            </div>
-
-
-                        </div>
-                        <div class="row largeMar">
-                            <div class="col-lg-4">
-                                <h2>Flights</h2>
-                                <p>We will be offering flight reimbursements on a first come first serve basis with the amount reimbursed affected by distance traveled. Once approved by our admin team via email, you will
-                                    be required to submit travel receipts at our travel station on Sunday at the event. Your entire flight may or may not be covered by reimbursements.</p>
-
-                            </div>
-                            <div class="col-lg-4">
-                                <h2>International Travel</h2>
-                                <p>We love international participants! Unfortunately, HackCU cannot provide assistance for international travel or visa paperwork. However, if you do make
-                                    it to HackCU, send us an email at contact[at]hackcu.org with the subject line: "International Participant" and we can put in a request for reimbursement.</p>
-                            </div>
-                            <div class="col-lg-4">
-                                <h2>Questions?</h2>
-                                <p>Have any questions that were not answered here? Feel free to contact us <a href="contact.html">here</a> or email us at contact[at]hackcu.org.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!--            Shows nonparallax image-->
-<!--            <div class="layer layer-07"></div>-->
+<div class="container text-center largeMar" id="travel">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-12">
+            <h1>HackCU 2017 Travel</h1>
+            <p class="smallMar">How do you get to HackCU?</p>
         </div>
     </div>
-</header>
+    <!--                        <p class="smallMar">April 8<sup>th</sup> to April 9<sup>th</sup> 2017</p>-->
+    <!--                        <p>University of Colorado Boulder</p>-->
+
+    <div class="row largeMar">
+        <div class="col-lg-4">
+            <h2>Location and Parking</h2>
+            <p>The main event will be located in the Wolf Law building at:</p>
+            <b>2450 Kittredge Loop Dr.
+                <br>Boulder, CO 80305</b></p>
+            <p>Parking will be available in the parking lot outside of Wolf Law on Kittredge Loop Dr. Be sure to follow
+                directions on the signs to make sure you are not in permit only parking.</p>
+        </div>
+
+        <div class="col-lg-4">
+            <h2>Coming From the Airport</h2>
+            <p>There is a bus, the RTD AB line, that runs from DIA to our university campus. Get off at the Euclid and
+                Broadway stop.</p>
+            <img src="images/map.png" style="width: 60%;"/><br><br>
+            <p>If you take an Uber or Lyft from DIA (Denver International Airport), save your receipt to be used for
+                your travel reimbursement if you were approved.</p>
+
+        </div>
+
+        <div class="col-lg-4">
+            <h2>Grant Amounts</h2>
+            <p>If you are traveling farther then 25 miles from the University of Colorado Boulder, you are eligible for
+                travel reimbursement. To receive reimbursement, you must:</p>
+            <ol>
+                <li>RSVP to the link via email.</li>
+                <li>Be approved by the HackCU admin team for reimbursement. You will receive an email.</li>
+                <li>Provide receipts to the travel reimbursement station on Sunday at the event.</li>
+                <li>Submit a project at the end of the hackathon.</li>
+            </ol>
+        </div>
+    </div>
 
 
+    <div class="row largeMar">
+        <div class="col-lg-4">
+            <h2>Flights</h2>
+            <p>We will be offering flight reimbursements on a first come first serve basis with the amount reimbursed
+                affected by distance traveled. Once approved by our admin team via email, you will
+                be required to submit travel receipts at our travel station on Sunday at the event. Your entire flight
+                may or may not be covered by reimbursements.</p>
 
-<!--<section id="about" class="text-center about">-->
-<!--    --><?php //include('sections/about.html'); ?>
-<!--</section>-->
-<!---->
-<!--<section id="apply" class="">-->
-<!--    --><?php //include('sections/apply.html'); ?>
-<!--</section>-->
-<!---->
-<!--<section id="goals" class="faq">-->
-<!--    --><?php //include('sections/goals.html'); ?>
-<!--</section>-->
-<!---->
-<!--<section id="schedule" class="text-center">-->
-<!--    --><?php //include('sections/schedule.html'); ?>
-<!--</section>-->
-<!---->
-<!---->
-<!--<section id="faq" class="faq">-->
-<!--    --><?php //include('sections/faq.html'); ?>
-<!--</section>-->
-<!---->
-<!--<section id="location" class="text-center">-->
-<!--    --><?php //include('sections/location.html'); ?>
-<!--</section>-->
-<!---->
-<!--<section id="sponsors" class="text-center">-->
-<!--    --><?php //include('sections/sponsors.html'); ?>
-<!--</section>-->
-<!---->
-<!--<section id="team" class="text-center">-->
-<!--    --><?php //include('sections/team.html'); ?>
-<!--</section>-->
-<!---->
-<!--<section id="contact" class="contact">-->
-<!--    --><?php //include('sections/contact.html'); ?>
-<!--</section>-->
+        </div>
+        <div class="col-lg-4">
+            <h2>International Travel</h2>
+            <p>We love international participants! Unfortunately, HackCU cannot provide assistance for international
+                travel or visa paperwork. However, if you do make
+                it to HackCU, send us an email at contact[at]hackcu.org with the subject line: "International
+                Participant" and we can put in a request for reimbursement.</p>
+        </div>
+        <div class="col-lg-4">
+            <h2>Questions?</h2>
+            <p>Have any questions that were not answered here? Feel free to contact us <a href="contact.html">here</a>
+                or email us at contact@hackcu.org.</p>
+        </div>
+    </div>
+</div>
+
 
 <footer>
     <div class="container">
@@ -224,13 +179,13 @@
             <div class="col-lg-4">
                 <ul>
                     <li>
-                        <a href="https://localday2016.hackcu.org/" target="_blank" >Local Hack Day 2016</a>
+                        <a href="https://localday2016.hackcu.org/" target="_blank">Local Hack Day 2016</a>
                     </li>
                     <li>
                         <a href="https://2016.hackcu.org/" target="_blank">HackCU 2016</a>
                     </li>
                     <li>
-                        <a href="https://localday2015.hackcu.org/" target="_blank" >Local Hack Day 2015</a>
+                        <a href="https://localday2015.hackcu.org/" target="_blank">Local Hack Day 2015</a>
                     </li>
                     <li>
                         <a href="https://startups2students.hackcu.org/" target="_blank">Startup2Students</a>
