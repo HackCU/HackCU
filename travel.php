@@ -74,7 +74,7 @@
 
         <div class="col-lg-4">
             <h2>Grant Amounts</h2>
-            <p>If you are traveling farther then 25 miles from the University of Colorado Boulder, you are eligible for
+            <p>If you are traveling farther than 25 miles from the University of Colorado Boulder, you are eligible for
                 travel reimbursement. To receive reimbursement, you must:</p>
             <ol>
                 <li>RSVP to the link via email.</li>
