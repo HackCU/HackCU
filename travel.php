@@ -112,7 +112,7 @@
 
         <div class="col-lg-4">
             <h2>Coming From the Airport</h2>
-            <p>There is a bus, the RTD AB line, that runs from DIA to our university campus. Get off at the Euclid and
+            <p>There is a bus, the RTD AB line, that runs from DIA to our university campus. Get off at the Baseline and
                 Broadway stop.</p>
             <img src="images/map.png" style="width: 60%;"/><br><br>
             <p>If you take an Uber or Lyft from DIA (Denver International Airport), save your receipt to be used for
