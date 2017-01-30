@@ -52,28 +52,28 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="index.php/#about">About</a>
+                    <a class="page-scroll" href="index.php#about">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php/#apply">Apply</a>
+                    <a class="page-scroll" href="index.php#apply">Apply</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php/#schedule">Schedule</a>
+                    <a class="page-scroll" href="index.php#schedule">Schedule</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php/#faq">FAQ</a>
+                    <a class="page-scroll" href="index.php#faq">FAQ</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php/#location">Location</a>
+                    <a class="page-scroll" href="index.php#location">Location</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php/#sponsors">Sponsors</a>
+                    <a class="page-scroll" href="index.php#sponsors">Sponsors</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php/#team">Team</a>
+                    <a class="page-scroll" href="index.php#team">Team</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php/#contact">Contact</a>
+                    <a class="page-scroll" href="index.php#contact">Contact</a>
                 </li>
                 <!--
                     <li>
