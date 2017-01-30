@@ -838,6 +838,7 @@ body {
 
 #sponsors img {
   opacity: 0.5;
+  margin: 2em;
 }
 
 #sponsors img:hover {
