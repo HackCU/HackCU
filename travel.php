@@ -38,56 +38,8 @@
 <body id="page-top" ng-app="hackcu2017" style="background-color: #220B0D;">
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" id="brand-text" href="index.php">HackCU 2017</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" href="index.php#about">About</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="index.php#apply">Apply</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="index.php#schedule">Schedule</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="index.php#faq">FAQ</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="index.php#location">Location</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="index.php#sponsors">Sponsors</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="index.php#team">Team</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="index.php#contact">Contact</a>
-                </li>
-                <!--
-                    <li>
-                    <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;width:10%;z-index:10000;" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
-                    </li>
-                -->
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-
-    </div>
-    <!-- /.container-fluid -->
+        <?php include('sections/navbar.php'); ?>
 </nav>
-
 
 
 <div class="container text-center largeMar travelContainer" id="travel">
@@ -160,41 +112,7 @@
 
 
 <footer>
-    <div class="container">
-
-        <p>Made with <i class="fa fa-heart"></i> by HackCU</p>
-        <div class="row">
-            <div class="col-lg-4">
-                <ul>
-                    <li>
-                        <a href="application.html" target="_blank">Apply</a>
-                    </li>
-                    <li>
-                        <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-4">
-            </div>
-            <div class="col-lg-4">
-                <ul>
-                    <li>
-                        <a href="https://localday2016.hackcu.org/" target="_blank">Local Hack Day 2016</a>
-                    </li>
-                    <li>
-                        <a href="https://2016.hackcu.org/" target="_blank">HackCU 2016</a>
-                    </li>
-                    <li>
-                        <a href="https://localday2015.hackcu.org/" target="_blank">Local Hack Day 2015</a>
-                    </li>
-                    <li>
-                        <a href="https://startups2students.hackcu.org/" target="_blank">Startup2Students</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </div>
+    <?php include('sections/footer.php'); ?>
 </footer>
 
 <!-- jQuery -->
