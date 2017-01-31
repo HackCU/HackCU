@@ -79,8 +79,8 @@
             <ol>
                 <li>RSVP to the link via email.</li>
                 <li>Be approved by the HackCU admin team for reimbursement. You will receive an email.</li>
-                <li>Provide receipts to the travel reimbursement station on Sunday at the event.</li>
-                <li>Submit a project at the end of the hackathon.</li>
+                <li>Provide receipts to the travel reimbursement form provided.</li>
+                <li>Submit a project to Devpost at the end of the hackathon.</li>
             </ol>
         </div>
     </div>
@@ -91,7 +91,7 @@
             <h2>Flights</h2>
             <p>We will be offering flight reimbursements on a first come first serve basis with the amount reimbursed
                 affected by distance traveled. Once approved by our admin team via email, you will
-                be required to submit travel receipts at our travel station on Sunday at the event. Your entire flight
+                be required to submit travel receipts on our travel reimbursement form. Your entire flight
                 may or may not be covered by reimbursements.</p>
 
         </div>
