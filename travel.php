@@ -64,7 +64,7 @@
 
         <div class="col-lg-4">
             <h2>Coming From the Airport</h2>
-            <p>There is a bus, the RTD AB line, that runs from the airport to our university campus. It costs $9 and it's cash only. Get off at the Baseline and
+            <p>There is a bus, the RTD AB line, that runs from the airport to our university campus. Find the bus schedule and fares <a href="http://www3.rtd-denver.com/schedules/getSchedule.action?routeId=AB" target="_blank">here</a>. Get off at the Baseline and
                 Broadway stop, and follow the route from the bus stop to the Wolf Law building just 4 minutes away.</p>
             <img src="images/map.png" style="width: 60%;"/><br><br>
             <p>If you take an Uber or Lyft from DIA (Denver International Airport), save your receipt to be used for
