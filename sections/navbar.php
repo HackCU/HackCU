@@ -27,6 +27,9 @@
                     <a class="page-scroll" href="/#location">Location</a>
                 </li>-->
                 <li>
+                    <a class="page-scroll" href="/travel.php">Travel</a>
+                </li>
+                <li>
                     <a class="page-scroll" href="/#sponsors">Sponsors</a>
                 </li>
                 <li>
