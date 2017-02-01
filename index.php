@@ -81,7 +81,7 @@
     <?php include('sections/about.html'); ?>
 </section>
 
-<section id="apply" class="">
+<section id="apply" class="cta">
     <?php include('sections/apply.html'); ?>
 </section>
 

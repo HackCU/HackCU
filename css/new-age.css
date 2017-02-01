@@ -337,7 +337,7 @@ section.cta {
   /* Chrome 10-25, Safari 5.1-6 */
   background: url("../images/bg-pattern.png"), linear-gradient(to left, #F9AD36, #943A24);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 250px 0;
+  padding: 150px 0;
   text-align: center;
 }
 section.cta .cta-content {
@@ -347,17 +347,10 @@ section.cta .cta-content {
 }
 section.cta .cta-content h2 {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: white;
-  max-width: 450px;
-  font-size: 50px;
+  font-size: 500%;
   text-align: center;
-}
-@media (min-width: 768px) {
-  section.cta .cta-content h2 {
-    font-size: 80px;
-    text-align: center;
-  }
 }
 section.cta .overlay {
   height: 100%;
@@ -460,6 +453,7 @@ footer i {
   padding-right: 0;
   padding-left: 0;
 }
+
 .btn-outline {
   color: white;
   border-color: white;
@@ -559,6 +553,7 @@ body {
   background-color: #220B0D;
   color: #F4C976;
   padding: 1em;
+  padding-bottom:3em;
 }
 
 /*@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){*/
