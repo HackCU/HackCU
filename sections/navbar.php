@@ -5,7 +5,7 @@
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" id="brand-text" href="#page-top">HackCU 2017</a>
+            <a class="navbar-brand page-scroll" id="brand-text" href="/#page-top">HackCU 2017</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,4 +51,3 @@
                                 alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
     </div>
     <!-- /.container-fluid -->
-
