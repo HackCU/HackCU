@@ -46,8 +46,8 @@
 
     <!--            <div class="keyart" id="nonparallax">-->
     <div id="hero" ng-controller="HeaderCtrl">
-        <div class="row">
-            <div class="col-md-12 container">
+        <div class="row info-row">
+            <div class="col-md-12 container info-container">
                 <div class="header-content" style="z-index: 100;">
                     <div class="header-content-inner text-center">
 
