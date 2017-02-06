@@ -330,12 +330,13 @@ section.cta {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
+  background-image: url("../images/hackers2015.jpg");
   /*background-image: url('../images/hackers.jpg');*/
-  background: url("../images/bg-pattern.png"), #943A24;
+  /*background: url("../images/bg-pattern.png"), #943A24;*/
   /* fallback for old browsers */
-  background: url("../images/bg-pattern.png"), -webkit-linear-gradient(to left, #F9AD36, #943A24);
+  /*background: url("../images/bg-pattern.png"), -webkit-linear-gradient(to left, #F9AD36, #943A24);*/
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../images/bg-pattern.png"), linear-gradient(to left, #F9AD36, #943A24);
+  /*background: url("../images/bg-pattern.png"), linear-gradient(to left, #F9AD36, #943A24);*/
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 150px 0;
   text-align: center;
