@@ -3,5 +3,5 @@
 
 ## To use the site:
 * `bower install` to add all dependencies
-* `python -m SimpleHTTPServer` to run the website (Angular Doesn't work properly locally)
+* `php -S 127.0.0.1:8000` to run the website locally
 * Go to `localhost:8000`
