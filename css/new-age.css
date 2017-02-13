@@ -865,7 +865,10 @@ body {
   color: #fff;
 }
 
-
+#volunteer {
+  background-color: #EB8223;
+  color: #fff;
+}
 
 #apply {
   text-align: center;
