@@ -109,6 +109,10 @@
     <?php include('sections/sponsors.html'); ?>
 </section>
 
+<section id="judges" class="text-center">
+    <?php include('sections/judges.html'); ?>
+</section>
+
 <section id="team" class="text-center">
     <?php include('sections/team.html'); ?>
 </section>
