@@ -33,6 +33,9 @@
                     <a class="page-scroll" href="/#sponsors">Sponsors</a>
                 </li>
                 <li>
+                   <a class="page-scroll" href="/#judges">Judges</a>
+                </li>
+                <li>
                     <a class="page-scroll" href="/#team">Team</a>
                 </li>
                 <li>
