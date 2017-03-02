@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="schedule.php">Schedule</a>
+                    <a class="page-scroll" href="/live/schedule.php">Schedule</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="/#apply">Talks</a>
@@ -45,6 +45,6 @@
         </div>
         <!-- /.navbar-collapse -->
 
-    
+
     </div>
     <!-- /.container-fluid -->

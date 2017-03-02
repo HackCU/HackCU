@@ -45,8 +45,8 @@
 <div class="container text-center largeMar travelContainer" id="travel">
     <div class="row travelQuestion">
         <div class="col-md-6 col-md-offset-3 col-sm-12" style="margin-top: 10em;">
-            <h1>HackCU 2017 Travel</h1>
-            <p class="smallMar">How do you get to HackCU?</p>
+            <h1>HackCU 2017 Live</h1>
+            <p>((delete travel info and have general event info here))</p>
         </div>
     </div>
     <!--                        <p class="smallMar">April 8<sup>th</sup> to April 9<sup>th</sup> 2017</p>-->
