@@ -98,9 +98,9 @@
     <?php include('sections/faq.html'); ?>
 </section>
 
-<!--<section id="location" class="text-center">-->
-    <!--?php //include('sections/location.html'); ?-->
-<!--/section>-->
+<section id="location" class="text-center">
+    <?php include('sections/location.html'); ?>
+</section>
 <section id="volunteer" class="text-center">
     <?php include('sections/volunteer.html'); ?>
 </section>
