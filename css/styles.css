@@ -2,6 +2,30 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.partners {
+  margin-left: -10%;
+}
+
+.partners li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.partners li img {
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  width: 200px;
+}
+
+.partners li img:hover {
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  width: 210px;
+}
+
 .sponsors {
   margin-left: -10%;
 }
