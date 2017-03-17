@@ -63,7 +63,7 @@ body {
   text-align: center;
 }
 
-.team li a {
+.team li a span {
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
@@ -79,7 +79,7 @@ body {
   box-shadow: none;
 }
 
-.team li a:hover {
+.team li a span:hover {
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
