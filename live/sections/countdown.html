@@ -1,0 +1,80 @@
+<!-- Countdown for the day of hackathon -->
+<div class="container text-center clock">
+    <div id="countdown-timer">
+      <span class="timer" id="hours"></span> :
+      <span class="timer" id="minutes"></span> :
+      <span class="timer" id="seconds"></span>
+    </div>
+</div>
+
+<style>
+  #countdown-timer {
+    font-size: 3.5em;
+    color: #fff;
+  }
+</style>
+
+<script>
+
+//Calculate remaining time
+function getTimeRemaining(startTime, endTime) {
+  let today = new Date();
+  //Before hackathon
+  if (Date.parse(today) < Date.parse(startTime)) {
+    return {
+      'total': 0,
+      'days': 0,
+      'hours': 24,
+      'minutes': 0,
+      'seconds': 0
+    };
+  }
+  //After hackathon
+  if (Date.parse(today) > Date.parse(endTime)) {
+    return {
+      'total': 0,
+      'days': 0,
+      'hours': 0,
+      'minutes': 0,
+      'seconds': 0
+    };
+  }
+  //Forth, Eorlingas!
+  let t = Date.parse(endTime) - Date.parse(today);
+  let seconds = Math.floor( (t/1000) % 60 );
+  let minutes = Math.floor( (t/1000/60) % 60 );
+  let hours = Math.floor( (t/(1000*60*60)) % 24 );
+  let days = Math.floor( t/(1000*60*60*24) );
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+} // end of calculating remaining time
+
+//initialize and update clock during event
+function initializeClock(id, startTime, endTime) {
+  let clock = document.getElementById(id);
+  let hours = clock.querySelector('#hours');
+  let minutes = clock.querySelector('#minutes');
+  let seconds = clock.querySelector('#seconds');
+  //update clock every second
+  let remainingTime = setInterval(function() {
+    let time = getTimeRemaining(startTime, endTime);
+    hours.innerHTML = ('0' + time.hours).slice(-2);
+    minutes.innerHTML = ('0' + time.minutes).slice(-2);
+    seconds.innerHTML = ('0' + time.seconds).slice(-2);
+    //stop updating once time remaining becomes 0
+    if (time.total <= 0) {
+      clearInterval(remainingTime);
+    }
+  }, 1000); // end of updating clock
+} // end of setting up clock
+
+let hackingBegins = "April 22 2017 12:00:00 GMT-0600";
+let hackingEnds = "April 23 2017 11:59:59 GMT-0600";
+initializeClock('countdown-timer', hackingBegins, hackingEnds);
+
+</script>
