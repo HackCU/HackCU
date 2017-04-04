@@ -41,6 +41,9 @@
         <?php include('sections/navbar.php'); ?>
 </nav>
 
+<section>
+  <?php include('sections/countdown.html'); ?>
+</section>
 
 <div class="container text-center largeMar travelContainer" id="travel">
     <div class="row travelQuestion">
@@ -116,27 +119,26 @@
 </footer>
 
 <!-- jQuery -->
-<script src="/js/jquery.min.js"></script>
+<script src="../js/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="/js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 
 <!-- Angular Core JavaScript -->
-<script src="/bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular/angular.min.js"></script>
 
 <!-- Plugin JavaScript -->
 <script src="/https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 <!-- Theme JavaScript -->
-<script src="/js/new-age.js"></script>
+<script src="../js/new-age.js"></script>
 
 <!-- Angular App JS -->
-<script src="/js/app.js"></script>
+<script src="../js/app.js"></script>
 
 <!-- External JS -->
-<script src="/js/waypoints.min.js"></script>
-<script src="/js/jquery.counterup.min.js"></script>
-
+<script src="../js/waypoints.min.js"></script>
+<script src="../js/jquery.counterup.min.js"></script>
 
 </body>
 
