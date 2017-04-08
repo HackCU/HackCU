@@ -36,7 +36,10 @@
     <!-- ngRoute -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
 
+    <!-- Google Maps -->
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBF59zIMAxSx94ze66lke-r4KJFngmJKn0" type="text/javascript"></script>
 
+    </script>
 </head>
 
 <body id="page-top" ng-app="hackculive" style="background-color: #FAAE17;">
@@ -101,7 +104,7 @@
 </section>
 
 <!-- content section - angular view -->
-<section>
+<section style="padding:0 0">
     <div class="container">
         <ng-view></ng-view>
 </div>

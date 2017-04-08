@@ -2,11 +2,14 @@
 var DAY1 = 'http://spreadsheets.google.com/feeds/list/1GNpcrXPIa0LUNGzquRKPsjqzFs2FyRaKw51rhOvTNtU/od6/public/values?alt=json'
 var DAY2 = 'http://spreadsheets.google.com/feeds/list/1GNpcrXPIa0LUNGzquRKPsjqzFs2FyRaKw51rhOvTNtU/on3tpxo/public/values?alt=json'
 
+var MAP_KEY = 'AIzaSyBF59zIMAxSx94ze66lke-r4KJFngmJKn0';
+
 angular.module("hackculive", ["ngRoute","angularMoment"])
 .config(function($routeProvider) {
     $routeProvider
     .when("/map", {
-        templateUrl : "live/views/map.html"
+        templateUrl : "live/views/map.html",
+        controller: "MapCtrl"
     })
     .when("/schedule", {
         templateUrl : "live/views/schedule.html",
@@ -14,6 +17,8 @@ angular.module("hackculive", ["ngRoute","angularMoment"])
     })
 })
 .controller('MainCtrl', ['$scope','$http','moment', function($scope, $http, moment) {
+    $scope.loaded1=false;
+    $scope.loaded2=false;
     // prototype for event object
     function Event(entry){
         this.description = entry['gsx$description']['$t'];
@@ -43,6 +48,7 @@ angular.module("hackculive", ["ngRoute","angularMoment"])
     $http.get(DAY1).success(function(data, status, headers, config) {
         $scope.day1entries = createScheduleObj(data.feed.entry);
         console.log($scope.day1entries);
+        $scope.loaded1 = true;
     }).error(function(data, status, headers, config) {
         // log error
         console.log(error);
@@ -52,8 +58,48 @@ angular.module("hackculive", ["ngRoute","angularMoment"])
     $http.get(DAY2).success(function(data, status, headers, config) {
         $scope.day2entries = createScheduleObj(data.feed.entry);
         console.log($scope.day1entries);
+        $scope.loaded2 = true;
     }).error(function(data, status, headers, config) {
         // log error
         console.log(error);
     });
+}])
+.controller('MapCtrl', ['$scope','$http','$location', function($scope, $http, $location) {
+    var locations = [
+      ['Wolf Law', 40.001261, -105.262292],
+      ['Math 100', 40.007518, -105.264629]
+    ];
+
+    $scope.updateQuery = function(newMarker){
+        console.log('update')
+        $location.search('marker', newMarker);
+        return;
+    }
+
+    var geocoder = new google.maps.Geocoder();
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: new google.maps.LatLng(40.004489, -105.266088),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+            infowindow.setContent(locations[i][0]);
+            infowindow.open(map, marker);
+            $scope.updateQuery('hi');
+        }
+      })(marker, i));
+    }
 }])
