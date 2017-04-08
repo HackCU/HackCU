@@ -7,13 +7,25 @@ var MAP_KEY = 'AIzaSyBF59zIMAxSx94ze66lke-r4KJFngmJKn0';
 angular.module("hackculive", ["ngRoute","angularMoment"])
 .config(function($routeProvider) {
     $routeProvider
+    .when("/", {
+        templateUrl : "live/views/main.html",
+        controller: "MainCtrl"
+    })
+    .when("/talks", {
+        templateUrl : "live/views/talks.html"
+    })
     .when("/map", {
         templateUrl : "live/views/map.html",
         controller: "MapCtrl"
     })
-    .when("/schedule", {
-        templateUrl : "live/views/schedule.html",
-        controller: "MainCtrl"
+    .when("/sponsors", {
+        templateUrl : "live/views/sponsors.html"
+    })
+    .when("/faq", {
+        templateUrl : "live/views/faq.html"
+    })
+    .when("/rules", {
+        templateUrl : "live/views/rules.html"
     })
 })
 .controller('MainCtrl', ['$scope','$http','moment', function($scope, $http, moment) {

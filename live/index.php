@@ -59,10 +59,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#schedule">Schedule</a>
-                </li>
-                <li>
-                    <a href="#apply">Talks</a>
+                    <a href="#talks">Talks</a>
                 </li>
                 <li>
                     <a href="#map">Map</a>
@@ -72,12 +69,6 @@
                 </li>
                 <li>
                     <a href="/travel.php">Travel</a>
-                </li>
-                <li>
-                    <a href="#hardware">Hardware</a>
-                </li>
-                <li>
-                    <a href="#prizes">Prizes</a>
                 </li>
                 <li>
                     <a href="#faq">FAQ</a>

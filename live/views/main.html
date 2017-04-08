@@ -1,0 +1,69 @@
+<div class="jumbotron">
+    <h1>Welcome to HackCU!</h1>
+    <h3>General Info</h3>
+    <p><b>Slack:</b> hackcu.slack.com</p>
+    <p><b>Wi-Fi:</b> foo</p>
+
+</div>
+<div class="jumbotron">
+    <h1>Event Schedule</h1>
+    <h3>Subject to change</h3>
+    <div class="row" ng-show="loaded1 && loaded2">
+      <!-- Day 1 -->
+      <div class="col-xs-12 col-md-12">
+        <h2>Saturday, April 22nd</h2>
+        <br>
+        <span ng-repeat="(key, val) in day1entries">
+            <div class="col-xs-4 col-md-3">
+                <p style="text-align: right">{{key}}</p>
+            </div>
+            <div class="col-xs-8 col-md-9">
+                <span ng-repeat="event in val.events">
+                    <div class="col-xs-6">
+                        <p style="text-align: left">{{event.description}}</p>
+                    </div>
+                    <div class="col-xs-6">
+                        <p style="text-align: left">{{event.location}}</p>
+                    </div>
+                </span>
+            </div>
+        </span>
+      </div>
+      <br>
+      <!-- Day 2 -->
+      <div class=" col-xs-12 col-md-12">
+        <h2>Sunday, April 23rd</h2>
+        <br>
+        <span ng-repeat="(key, val) in day2entries">
+            <div class="col-xs-4 col-md-3">
+                <p style="text-align: right">{{key}}</p>
+            </div>
+            <div class="col-xs-8 col-md-9">
+                <span ng-repeat="event in val.events">
+                    <div class="col-xs-6">
+                        <p style="text-align: left">{{event.description}}</p>
+                    </div>
+                    <div class="col-xs-6">
+                        <p style="text-align: left">{{event.location}}</p>
+                    </div>
+                </span>
+            </div>
+        </span>
+      </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-6">
+        <div class="jumbotron">
+            <h1>Hardware</h1>
+            <p>... hardware list here</p>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="jumbotron">
+            <h1>Prizes</h1>
+            <p>... prize list here</p>
+        </div>
+    </div>
+</div>
