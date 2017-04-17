@@ -59,7 +59,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#talks">Talks</a>
+                    <a href="#schedule">Schedule</a>
                 </li>
                 <li>
                     <a href="#map">Map</a>
@@ -96,9 +96,112 @@
 
 <!-- content section - angular view -->
 <section style="padding:0 0">
-    <div class="container">
-        <ng-view></ng-view>
-</div>
+    <div class="container" ng-controller="MainCtrl">
+        <div class="row">
+            <div class="col-xs-12 col-md-8" style="height: 100%">
+                <div class="jumbotron" style="height: 100%">
+                    <h1>Welcome to HackCU!</h1>
+                    <h3>General Info</h3>
+                    <p><b>Slack: <a href="https://hackcu.slack.com/" target="_blank">hackcu.slack.com</a></b></p>
+                    <p><b>Devpost: <a href="https://hackcu2017.devpost.com" target="_blank">hackcu2017.devpost.com</a></b></p>
+
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4" style="height: 100%">
+                <div class="jumbotron" style="height: 100%">
+                    <h2><b><i class="fa fa-wifi" aria-hidden="true"></i></b></h2>
+                    <p>Network: </p>
+                    <p>Password: </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4" style="height: 100%">
+                <div class="jumbotron" style="height: 100%">
+                    <h2><b>#hackcu</b></h2>
+                    <h3><b><i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/HackCU" target="_blank">@hackcu</a></b></h3>
+                    <h3><b><i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://www.instagram.com/hackcu/" target="_blank">@hackcu</a></b></h3>
+                    <h3><b><i class="fa fa-facebook-official" aria-hidden="true"></i> <a href="https://www.facebook.com/HackCU/" target="_blank">/hackcu</a></b></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron" id="schedule">
+            <h1>Event Schedule</h1>
+            <h3>Subject to change</h3>
+            <div class="row" ng-show="loaded1 && loaded2">
+              <!-- Day 1 -->
+              <div class="col-xs-12 col-md-12">
+                <h2>Saturday, April 22nd</h2>
+                <br>
+                <span ng-repeat="(key, val) in day1entries">
+                    <div class="col-xs-4 col-md-2">
+                        <p style="text-align: right">{{key}}</p>
+                    </div>
+                    <div class="col-xs-8 col-md-10">
+                        <span ng-repeat="event in val.events">
+                            <div class="col-xs-12 col-md-6">
+                                <p style="text-align: left"><b>{{event.description}}</b></p>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <p style="text-align: left">{{event.category}}</p>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <p style="text-align: left">{{event.location}}</p>
+                            </div>
+                        </span>
+                    </div>
+                </span>
+              </div>
+              <br>
+              <!-- Day 2 -->
+              <div class=" col-xs-12 col-md-12">
+                <h2>Sunday, April 23rd</h2>
+                <br>
+                <span ng-repeat="(key, val) in day2entries">
+                    <div class="col-xs-4 col-md-2">
+                        <p style="text-align: right">{{key}}</p>
+                    </div>
+                    <div class="col-xs-8 col-md-10">
+                        <span ng-repeat="event in val.events">
+                            <div class="col-xs-12 col-md-6">
+                                <p style="text-align: left"><b>{{event.description}}</b></p>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <p style="text-align: left">{{event.category}}</p>
+                            </div>
+                            <div class="col-xs-12 col-md-3">
+                                <p style="text-align: left">{{event.location}}</p>
+                            </div>
+                        </span>
+                    </div>
+                </span>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="jumbotron" style="background-color:#53190C; color: white;" id="map">
+                    <h1>Map</h1>
+                    <br>
+                    <div id="real-map" style="height: 500px; width: 100%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="jumbotron">
+                    <h1>Hardware</h1>
+                    <p>... hardware list here</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="jumbotron">
+                    <h1>Prizes</h1>
+                    <p>... prize list here</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- <footer>

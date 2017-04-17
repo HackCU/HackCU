@@ -4,30 +4,33 @@ var DAY2 = 'http://spreadsheets.google.com/feeds/list/1GNpcrXPIa0LUNGzquRKPsjqzF
 
 var MAP_KEY = 'AIzaSyBF59zIMAxSx94ze66lke-r4KJFngmJKn0';
 
-angular.module("hackculive", ["ngRoute","angularMoment"])
-.config(function($routeProvider) {
-    $routeProvider
-    .when("/", {
-        templateUrl : "live/views/main.html",
-        controller: "MainCtrl"
-    })
-    .when("/talks", {
-        templateUrl : "live/views/talks.html"
-    })
-    .when("/map", {
-        templateUrl : "live/views/map.html",
-        controller: "MapCtrl"
-    })
-    .when("/sponsors", {
-        templateUrl : "live/views/sponsors.html"
-    })
-    .when("/faq", {
-        templateUrl : "live/views/faq.html"
-    })
-    .when("/rules", {
-        templateUrl : "live/views/rules.html"
-    })
+angular.module("hackculive", ["angularMoment"])
+.config(function() {
+
 })
+// .config(function($routeProvider) {
+//     $routeProvider
+//     .when("/", {
+//         templateUrl : "live/views/main.html",
+//         controller: "MainCtrl"
+//     })
+//     .when("/talks", {
+//         templateUrl : "live/views/talks.html"
+//     })
+//     .when("/map", {
+//         templateUrl : "live/views/map.html",
+//         controller: "MapCtrl"
+//     })
+//     .when("/sponsors", {
+//         templateUrl : "live/views/sponsors.html"
+//     })
+//     .when("/faq", {
+//         templateUrl : "live/views/faq.html"
+//     })
+//     .when("/rules", {
+//         templateUrl : "live/views/rules.html"
+//     })
+// })
 .controller('MainCtrl', ['$scope','$http','moment', function($scope, $http, moment) {
     $scope.loaded1=false;
     $scope.loaded2=false;
@@ -75,8 +78,7 @@ angular.module("hackculive", ["ngRoute","angularMoment"])
         // log error
         console.log(error);
     });
-}])
-.controller('MapCtrl', ['$scope','$http','$location', function($scope, $http, $location) {
+
     var locations = [
       ['Wolf Law', 40.001261, -105.262292],
       ['Math 100', 40.007518, -105.264629]
@@ -90,7 +92,7 @@ angular.module("hackculive", ["ngRoute","angularMoment"])
 
     var geocoder = new google.maps.Geocoder();
 
-    var map = new google.maps.Map(document.getElementById('map'), {
+    var map = new google.maps.Map(document.getElementById('real-map'), {
       zoom: 15,
       center: new google.maps.LatLng(40.004489, -105.266088),
       mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -108,10 +110,13 @@ angular.module("hackculive", ["ngRoute","angularMoment"])
 
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
-            infowindow.setContent(locations[i][0]);
+            infowindow.setContent("<b style='color: black;'>"+locations[i][0]+"</b>");
             infowindow.open(map, marker);
             $scope.updateQuery('hi');
         }
       })(marker, i));
     }
 }])
+// .controller('MapCtrl', ['$scope','$http','$location', function($scope, $http, $location) {
+//
+// }])
