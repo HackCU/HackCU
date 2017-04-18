@@ -98,6 +98,8 @@ angular.module("hackculive", ["angularMoment"])
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
+    map.setOptions({ scrollwheel: false });
+
     var infowindow = new google.maps.InfoWindow();
 
     var marker, i;
@@ -107,6 +109,7 @@ angular.module("hackculive", ["angularMoment"])
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map
       });
+
 
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
