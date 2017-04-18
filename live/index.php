@@ -348,7 +348,7 @@
 <script src="../js/new-age.js"></script>
 
 <!-- Angular App JS -->
-<script src="./live/app.js"></script>
+<script src="live/app.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.1/angular-moment.min.js"></script>
