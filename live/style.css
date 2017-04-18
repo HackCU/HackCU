@@ -1,0 +1,15 @@
+a {
+    color: #EB8223;
+}
+
+#rules li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+#rules p {
+    margin-bottom: 10px !important;
+    font-size: 18px !important;
+    font-weight: 200;
+}

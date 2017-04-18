@@ -30,6 +30,7 @@
     <!-- Theme & Custom CSS -->
     <link href="/css/styles.css" rel="stylesheet">
     <link href="/css/new-age.css" rel="stylesheet">
+    <link href="/live/style.css" rel="stylesheet">
 
     <!-- Angular Core JavaScript -->
     <script src="../bower_components/angular/angular.min.js"></script>
@@ -65,13 +66,10 @@
                     <a href="#map">Map</a>
                 </li>
                 <li>
-                    <a href="#sponsors">Sponsors & API </a>
+                    <a href="#sponsors">Sponsors & APIs </a>
                 </li>
                 <li>
                     <a href="/travel.php">Travel</a>
-                </li>
-                <li>
-                    <a href="#faq">FAQ</a>
                 </li>
                 <li>
                     <a href="#rules">Rules</a>
@@ -101,18 +99,16 @@
             <div class="col-xs-12 col-md-8" style="height: 100%">
                 <div class="jumbotron" style="height: 100%">
                     <h1>Welcome to HackCU!</h1>
-                    <h3>General Info</h3>
-                    <p><b>Slack: <a href="https://hackcu.slack.com/" target="_blank">hackcu.slack.com</a></b></p>
-                    <p><b>Devpost: <a href="https://hackcu2017.devpost.com" target="_blank">hackcu2017.devpost.com</a></b></p>
-
-
+                    <h3><b>General Info</b></h3>
+                    <p><b>Slack: <a href="http://slack.hackcu.org/" target="_blank">slack.hackcu.org</a></b><br>Join our Slack to talk with other hackers and keep up to date with announcements.</p><br>
+                    <p><b>Devpost: <a href="https://hackcu3.devpost.com" target="_blank">hackcu3.devpost.com</a></b><br>Register for HackCU on Devpost, and submit your hack here on Sunday by 12 noon (submit early, you can edit your submission!)</p><br>
+                    <p><b>Mentor: <a href="https://mentors.hackcu.org" target="_blank">mentors.hackcu.org</a></b><br>Request one of our mentors using our ticketing system.</p><br>
                 </div>
             </div>
             <div class="col-xs-12 col-md-4" style="height: 100%">
                 <div class="jumbotron" style="height: 100%">
                     <h2><b><i class="fa fa-wifi" aria-hidden="true"></i></b></h2>
-                    <p>Network: </p>
-                    <p>Password: </p>
+                    <p><b>Network:</b> UCB Guest</p>
                 </div>
             </div>
             <div class="col-xs-12 col-md-4" style="height: 100%">
@@ -178,6 +174,7 @@
               </div>
             </div>
         </div>
+<!-- MAP  -->
         <div class="row">
             <div class="col-xs-12">
                 <div class="jumbotron" style="background-color:#53190C; color: white;" id="map">
@@ -187,6 +184,7 @@
                 </div>
             </div>
         </div>
+<!-- HARDWARE -->
         <div class="row">
             <div class="col-xs-12 col-md-6">
                 <div class="jumbotron">
@@ -194,10 +192,139 @@
                     <p>... hardware list here</p>
                 </div>
             </div>
+<!-- HARDWARE -->
             <div class="col-xs-12 col-md-6">
                 <div class="jumbotron">
                     <h1>Prizes</h1>
-                    <p>... prize list here</p>
+                    <p>Check out our <a href="https://hackcu3.devpost.com">Devpost</a> for the most up to date prizes</p>
+                </div>
+            </div>
+        </div>
+
+
+<!-- RULES - keep at bottom -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="jumbotron" id="rules">
+                    <h1>Rules</h1>
+                    <p>
+                        These rules are based on the standard competition rules used at MLH Member Hackathons.
+                        If you have a suggestion for these rules or a question about them, please submit an issue <a href="https://github.com/MLH/hackathon-rules/issues">here</a>.
+                    </p>
+                    <br>
+                    <h2>The spirit of the competition</h2>
+                    <p>
+                        Remember that hackathons are like marathons. Some people go to compete but most people
+                        take part to better themselves and have fun. Whatever the reason is you're at a hackathon,
+                        make sure you're upholding the <a href="https://medium.com/tfogo/the-spirit-of-hackathons-a0d81a65060a#.6cx5ac9t8">hacker spirit</a> by collaborating with other teams, helping
+                        beginners, and having fun.
+                    </p>
+                    <br>
+                    <h2>The rules of the competition</h2>
+                    <p>
+                    <ol>
+                        <li>
+                            There is no maximum or minimum team size. As a participant, you should make sure to check how many prizes are available per team. There is usually a limited number of prizes for each challenge. So if you form a large team and win a challenge, there might not be enough prizes for everyone on your team.
+                        </li>
+                        <li>
+                            Teams should be made up exclusively of students (or recent graduates within one year of having graduated) who are not organizers, volunteers, judges, sponsors, or in any other privileged position at the event.
+                        </li>
+                        <li>
+                            All team members should be present at the event. Leaving the venue for some time to hack elsewhere is fine.
+                        </li>
+                        <li>
+                            Teams can of course gain advice and support from organizers, volunteers, sponsors, and others.
+                        </li>
+                        <li>
+                            All work on a project should be done at the hackathon.
+                        </li>
+                        <li>
+                            Teams can use an idea they had before the event.
+                        </li>
+                        <li>
+                            Teams can work on ideas that have already been done. Hacks do not have to be “innovative”. If somebody wants to work on a common idea they should be allowed to do so and should be judged on the quality of their hack. These days it’s hard to find something that’s fully original and teams might not know an idea has been done before anyway.
+                        </li>
+                        <li>
+                            Teams can work on an idea that they have worked on before (as long as they do not re-use code).
+                        </li>
+                        <li>
+                            Teams can use libraries, frameworks, or open-source code in their projects. Working on a project before the event and open-sourcing it for the sole purpose of using the code during the event is against the spirit of the rules and is not allowed.
+                        </li>
+                        <li>
+                            Adding new features to existing projects is allowed. Judges will only consider new functionality introduced or new features added during the hackathon in determining the winners.
+                        </li>
+                        <li>
+                            Teams must stop hacking once the time is up. However, teams are allowed to debug and make small fixes to their programs after time is up. e.g. If during demoing your hack you find a bug that breaks your application and the fix is only a few lines of code, it's okay to fix that. Making large changes or adding new features is not allowed.
+                        </li>
+                        <li>
+                            Projects that violate the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a> are not allowed.
+                        </li>
+                        <li>
+                            Teams can be disqualified from the competition at the organizers' discretion. Reasons might include but are not limited to breaking the Competition Rules, breaking the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>, or other unsporting behaviour.</li>
+                        </li>
+                    </ol>
+                    </p>
+                    <br>
+                    <h2>Demos</h2>
+                    <p>
+                        After hacking finishes, teams will show their projects each other and to the judges.
+                    </p>
+                    <p>
+                        You are strongly encouraged to present a demo of what you have built. Pitches or presentations are discouraged. You are not judged on the quality of your pitch or the quality of your idea. As you are judged on what you built, you'll only hurt yourself by not showing a demo.
+                    </p>
+                    <p>
+                        You are encouraged to present what you have done even if your hack is broken or you weren’t able to finish. It's okay if you didn't finish your hack—that happens all the time! Completion is only one part of the judging criteria, so you might still do well. Also, demoing is not just about the competition. It's a chance to share with others what you learned and what you tried to build—that's what hacking's all about! For being courageous enough to demo, you'll receive a special MLH "I Demoed" sticker—it doesn't matter how good the demo is! In the case that you don't have anything to demo, you can give a presentation about what you tried and what you learned. Hearing what other people learned is interesting and inspiring for other attendees.
+                    </p>
+                    <br>
+                    <h2>Judging Criteria</h2>
+                    <p>
+                        Teams will be judged on these four criteria. Judges will weigh the criteria equally. During judging, participants should try to describe what they did for each criterion in their project.
+                    </p>
+                    <ul>
+                        <li>
+                            <b>Technology:</b> How technically impressive was the hack? Was the technical problem the team tackled difficult? Did it use a particularly clever technique or did it use many different components? Did the technology involved make you go "Wow"?
+                        </li>
+                        <li>
+                            <b>Design:</b> Did the team put thought into the user experience? How well designed is the interface? For a website, this might be about how beautiful the CSS or graphics are. For a hardware project, it might be more about how good the human-computer interaction is (e.g. is it easy to use or does it use a cool interface?).
+                        </li>
+                        <li>
+                            <b>Completion:</b> Does the hack work? Did the team achieve everything they wanted?
+                        </li>
+                        <li>
+                            <b>Learning:</b> Did the team stretch themselves? Did they try to learn something new? What kind of projects have they worked on before? If a team which always does virtual reality projects decides to switch up and try doing a mobile app instead, that exploration should be rewarded.
+                        </li>
+                    </ul>
+                    <p>
+                        These criteria will guide judges but ultimately judges are free to make decisions based on their gut feeling of which projects are the most impressive and most deserving.
+                    </p>
+                    <p>
+                        It's important to note that these judging criteria do not include:
+                    </p>
+                    <ul>
+                        <li>
+                            How good your code is. It doesn't matter if your code is messy, or not well commented, or uses inefficient algorithms. Hacking is about playing around, making mistakes, and learning new things. If your code isn't production ready, we're not going to mark you down.
+                        </li>
+                        <li>
+                            How well you pitch. Hacking is about building and learning, not about selling.
+                        </li>
+                        <li>
+                            How good the idea is. Again, hackathons aren't about coming up with innovative ideas. It's about building and learning.
+                        </li>
+                        <li>
+                            How well the project solves a problem. You can build something totally useless and as long as you're learning and having fun, that's a good hack! Sometimes a pointless project is one of the best hacks!
+                        </li>
+                    </ul>
+                    <p>
+                        So don't worry about coming up with the next big idea or building the next Facebook. You'll have plenty of time for that outside the hackathon. just focus on learning, having fun, and making new friends. At the end of the day the skills you learn and the friends you make might lead to the next big thing—but you don't have to do that to win a hackathon.
+                    </p>
+                    <br>
+                    <h2>Remember!</h2>
+                    <p>
+                        The competition is just a part of the hackathon. To make the most out of the event, try something new, teach other people, and make new friends!
+                    </p>
+                    <p>
+                        Happy Hacking from the <a href="https://hackcu.org/#team">HackCU Team</a>!
+                    </p>
                 </div>
             </div>
         </div>
