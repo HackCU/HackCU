@@ -1,6 +1,6 @@
 // links to spreadsheet json endpoints
-var DAY1 = 'https://spreadsheets.google.com/feeds/list/1GNpcrXPIa0LUNGzquRKPsjqzFs2FyRaKw51rhOvTNtU/od6/public/values?alt=json'
-var DAY2 = 'https://spreadsheets.google.com/feeds/list/1GNpcrXPIa0LUNGzquRKPsjqzFs2FyRaKw51rhOvTNtU/on3tpxo/public/values?alt=json'
+var DAY1 = 'https://spreadsheets.google.com/feeds/list/1GNpcrXPIa0LUNGzquRKPsjqzFs2FyRaKw51rhOvTNtU/od6/public/values?alt=json';
+var DAY2 = 'https://spreadsheets.google.com/feeds/list/1GNpcrXPIa0LUNGzquRKPsjqzFs2FyRaKw51rhOvTNtU/on3tpxo/public/values?alt=json';
 
 var MAP_KEY = 'AIzaSyBF59zIMAxSx94ze66lke-r4KJFngmJKn0';
 
@@ -8,29 +8,6 @@ angular.module("hackculive", ["angularMoment"])
 .config(function() {
 
 })
-// .config(function($routeProvider) {
-//     $routeProvider
-//     .when("/", {
-//         templateUrl : "live/views/main.html",
-//         controller: "MainCtrl"
-//     })
-//     .when("/talks", {
-//         templateUrl : "live/views/talks.html"
-//     })
-//     .when("/map", {
-//         templateUrl : "live/views/map.html",
-//         controller: "MapCtrl"
-//     })
-//     .when("/sponsors", {
-//         templateUrl : "live/views/sponsors.html"
-//     })
-//     .when("/faq", {
-//         templateUrl : "live/views/faq.html"
-//     })
-//     .when("/rules", {
-//         templateUrl : "live/views/rules.html"
-//     })
-// })
 .controller('MainCtrl', ['$scope','$http','moment', function($scope, $http, moment) {
     $scope.loaded1=false;
     $scope.loaded2=false;
@@ -119,7 +96,4 @@ angular.module("hackculive", ["angularMoment"])
         }
       })(marker, i));
     }
-}])
-// .controller('MapCtrl', ['$scope','$http','$location', function($scope, $http, $location) {
-//
-// }])
+}]);
