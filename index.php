@@ -54,7 +54,7 @@
                         <h1>HackCU Episode III</h1>
                         <p class="smallMar">University of Colorado Boulder</p>
                         <p>April 22<sup>nd</sup> to April 23<sup>rd</sup> 2017</p>
-                        <a href="application.html" target="_blank" class="btn btn-outline btn-xl page-scroll">Apply for 2017</a>
+                        <a href="/live" target="" class="btn btn-outline btn-xl page-scroll">Go live</a>
 
                     </div>
                 </div>
