@@ -10,7 +10,7 @@ angular.module("hackculive", ["angularMoment"])
 .config(function() {
 
 })
-.controller('MainCtrl', ['$scope','$http','moment', function($scope, $http, moment) {
+.controller('MainCtrl', ['$scope','$http','moment','$interval', function($scope, $http, moment, $interval) {
     $scope.loaded1=false;
     $scope.loaded2=false;
     $scope.loaded3=false;
@@ -46,6 +46,54 @@ angular.module("hackculive", ["angularMoment"])
         return S;
     }
 
+    // used to refresh info retrieved from Google Docs
+    var pullAllData = function(){
+        console.log('getting hardware;')
+        $http.get(HW_LAB).success(function(data, status, headers, config) {
+            console.log('setting hardware;')
+            var all_hw = data.data;
+
+            $scope.hardware1 = all_hw.slice(0,all_hw.length/2);
+            $scope.hardware2 = all_hw.slice(all_hw.length/2, all_hw.length+1);
+            console.log(data);
+
+            console.log($scope.hardware);
+        }).error(function(data, status, headers, config) {
+            // log error
+            console.log(error);
+        });
+
+        // get day 1 spreadsheet and convert to json object
+        $http.get(DAY1).success(function(data, status, headers, config) {
+            $scope.day1entries = createScheduleObj(data.feed.entry);
+            console.log($scope.day1entries);
+        }).error(function(data, status, headers, config) {
+            // log error
+            console.log(error);
+        });
+
+        // get day 2 spreadsheet and convert to json object
+        $http.get(DAY2).success(function(data, status, headers, config) {
+            $scope.day2entries = createScheduleObj(data.feed.entry);
+            console.log($scope.day1entries);
+        }).error(function(data, status, headers, config) {
+            // log error
+            console.log(error);
+        });
+    }
+
+    // create time interval to refresh data
+    // currently 2 minutes
+    var theInterval = $interval(function(){
+        console.log('refresh');
+        pullAllData();
+    }.bind(this), 120000);
+
+    $scope.$on('$destroy', function () {
+        $interval.cancel(theInterval)
+    });
+
+
     // create a schedule object from the Google Spreadsheets returned data
     var createSponsorArray = function(entries){
         var A = [];
@@ -68,7 +116,7 @@ angular.module("hackculive", ["angularMoment"])
         // log error
         console.log(error);
     });
-    
+
     console.log('getting hardware;')
     $http.get(HW_LAB).success(function(data, status, headers, config) {
         console.log('setting hardware;')
@@ -85,9 +133,6 @@ angular.module("hackculive", ["angularMoment"])
         // log error
         console.log(error);
     });
-
-
-
 
     // get day 1 spreadsheet and convert to json object
     $http.get(DAY1).success(function(data, status, headers, config) {
