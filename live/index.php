@@ -103,6 +103,8 @@
                     <p><b>Slack: <a href="http://slack.hackcu.org/" target="_blank">slack.hackcu.org</a></b><br>Join our Slack to talk with other hackers and keep up to date with announcements.</p><br>
                     <p><b>Devpost: <a href="https://hackcu3.devpost.com" target="_blank">hackcu3.devpost.com</a></b><br>Register for HackCU on Devpost, and submit your hack here on Sunday by 12 noon (submit early, you can edit your submission!)</p><br>
                     <p><b>Mentor: <a href="https://mentors.hackcu.org" target="_blank">mentors.hackcu.org</a></b><br>Request one of our mentors using our ticketing system.</p><br>
+                    <p><b>HackCU Hackers: <a href="https://www.facebook.com/groups/hackcu/" target="_blank">facebook.com/groups/hackcu</a></b><br>Join our Facebook Community :)</p><br>
+
                 </div>
             </div>
             <div class="col-xs-12 col-md-4" style="height: 100%">
@@ -204,16 +206,9 @@
                 </div>
             </div>
         </div>
-<!-- HARDWARE -->
+<!-- PRizes-->
         <div class="row">
-            <div class="col-xs-12 col-md-6">
-                <div class="jumbotron">
-                    <h1>Hardware</h1>
-                    <p>... hardware list here</p>
-                </div>
-            </div>
-<!-- HARDWARE -->
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-12">
                 <div class="jumbotron">
                     <h1>Prizes</h1>
                     <p>Check out our <a href="https://hackcu3.devpost.com">Devpost</a> for the most up to date prizes</p>
