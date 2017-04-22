@@ -201,15 +201,13 @@
             <div class="col-xs-12">
                 <div class="jumbotron" id="hardware">
                     <h1><a href='https://hardware.mlh.io/events/hackcu-iii' target='_blank'>Hardware Lab</a></h1>
-                    <h3>You can find MLH Hardware Lab on 3rd floor at Wolf Law. Head to <a href='https://hardware.mlh.io/events/hackcu-iii' target='_blank'>MLH Hardware Lab website</a> to request hardware to borrow before to come. Here's the items available/existing:</h3>
+                    <p>You can find MLH Hardware Lab on 3rd floor at Wolf Law. Head to <a href='https://hardware.mlh.io/events/hackcu-iii' target='_blank'>MLH Hardware Lab website</a> to request hardware to borrow before to come. Here's the items available/existing:</p>
                     <div class="row" ng-show="loaded4">
                         <div class="col col-md-6" ng-repeat="item in hardware1">
-                            <p>{{item.item_name}} ({{item.available}} / {{item.quantity}})</p>
-                            <br>
+                            <p>{{item.item_name}} <span class="badge">{{item.available}} / {{item.quantity}}</span></p>
                         </div>
                         <div class="col col-md-6" ng-repeat="item in hardware2">
-                            <p>{{item.item_name}} ({{item.available}} / {{item.quantity}})</p>
-                            <br>
+                            <p>{{item.item_name}} <span class="badge">{{item.available}} / {{item.quantity}}</span></p>
                         </div>
                     </div>
 
