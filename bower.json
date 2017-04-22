@@ -18,7 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.8",
+    "angular": "1.5.8",
     "simple-line-icons": "^2.3.2",
     "jquery": "^1.11.3",
     "bootstrap": "^3.3.7",

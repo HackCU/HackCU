@@ -66,6 +66,9 @@
                     <a href="#map">Map</a>
                 </li>
                 <li>
+                    <a href="#hardware">Hardware</a>
+                </li>
+                <li>
                     <a href="#sponsors">Sponsors</a>
                 </li>
                 <li>
@@ -187,6 +190,26 @@
             </div>
         </div>
 
+<!-- HARDWARE  -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="jumbotron" id="hardware">
+                    <h1><a href='https://hardware.mlh.io/events/hackcu-iii' target='_blank'>Hardware Lab</a></h1>
+                    <h3>You can find MLH Hardware Lab on 3rd floor at Wolf Law. Head to <a href='https://hardware.mlh.io/events/hackcu-iii' target='_blank'>MLH Hardware Lab website</a> to request hardware to borrow before to come. Here's the items available/existing:</h3>
+                    <div class="row" ng-show="loaded4">
+                        <div class="col col-md-6" ng-repeat="item in hardware1">
+                            <p>{{item.item_name}} ({{item.available}} / {{item.quantity}})</p>
+                            <br>
+                        </div>
+                        <div class="col col-md-6" ng-repeat="item in hardware2">
+                            <p>{{item.item_name}} ({{item.available}} / {{item.quantity}})</p>
+                            <br>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 <!-- SPONSORS  -->
         <div class="row">
             <div class="col-xs-12">

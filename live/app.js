@@ -1,7 +1,7 @@
 // links to spreadsheet json endpoints
 var DAY1 = 'https://spreadsheets.google.com/feeds/list/1GNpcrXPIa0LUNGzquRKPsjqzFs2FyRaKw51rhOvTNtU/od6/public/values?alt=json';
 var DAY2 = 'https://spreadsheets.google.com/feeds/list/1GNpcrXPIa0LUNGzquRKPsjqzFs2FyRaKw51rhOvTNtU/on3tpxo/public/values?alt=json';
-
+var HW_LAB = 'https://hardware.mlh.io/events/hackcu-iii.json'
 var SPON = 'https://spreadsheets.google.com/feeds/list/1OjUQ1CCUmkoCAGMBtNoMVXdhuUeolcR3aKK3tsDwI2o/od6/public/values?alt=json';
 
 var MAP_KEY = 'AIzaSyBF59zIMAxSx94ze66lke-r4KJFngmJKn0';
@@ -13,6 +13,8 @@ angular.module("hackculive", ["angularMoment"])
 .controller('MainCtrl', ['$scope','$http','moment', function($scope, $http, moment) {
     $scope.loaded1=false;
     $scope.loaded2=false;
+    $scope.loaded3=false;
+    $scope.loaded4=false;
     // prototype for event object
     function Event(entry){
         this.description=entry['gsx$description']['$t'];
@@ -62,6 +64,23 @@ angular.module("hackculive", ["angularMoment"])
         console.log($scope.sponsors);
 
         $scope.loaded3 = true;
+    }).error(function(data, status, headers, config) {
+        // log error
+        console.log(error);
+    });
+    
+    console.log('getting hardware;')
+    $http.get(HW_LAB).success(function(data, status, headers, config) {
+        console.log('setting hardware;')
+        var all_hw = data.data;
+
+        $scope.hardware1 = all_hw.slice(0,all_hw.length/2);
+        $scope.hardware2 = all_hw.slice(all_hw.length/2, all_hw.length+1);
+        console.log(data);
+
+        console.log($scope.hardware);
+
+        $scope.loaded4 = true;
     }).error(function(data, status, headers, config) {
         // log error
         console.log(error);
