@@ -2,6 +2,8 @@
 var DAY1 = 'https://spreadsheets.google.com/feeds/list/1GNpcrXPIa0LUNGzquRKPsjqzFs2FyRaKw51rhOvTNtU/od6/public/values?alt=json';
 var DAY2 = 'https://spreadsheets.google.com/feeds/list/1GNpcrXPIa0LUNGzquRKPsjqzFs2FyRaKw51rhOvTNtU/on3tpxo/public/values?alt=json';
 
+var SPON = 'https://spreadsheets.google.com/feeds/list/1OjUQ1CCUmkoCAGMBtNoMVXdhuUeolcR3aKK3tsDwI2o/od6/public/values?alt=json';
+
 var MAP_KEY = 'AIzaSyBF59zIMAxSx94ze66lke-r4KJFngmJKn0';
 
 angular.module("hackculive", ["angularMoment"])
@@ -13,9 +15,15 @@ angular.module("hackculive", ["angularMoment"])
     $scope.loaded2=false;
     // prototype for event object
     function Event(entry){
-        this.description = entry['gsx$description']['$t'];
-        this.category = entry['gsx$category']['$t'];
-        this.location = entry['gsx$location']['$t'];
+        this.description=entry['gsx$description']['$t'];
+        this.category=entry['gsx$category']['$t'];
+        this.location=entry['gsx$location']['$t'];
+    }
+
+    function Sponsor(entry){
+        this.company = entry['gsx$company']['$t'];
+        this.link = entry['gsx$link']['$t'];
+        this.info = entry['gsx$info']['$t'];
     }
 
     // create a schedule object from the Google Spreadsheets returned data
@@ -36,6 +44,32 @@ angular.module("hackculive", ["angularMoment"])
         return S;
     }
 
+    // create a schedule object from the Google Spreadsheets returned data
+    var createSponsorArray = function(entries){
+        var A = [];
+        entries.forEach(function(entry){
+            A.push(new Sponsor(entry));
+        })
+        return A;
+    }
+
+    console.log('getting sponsors;')
+    $http.get(SPON).success(function(data, status, headers, config) {
+        console.log('getting sponsors;')
+        $scope.sponsors = createSponsorArray(data.feed.entry);
+        console.log(data);
+
+        console.log($scope.sponsors);
+
+        $scope.loaded3 = true;
+    }).error(function(data, status, headers, config) {
+        // log error
+        console.log(error);
+    });
+
+
+
+
     // get day 1 spreadsheet and convert to json object
     $http.get(DAY1).success(function(data, status, headers, config) {
         $scope.day1entries = createScheduleObj(data.feed.entry);
@@ -55,6 +89,7 @@ angular.module("hackculive", ["angularMoment"])
         // log error
         console.log(error);
     });
+
 
     var locations = [
       ['Wolf Law', 40.001261, -105.262292],

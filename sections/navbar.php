@@ -38,6 +38,10 @@
                 <li>
                     <a class="page-scroll" href="/#contact">Contact</a>
                 </li>
+                <li>
+                    <a class="page-scroll" href="/live"><b><i class="fa fa-circle" style="color:red;"></i> LIVE</b></a>
+                </li>
+
                 <!--
                     <li>
                     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;width:10%;z-index:10000;" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>

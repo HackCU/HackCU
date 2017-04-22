@@ -66,7 +66,7 @@
                     <a href="#map">Map</a>
                 </li>
                 <li>
-                    <a href="#sponsors">Sponsors & APIs </a>
+                    <a href="#sponsors">Sponsors</a>
                 </li>
                 <li>
                     <a href="/travel.php">Travel</a>
@@ -181,6 +181,26 @@
                     <h1>Map</h1>
                     <br>
                     <div id="real-map" style="height: 500px; width: 100%"></div>
+                </div>
+            </div>
+        </div>
+
+<!-- SPONSORS  -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="jumbotron" id="sponsors">
+                    <h1>Sponsors & APIs</h1>
+                    <div class="row" ng-show="loaded3">
+                        <div class="col col-xs-12" ng-repeat="sponsor in sponsors">
+                            <h3 ng-show="sponsor.link"><b><a href={{sponsor.link}}>{{sponsor.company}}</a></b></h3>
+                            <h3 ng-hide="sponsor.link"><b>{{sponsor.company}}</b></h3>
+                            <p class="sponsorinfo">
+                                {{sponsor.info}}
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -348,7 +368,8 @@
 <script src="../js/new-age.js"></script>
 
 <!-- Angular App JS -->
-<script src="https://hackcu.org/live/app.js"></script>
+<script src="/live/app.js"></script>
+<!-- <script src="https://hackcu.org/live/app.js"></script> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.1/angular-moment.min.js"></script>
