@@ -107,7 +107,7 @@
                     <p><b>Devpost: <a href="https://hackcu3.devpost.com" target="_blank">hackcu3.devpost.com</a></b><br>Register for HackCU on Devpost, and submit your hack here on Sunday by 12 noon (submit early, you can edit your submission!)</p><br>
                     <p><b>Mentor: <a href="https://mentors.hackcu.org" target="_blank">mentors.hackcu.org</a></b><br>Request one of our mentors using our ticketing system.</p><br>
                     <p><b>HackCU Hackers: <a href="https://www.facebook.com/groups/hackcu/" target="_blank">facebook.com/groups/hackcu</a></b><br>Join our Facebook Community :)</p><br>
-
+                    <p><b>Social Media:</b><br>Show us what you are hacking on social media using <b><a href="https://twitter.com/search?src=typd&q=%23hackcu" target="_blank">#hackcu</a></b>. We will be retweeting you on <b><a href="https://twitter.com/HackCU" target="_blank">Twitter</a></b>, and reposting our favourite posts on <b><a href="https://www.instagram.com/hackcu/" target="_blank">Instagram</a></b>!</p><br>
                 </div>
             </div>
             <div class="col-xs-12 col-md-4" style="height: 100%">
