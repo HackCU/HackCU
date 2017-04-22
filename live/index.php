@@ -201,7 +201,7 @@
             <div class="col-xs-12">
                 <div class="jumbotron" id="hardware">
                     <h1><a href='https://hardware.mlh.io/events/hackcu-iii' target='_blank'>Hardware Lab</a></h1>
-                    <p>You can find MLH Hardware Lab on 3rd floor at Wolf Law. Head to <a href='https://hardware.mlh.io/events/hackcu-iii' target='_blank'>MLH Hardware Lab website</a> to request hardware to borrow before to come. Here's the items available/existing:</p>
+                    <p>You can find MLH Hardware Lab on 3rd floor at Wolf Law. Head to <a href='https://hardware.mlh.io/events/hackcu-iii' target='_blank'>MLH Hardware Lab website</a> to request hardware to borrow before you arrive at the desk. Here's the items available/existing:</p>
                     <div class="row" ng-show="loaded4">
                         <div class="col col-md-6" ng-repeat="item in hardware1">
                             <p>{{item.item_name}} <span class="badge">{{item.available}} / {{item.quantity}}</span></p>
@@ -390,8 +390,8 @@
 <script src="../js/new-age.js"></script>
 
 <!-- Angular App JS -->
-<script src="/live/app.js"></script>
-<!-- <script src="https://hackcu.org/live/app.js"></script> -->
+<!-- <script src="/live/app.js"></script> -->
+<script src="https://hackcu.org/live/app.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.1/angular-moment.min.js"></script>
