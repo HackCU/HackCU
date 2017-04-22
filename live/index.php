@@ -114,11 +114,17 @@
                 <div class="jumbotron" style="height: 100%">
                     <h2><b><i class="fa fa-wifi" aria-hidden="true"></i></b></h2>
                     <p><b>Network:</b> UCB Guest</p>
+                    <p class="smallp">
+                        Open your browser and go to <a href="https://cuwireless.int.colorado.edu/">cuwireless.int.colorado.edu</a>, to accept the usage agreement.
+                    </p>
                 </div>
             </div>
             <div class="col-xs-12 col-md-4" style="height: 100%">
                 <div class="jumbotron" style="height: 100%">
                     <h2><b>#hackcu</b></h2>
+                    <p>
+                        Get <a href="https://twitter.com/search?src=typd&q=%23hackcu" target="_blank">#hackcu</a> trending!
+                    </p>
                     <h3><b><i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/HackCU" target="_blank">@hackcu</a></b></h3>
                     <h3><b><i class="fa fa-instagram" aria-hidden="true"></i> <a href="https://www.instagram.com/hackcu/" target="_blank">@hackcu</a></b></h3>
                     <h3><b><i class="fa fa-facebook-official" aria-hidden="true"></i> <a href="https://www.facebook.com/HackCU/" target="_blank">/hackcu</a></b></h3>
