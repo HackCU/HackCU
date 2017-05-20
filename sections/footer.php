@@ -5,9 +5,6 @@
             <div class="col-lg-4">
                 <ul>
                     <li>
-                        <a href="application.html" target="_blank">Apply</a>
-                    </li>
-                    <li>
                         <a href="contact.html" target="_blank">Contact Us</a>
                     </li>
                     <li>

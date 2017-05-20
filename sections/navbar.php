@@ -14,12 +14,12 @@
                 <li>
                     <a class="page-scroll" href="/#about">About</a>
                 </li>
-                <li>
+                <!--li>
                     <a class="page-scroll" href="/#apply">Apply</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="/#schedule">Schedule</a>
-                </li>
+                </li-->
                 <li>
                     <a class="page-scroll" href="/#faq">FAQ</a>
                 </li>
@@ -37,9 +37,6 @@
                 </li>
                 <li>
                     <a class="page-scroll" href="/#contact">Contact</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/live"><b><i class="fa fa-circle" style="color:red;"></i> LIVE</b></a>
                 </li>
 
                 <!--

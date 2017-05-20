@@ -80,17 +80,17 @@
     <?php include('sections/about.html'); ?>
 </section>
 
-<section id="apply" class="cta">
-    <?php include('sections/apply.html'); ?>
-</section>
+<!--section id="apply" class="cta"-->
+    <!--?php //include('sections/apply.html'); ?-->
+<!--/section-->
 
 <section id="goals" class="faq">
     <?php include('sections/goals.html'); ?>
 </section>
 
-<section id="schedule" class="text-center">
-    <?php include('sections/schedule.html'); ?>
-</section>
+<!--section id="schedule" class="text-center"-->
+    <!--?php //include('sections/schedule.html'); ?-->
+<!--/section-->
 
 
 <section id="faq" class="faq">
@@ -100,9 +100,9 @@
 <section id="location" class="text-center">
     <?php include('sections/location.html'); ?>
 </section>
-<section id="volunteer" class="text-center">
-    <?php include('sections/volunteer.html'); ?>
-</section>
+<!--section id="volunteer" class="text-center"-->
+    <!--?php //include('sections/volunteer.html'); ?-->
+<!--/section-->
 
 <section id="sponsors" class="text-center">
     <?php include('sections/sponsors.html'); ?>
