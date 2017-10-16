@@ -9,3 +9,6 @@
 ## To add new logo images for sponsors and partners:
 1. After editing (removing background, adding whitespace, etc.), resize the image to `600 x 400 px`
 2. Archive the original `.png` file in the corresponding `originals/` folder
+
+## Want to contribute?
+Follow these [guidelines](.github/CONTRIBUTING.md)
