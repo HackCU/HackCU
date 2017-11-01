@@ -11,4 +11,4 @@
 2. Archive the original `.png` file in the corresponding `originals/` folder
 
 ## Want to contribute?
-Follow these [guidelines](.github/CONTRIBUTING.md)
+Please read our [Code of Conduct](CODE_OF_CONDUCT.md), then follow these [guidelines](.github/CONTRIBUTING.md)
