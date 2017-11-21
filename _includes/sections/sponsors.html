@@ -8,9 +8,9 @@
             </div>
         </div>
         <div class="row">
-            <ul class="sponsors gold">
-                {% assign gold = site.data.sponsors | where:"tier","gold" %}
-                {% for sponsor in gold  %}
+            <ul class="sponsors diamond">
+                {% assign diamond = site.data.sponsors | where:"tier","diamond" %}
+                {% for sponsor in diamond %}
                 <li>
                     <a href="{{sponsor.url}}" target="_blank">
                         <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
@@ -19,29 +19,51 @@
                 {%endfor%}
             </ul>
         </div>
-        <div class="row">
-            <ul class="sponsors silver">
-                {% assign silver = site.data.sponsors | where:"tier","silver" %}
-                {% for sponsor in silver%}
-                <li>
-                    <a href="{{sponsor.url}}" target="_blank">
-                        <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
-                    </a>
-                </li>
-                {%endfor%}
-            </ul>
-        </div>
-        <div class="row">
-            <ul class="sponsors bronze">
-                {% assign bronze = site.data.sponsors | where:"tier","bronze" %}
-                {% for sponsor in bronze | where:"tier","bronze" %}
-                <li>
-                    <a href="{{sponsor.url}}" target="_blank">
-                        <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
-                    </a>
-                </li>
-                {%endfor%}
-            </ul>
+        <ul class="sponsors gold">
+            {% assign gold = site.data.sponsors | where:"tier","gold" %}
+            {% for sponsor in gold %}
+            <li>
+                <a href="{{sponsor.url}}" target="_blank">
+                    <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
+                </a>
+            </li>
+            {%endfor%}
+        </ul>
+    </div>
+    <div class="row">
+        <ul class="sponsors silver">
+            {% assign silver = site.data.sponsors | where:"tier","silver" %}
+            {% for sponsor in silver%}
+            <li>
+                <a href="{{sponsor.url}}" target="_blank">
+                    <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
+                </a>
+            </li>
+            {%endfor%}
+        </ul>
+    </div>
+    <div class="row">
+        <ul class="sponsors bronze">
+            {% assign bronze = site.data.sponsors | where:"tier","bronze" %}
+            {% for sponsor in bronze | where:"tier","bronze" %}
+            <li>
+                <a href="{{sponsor.url}}" target="_blank">
+                    <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
+                </a>
+            </li>
+            {%endfor%}
+        </ul>
+    </div>
+    <div class="buttons reverse">
+        <!--Inspired by https://github.com/HackCU/HackCU-Temp by Alex Walling-->
+        <div class="svg-wrapper ">
+            <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape" height="40" width="150"/>
+                <div class="text">
+                    <a href="mailto:sponsor@hackcu.org" target="_blank">Sponsor us</a>
+                </div>
+            </svg>
         </div>
     </div>
+
 </section>

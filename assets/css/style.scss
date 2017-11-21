@@ -3,6 +3,9 @@
 
 @import "../_sass/mixins";
 
+$footer-text: #666666;
+$main-color: rgb(34, 41, 44);
+
 * {
   margin: 0;
 }
@@ -25,14 +28,14 @@ h1, h2, h3, h4, h5 {
 body {
   height: 100%;
   width: 100%;
-  color: rgb(34, 41, 44);
+  color: $main-color;
   font-family: Roboto, sans-serif;
 
 }
 
 canvas {
   position: absolute;
-  background-color: rgb(34, 41, 44);
+  background-color: $main-color;
   top: 0;
   left: 0;
   width: 100%;
@@ -51,62 +54,74 @@ header {
     padding-bottom: 30px;
   }
 
-  .buttons {
-    padding-top: 4vh;
-    padding-bottom: 10vh;
-    .svg-wrapper {
-      margin-top: 0;
-      position: relative;
-      display: inline-block;
-      margin-left: 10px;
-      margin-right: 10px;
-      padding-bottom: 3vh;
-      text-transform: uppercase;
-      border-radius: 3px;
+}
 
-      a {
-        color: white;
-        text-decoration: none;
+.buttons {
+  padding-top: 4vh;
+  padding-bottom: 3vh;
 
-        padding: 5px 10px;
-      }
+  .svg-wrapper {
+    margin-top: 0;
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 3vh;
+    text-transform: uppercase;
+    border-radius: 3px;
 
-      svg {
-        background-color: transparent;
-      }
-      .shape {
-        stroke-width: 6px;
-        fill: transparent;
-        stroke: white;
-        stroke-dasharray: 85 400;
-        stroke-dashoffset: -220;
-        transition: 1s all ease;
-      }
+    a {
+      color: white;
+      text-decoration: none;
 
-      &.disabled .shape {
-        stroke: #777;
-      }
-      .text {
-        margin-top: -40px;
-        font-size: 1.5em;
-        text-align: center;
-      }
+      padding: 5px 10px;
+    }
 
-      &:hover .shape {
-        stroke-dasharray: 50 0;
-        stroke-width: 6px;
-        stroke-dashoffset: 0;
-      }
-      &.disabled:hover .shape {
-        stroke-width: 6px;
-        fill: transparent;
-        stroke-dasharray: 85 400;
-        stroke-dashoffset: -220;
-        transition: 1s all ease;
-      }
+    svg {
+      background-color: transparent;
+    }
+    .shape {
+      stroke-width: 6px;
+      fill: transparent;
+      stroke: white;
+      stroke-dasharray: 85 400;
+      stroke-dashoffset: -220;
+      transition: 1s all ease;
+    }
+
+    &.disabled .shape {
+      stroke: #777;
+    }
+    .text {
+      margin-top: -40px;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    &:hover .shape {
+      stroke-dasharray: 50 0;
+      stroke-width: 6px;
+      stroke-dashoffset: 0;
+    }
+    &.disabled:hover .shape {
+      stroke-width: 6px;
+      fill: transparent;
+      stroke-dasharray: 85 400;
+      stroke-dashoffset: -220;
+      transition: 1s all ease;
+    }
+  }
+
+  &.reverse {
+    a {
+      color: $main-color;
+    }
+    .shape {
+      stroke: $main-color;
     }
 
   }
+
 }
 
 section {
@@ -119,7 +134,7 @@ section {
   }
 
   &.section-reverse {
-    background-color: rgb(34, 41, 44);
+    background-color: $main-color;
     color: white;
 
     hr {
@@ -134,22 +149,6 @@ section {
   }
 }
 
-@media (max-width: 768px) {
-  header {
-    > div {
-      padding-top: 10vh;
-    }
-
-    h1 {
-      font-size: 30px;
-    }
-    h3 {
-      font-size: 20px;
-    }
-
-  }
-}
-
 #sponsors {
   li {
     list-style-type: none;
@@ -157,10 +156,18 @@ section {
     margin: 10px;
   }
 
+  .diamond {
+    background-color: rgba(185, 242, 255, 0.12);
+    img {
+      max-height: 42vh;
+      max-width: 100%;
+    }
+  }
+
   .gold {
     background-color: rgba(212, 175, 55, 0.12);
     img {
-      max-height: 42vh;
+      max-height: 35vh;
       max-width: 100%;
     }
   }
@@ -168,7 +175,7 @@ section {
   .silver {
     background-color: rgba(192, 192, 192, 0.18);
     img {
-      max-height: 32vh;
+      max-height: 15vh;
       max-width: 100%;
     }
   }
@@ -194,5 +201,98 @@ section {
     max-width: 100%;
   }
 
+}
+
+#contact {
+  li a {
+    font-size: 2em;
+    color: $main-color;
+    padding: 0.4em;
+    @include transition(0.5s ease);
+
+    &:hover {
+      color: lighten($main-color, 20%);
+    }
+
+    &:active, &:focus {
+      color: $main-color;
+    }
+  }
+}
+
+footer {
+  padding-top: 2em;
+  width: 100%;
+
+  p {
+    color: $footer-text;
+    opacity: 0.5;
+    font-size: 70%;
+
+  }
+
+  .row {
+    margin-bottom: 10px;
+  }
+
+  a {
+    opacity: 0.5;
+    color: $footer-text;
+    @include transition(0.5s ease);
+    font-size: 70%;
+
+    &:hover {
+      opacity: 0.9;
+      color: $footer-text;
+    }
+
+    &:active, &:focus {
+      color: $footer-text;
+      opacity: 0.5;
+    }
+
+  }
+
+  .text-imp {
+    color: darken($footer-text, 100%);
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.9;
+    font-size: 100%;
+    &:active, &:focus {
+      color: darken($footer-text, 100%);
+      opacity: 0.9;
+    }
+
+  }
+  .social-icons {
+    a {
+      text-decoration: none;
+      padding: 10px;
+      font-size: 100%;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  .text-center-xs {
+    text-align: center;
+  }
+
+  header {
+    > div {
+      padding-top: 10vh;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+
+  }
 }
 
