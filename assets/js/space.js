@@ -1,6 +1,5 @@
-// Based mainly on https://github.com/Reynau/space/ by @reynau
+// Based mainly on https://codepen.io/Amaj/pen/azXvXY?q=space%20animation&order=popularity&depth=everything&show_forks=false
 // Edited by @casassg
-// It looks good mate!
 
 
 $(function () {
