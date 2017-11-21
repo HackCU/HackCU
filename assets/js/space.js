@@ -1,5 +1,5 @@
 // Based mainly on https://codepen.io/Amaj/pen/azXvXY?q=space%20animation&order=popularity&depth=everything&show_forks=false
-// Edited by @casassg
+// Coded by Gerard Casas - @casassg for HackCU 2018
 
 
 $(function () {
@@ -19,7 +19,8 @@ $(function () {
 
 
     // Constants
-    var numFlakes = 1000;
+    var numFlakes = 2000;
+    var doc_height = $(document).height();
 
     // circle radius
     var circleRadius = logo_animation.width() / 2;
@@ -37,13 +38,13 @@ $(function () {
     function update(dt) {
 
         var W = renderer.view.width;
-        var H = renderer.view.height;
+        var H = doc_height;
 
         for (var i = 0; i < numFlakes; i++) {
             var flake = flakes[i];
 
             if (flake != undefined) {
-                if (i % 5 > 1) {
+                if (i % 10 > 3) {
                     flake.angle += ((2 - flake.weight) / 20.0) * dt;
                     flake.radius = Math.max(flake.radius - (flake.weight / 15), circleRadius);
                 }
@@ -53,7 +54,7 @@ $(function () {
                 // Sending flakes back from the top when it exits
                 // Lets make it a bit more organic and let flakes enter from the left and right also.
                 if (flake.radius === circleRadius) {
-                    if (i % 5 > 2) {
+                    if (i % 6 > 3) {
                         if (Math.random() < 0.005) /* 10% possibility of restart */ {
                             flake.radius += Math.max(W / 2, H / 2);
                         }
@@ -96,13 +97,14 @@ $(function () {
     }
 
 
-    function restartFlake(f) {
+// Element constructors
+    function createFlake() {
+        var f = new PIXI.Sprite(circle);
         var W = renderer.width;
-        var H = renderer.height;
 
-        var max_rad = Math.sqrt(Math.pow(W, 2) + Math.pow(H, 2));
+        var max_rad = Math.sqrt(Math.pow(W, 2) + Math.pow(doc_height, 2));
         var angle = Math.random() * 2 * Math.PI;
-        var rad = Math.random() * (max_rad - circleRadius) + circleRadius;
+        var rad = Math.max(Math.random() * max_rad, circleRadius);
         f.radius = rad;
         f.angle = angle;
         f.position.x = Math.cos(angle) * rad + center_x;
@@ -115,20 +117,20 @@ $(function () {
         return f;
     }
 
-// Element constructors
-    function createFlake() {
-        var f = new PIXI.Sprite(circle);
-        return restartFlake(f)
-    }
-
     function resize() {
         renderer.resize(window.innerWidth, window.innerHeight);
-        center_x = logo_animation.offset().left + (logo_animation.width() / 2) - 10;
-        center_y = logo_animation.offset().top + (logo_animation.height() / 2) - 8;
+        recenter();
         circleRadius = logo_animation.width() / 2;
     }
 
+    function recenter() {
+        center_x = logo_animation.offset().left + (logo_animation.width() / 2) - 10;
+        center_y = logo_animation.offset().top + (logo_animation.height() / 2) - 8 - $(document).scrollTop();
+    }
+
     window.addEventListener('resize', resize, false);
+    window.addEventListener('scroll', recenter, false);
+
     resize();
 
     requestAnimationFrame(function (ts) {

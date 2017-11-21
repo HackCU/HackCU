@@ -36,7 +36,7 @@ body {
 }
 
 canvas {
-  position: absolute;
+  position: fixed;
   background-color: $main-color;
   top: 0;
   left: 0;
@@ -50,7 +50,7 @@ a {
   @include transition(0.5s ease);
 
   &:hover {
-    color: darken($accent-color,10%);
+    color: darken($accent-color, 10%);
   }
 }
 
@@ -58,14 +58,18 @@ section {
   padding-top: 5vh;
   padding-bottom: 5vh;
   text-align: center;
+  background-color: white;
+  @include box-shadow(0px 0px 0px 0px rgba(0,0,0,0.2));
 
   p {
     font-size: 1.4em;
   }
 
   &.section-reverse {
-    background-color: $main-color;
+    background-color: transparent;
     color: white;
+    @include box-shadow(inset 0px 0px 8px 3px rgba(0,0,0,0.2));
+
 
     hr {
       border-color: #373737;
@@ -109,7 +113,11 @@ header {
 
     svg {
       background-color: transparent;
-      @include box-shadow(0px 0px 10px 5px rgba(0, 0, 0, 0.2));
+      @include box-shadow(0px 2px 8px 3px rgba(0,0,0,0.2));
+
+      &:hover {
+        @include box-shadow(0px 2px 8px 0px rgba(0,0,0,0.2));
+      }
 
     }
     .shape {
@@ -151,6 +159,9 @@ header {
 
 }
 
+#about {
+  @include box-shadow(inset 0px -3px 8px 0px rgba(0,0,0,0.2));
+}
 
 
 #faq {
@@ -233,7 +244,7 @@ header {
 footer {
   padding-top: 2em;
   width: 100%;
-
+  background-color: white;
   p {
     color: $footer-text;
     opacity: 0.5;
@@ -294,6 +305,10 @@ footer {
   header {
     > div {
       padding-top: 10vh;
+    }
+    img {
+      width: 200px;
+      padding-bottom: 20px;
     }
 
     h1 {
