@@ -5,6 +5,7 @@
 
 $footer-text: #666666;
 $main-color: rgb(34, 41, 44);
+$accent-color: #008FB7;
 //$main-color: #161616;
 
 * {
@@ -44,6 +45,34 @@ canvas {
   z-index: -1;
 }
 
+a {
+  color: $accent-color;
+  @include transition(0.5s ease);
+
+  &:hover {
+    color: darken($accent-color,10%);
+  }
+}
+
+section {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  text-align: center;
+
+  p {
+    font-size: 1.4em;
+  }
+
+  &.section-reverse {
+    background-color: $main-color;
+    color: white;
+
+    hr {
+      border-color: #373737;
+    }
+  }
+}
+
 header {
   min-height: 100%;
   color: white;
@@ -72,7 +101,7 @@ header {
     border-radius: 3px;
 
     a {
-      color: white;
+      color: $main-color;
       text-decoration: none;
 
       padding: 5px 10px;
@@ -80,69 +109,49 @@ header {
 
     svg {
       background-color: transparent;
+      @include box-shadow(0px 0px 10px 5px rgba(0, 0, 0, 0.2));
+
     }
     .shape {
-      stroke-width: 6px;
-      fill: transparent;
-      stroke: white;
-      stroke-dasharray: 85 400;
-      stroke-dashoffset: -220;
-      transition: 1s all ease;
+      stroke-width: 8px;
+      fill: white;
+      stroke: $accent-color;
+      stroke-dasharray: 150 400;
+      stroke-dashoffset: -190;
+      @include transition(1s all ease);
+
     }
 
-    &.disabled .shape {
-      stroke: #777;
-    }
     .text {
       margin-top: -40px;
+      color: $main-color;
       font-size: 1.5em;
       text-align: center;
     }
 
     &:hover .shape {
+      opacity: 0.9;
       stroke-dasharray: 50 0;
-      stroke-width: 6px;
       stroke-dashoffset: 0;
     }
-    &.disabled:hover .shape {
-      stroke-width: 6px;
-      fill: transparent;
-      stroke-dasharray: 85 400;
-      stroke-dashoffset: -220;
-      transition: 1s all ease;
-    }
+
   }
 
   &.reverse {
     a {
-      color: $main-color;
+      color: white;
+
     }
     .shape {
-      stroke: $main-color;
+      fill: $main-color;
+      stroke: $accent-color;
     }
 
   }
 
 }
 
-section {
-  padding-top: 3vh;
-  padding-bottom: 5vh;
-  text-align: center;
 
-  p {
-    font-size: 1.4em;
-  }
-
-  &.section-reverse {
-    background-color: $main-color;
-    color: white;
-
-    hr {
-      border-color: #373737;
-    }
-  }
-}
 
 #faq {
   div.question > p {
@@ -207,16 +216,16 @@ section {
 #contact {
   li a {
     font-size: 2em;
-    color: $main-color;
+    color: white;
     padding: 0.4em;
     @include transition(0.5s ease);
 
     &:hover {
-      color: lighten($main-color, 20%);
+      color: darken(white, 40%);
     }
 
     &:active, &:focus {
-      color: $main-color;
+      color: white;
     }
   }
 }

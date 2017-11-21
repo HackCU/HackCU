@@ -6,11 +6,13 @@
             <div class="col-sm-6">
                 <ul class="list-inline">
                     {% for link in site.data.footer_links %}
+                    {%if link.line_break%}<br/>{%endif%}
                     <li>{%if link.url%}
                         <a class="text-imp" target="_blank" href="{{ link.url }}">
                             {%endif%}
                             {{ link.name|upcase }}{%if link.url%}</a>{%endif%}
                     </li>
+
                     {%endfor%}
                 </ul>
             </div>
@@ -30,18 +32,12 @@
                 <a class="btns" target="_blank" href="https://github.com/hackcu/">
                     <i aria-hidden="true" class="fa fa-github fa-lg"></i>
                 </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-            </div>
-            <div class="social-icons col-sm-6 text-right text-center-xs">
-                <a href="mailto:contact@hackcu.org">contact@hackcu.org</a>
+                <br>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by HackCU </p>
+                <p>Made with <i class="fa fa-laptop" aria-hidden="true"></i> by HackCU</p>
 
             </div>
         </div>
