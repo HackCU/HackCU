@@ -1,0 +1,47 @@
+<section id="sponsors">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Sponsors</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="sponsors gold">
+                {% assign gold = site.data.sponsors | where:"tier","gold" %}
+                {% for sponsor in gold  %}
+                <li>
+                    <a href="{{sponsor.url}}" target="_blank">
+                        <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
+                    </a>
+                </li>
+                {%endfor%}
+            </ul>
+        </div>
+        <div class="row">
+            <ul class="sponsors silver">
+                {% assign silver = site.data.sponsors | where:"tier","silver" %}
+                {% for sponsor in silver%}
+                <li>
+                    <a href="{{sponsor.url}}" target="_blank">
+                        <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
+                    </a>
+                </li>
+                {%endfor%}
+            </ul>
+        </div>
+        <div class="row">
+            <ul class="sponsors bronze">
+                {% assign bronze = site.data.sponsors | where:"tier","bronze" %}
+                {% for sponsor in bronze | where:"tier","bronze" %}
+                <li>
+                    <a href="{{sponsor.url}}" target="_blank">
+                        <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
+                    </a>
+                </li>
+                {%endfor%}
+            </ul>
+        </div>
+    </div>
+</section>

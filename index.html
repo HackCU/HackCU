@@ -40,44 +40,10 @@ layout: base
     </div>
 </header>
 
+{% include sections/faq.html %}
+{% include sections/about.html %}
 
-<section id="faq">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <h2>FAQ<br>
-                        <small>All the important questions. Answered.</small>
-                    </h2>
-                    <hr>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            {% for faq in site.data.faq %}
-            <div class="col-md-4 question">
-                <h3>{{faq.question}}</h3>
-                <p class="text-muted">{{faq.answer | markdownify }}</p>
+{% include sections/sponsors.html %}
+{% include sections/partners.html %}
 
-            </div>
-            {%endfor%}
-        </div>
-    </div>
-</section>
-<section id="about" class="section-reverse">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-sm-12">
-                <h2>About Us</h2>
-                <hr>
-                <p class="lead">HackCU hosts the largest annual hackathon in the Rocky Mountain region at the University
-                    of Colorado,
-                    Boulder. Every spring, we bring together people of all experience levels, majors and backgrounds to
-                    CU Boulder. HackCU provides the space and the resources for you to express your creativity,
-                    ingenuity, and determination to create anything you want to. We welcome any and all students to
-                    apply.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
