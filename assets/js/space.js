@@ -131,7 +131,6 @@ $(function () {
     }
 
     window.addEventListener('resize', resize, false);
-    window.addEventListener('scroll', recenter, false);
 
     resize();
 
