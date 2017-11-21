@@ -35,6 +35,14 @@ body {
 
 }
 
+hr {
+  background-color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 canvas {
   position: absolute;
   background-color: $main-color;
@@ -71,6 +79,7 @@ section {
     @include box-shadow(inset 0px 0px 8px 3px rgba(0, 0, 0, 0.2));
 
     hr {
+      background-color: transparent;
       border-color: #373737;
     }
   }
