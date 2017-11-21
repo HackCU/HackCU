@@ -45,7 +45,7 @@ $(function () {
 
             if (flake != undefined) {
                 if (i % 10 > 3) {
-                    flake.angle += ((2 - flake.weight) / 20.0) * dt;
+                    flake.angle += ((2 - flake.weight) / 30.0) * dt;
                     flake.radius = Math.max(flake.radius - (flake.weight / 15), circleRadius);
                 }
                 flake.y = Math.cos(flake.angle) * flake.radius + center_y;
@@ -118,14 +118,16 @@ $(function () {
     }
 
     function resize() {
-        renderer.resize(window.innerWidth, window.innerHeight);
+        doc_height = $(document).height();
+        renderer.resize(window.innerWidth, doc_height);
+        renderer.view.style.height = doc_height +"px";
         recenter();
         circleRadius = logo_animation.width() / 2;
     }
 
     function recenter() {
         center_x = logo_animation.offset().left + (logo_animation.width() / 2) - 10;
-        center_y = logo_animation.offset().top + (logo_animation.height() / 2) - 8 - $(document).scrollTop();
+        center_y = logo_animation.offset().top + (logo_animation.height() / 2) - 8 ;
     }
 
     window.addEventListener('resize', resize, false);
