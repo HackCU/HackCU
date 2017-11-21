@@ -17,25 +17,119 @@ html {
   height: 100%;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: Biko, sans-serif;
+
+}
+
 body {
   height: 100%;
   width: 100%;
-  color: white;
-  font-family: Biko, sans-serif;
+  color: rgb(34, 41, 44);
+  font-family: Roboto, sans-serif;
 
-  canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  header {
+}
+
+canvas {
+  position: absolute;
+  background-color: rgb(34, 41, 44);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+header {
+  height: 100%;
+  color: white;
+  > div {
     padding-top: 20vh;
-    img {
-      width: 240px;
+  }
+  img {
+    width: 240px;
+    padding-bottom: 30px;
+  }
+
+  .buttons {
+    padding-top: 4vh;
+    .svg-wrapper {
+      margin-top: 0;
+      position: relative;
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-transform: uppercase;
+      border-radius: 3px;
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        padding: 5px 10px;
+      }
+
+      svg {
+        background-color: transparent;
+      }
+      .shape {
+        stroke-width: 6px;
+        fill: transparent;
+        stroke: white;
+        stroke-dasharray: 85 400;
+        stroke-dashoffset: -220;
+        transition: 1s all ease;
+      }
+
+      &.disabled .shape {
+        stroke: #777;
+      }
+      .text {
+        margin-top: -40px;
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      &:hover .shape {
+        stroke-dasharray: 50 0;
+        stroke-width: 6px;
+        stroke-dashoffset: 0;
+      }
+      &.disabled:hover .shape {
+        stroke-width: 6px;
+        fill: transparent;
+        stroke-dasharray: 85 400;
+        stroke-dashoffset: -220;
+        transition: 1s all ease;
+      }
+    }
+
+  }
+}
+
+section {
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  text-align: center;
+
+  p {
+    font-size: 1.4em;
+  }
+
+  &.section-reverse {
+    background-color: rgb(34, 41, 44);
+    color: white;
+
+    hr {
+      border-color: #373737;
     }
   }
 }
+
+#faq {
+  div.question > p {
+    color: #777;
+  }
+}
+
 

@@ -4,7 +4,7 @@
 
 
 $(function () {
-    var renderer = PIXI.autoDetectRenderer(800, 600, {antialias: true, background: "#00090f"});
+    var renderer = PIXI.autoDetectRenderer(800, 600, {antialias: true, transparent: true});
     renderer.view.style.width = "100%";
     renderer.view.style.height = "100%";
     document.body.insertBefore(renderer.view, document.body.childNodes[0]);
@@ -15,8 +15,8 @@ $(function () {
     var circle = createCircleSprite();
 
     var logo_animation = $('#logo-animation');
-    var center_x = 0;
-    var center_y = 0;
+    var center_x = logo_animation.offset().left + (logo_animation.width() / 2) - 10;
+    var center_y = logo_animation.offset().top + (logo_animation.height() / 2) - 8;
 
 
     // Constants
@@ -44,15 +44,17 @@ $(function () {
             var flake = flakes[i];
 
             if (flake != undefined) {
-                flake.angle += ((2 - flake.weight) / 20.0) * dt;
-                flake.radius = Math.max(flake.radius - (flake.weight / 15), circleRadius);
+                if (i % 5 > 1) {
+                    flake.angle += ((2 - flake.weight) / 20.0) * dt;
+                    flake.radius = Math.max(flake.radius - (flake.weight / 15), circleRadius);
+                }
                 flake.y = Math.cos(flake.angle) * flake.radius + center_y;
                 flake.x = Math.sin(flake.angle) * flake.radius + center_x;
 
                 // Sending flakes back from the top when it exits
                 // Lets make it a bit more organic and let flakes enter from the left and right also.
                 if (flake.radius === circleRadius) {
-                    if (i % 10 > 1) {
+                    if (i % 5 > 2) {
                         if (Math.random() < 0.005) /* 10% possibility of restart */ {
                             flake.radius += Math.max(W / 2, H / 2);
                         }
@@ -97,17 +99,15 @@ $(function () {
     function restartFlake(f) {
         var W = renderer.width;
         var H = renderer.height;
-        var max_w = Math.max(Math.abs(W - center_x), Math.abs(W - center_x));
-        var max_h = Math.max(Math.abs(H - center_y), Math.abs(W - center_y));
 
-        var max_rad = Math.sqrt(Math.pow(max_w, 2) + Math.pow(max_h, 2));
+        var max_rad = Math.sqrt(Math.pow(W, 2) + Math.pow(H, 2));
         var angle = Math.random() * 2 * Math.PI;
         var rad = Math.max((Math.random() * max_rad), circleRadius);
         f.radius = rad;
         f.angle = angle;
         f.position.x = Math.cos(angle) * rad + center_x;
         f.position.y = Math.sin(angle) * rad + center_y;
-        f.alpha = Math.max(Math.random(), 0.8);
+        f.alpha = 0.7;
         var scale = Math.random() + 0.2;
         f.weight = scale * 4;
         f.scale.x = scale;
@@ -123,8 +123,8 @@ $(function () {
 
     function resize() {
         renderer.resize(window.innerWidth, window.innerHeight);
-        center_x = logo_animation.offset().left + (logo_animation.width() / 2)-10;
-        center_y = logo_animation.offset().top + (logo_animation.height() / 2)-8;
+        center_x = logo_animation.offset().left + (logo_animation.width() / 2) - 10;
+        center_y = logo_animation.offset().top + (logo_animation.height() / 2) - 8;
     }
 
     window.addEventListener('resize', resize, false);

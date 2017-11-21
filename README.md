@@ -8,7 +8,7 @@ Requirements: Jekyll
 - There's no 2
 
 ## Production
-Use
+Use GitHub pages to deploy
 
 ## To add new logo images for sponsors and partners:
 1. After editing (removing background, adding whitespace, etc.), resize the image to `600 x 400 px`
