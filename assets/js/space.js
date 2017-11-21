@@ -19,7 +19,7 @@ $(function () {
 
 
     // Constants
-    var numFlakes = 2000;
+    var numFlakes = 1000;
 
     // circle radius
     var circleRadius = 120;
