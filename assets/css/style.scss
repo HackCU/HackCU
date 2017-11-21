@@ -25,6 +25,11 @@ html {
 h1, h2, h3, h4, h5 {
   font-family: Biko, sans-serif;
 
+
+}
+
+h1.title {
+  font-size: 50px;
 }
 
 body {
@@ -99,7 +104,7 @@ header {
 }
 
 .buttons {
-  padding-top: 4vh;
+  padding-top: 10vh;
   padding-bottom: 3vh;
 
   .svg-wrapper {

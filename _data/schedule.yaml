@@ -6,11 +6,19 @@
   day:  1
   time: "9:30 am"
 
-- name: Team Formation<br>Career Fair
+- name: Team Formation
   day:  1
   time: "11:00 am"
 
-- name: Hacking Begins!<br>Lunch Served
+- name: Career Fair
+  day:  1
+  time: "11:00 am"
+
+- name: Hacking Begins!
+  day:  1
+  time: "12:00 pm"
+
+- name: Lunch Served
   day:  1
   time: "12:00 pm"
 
@@ -30,10 +38,14 @@
   day:  2
   time: "11:49 am"
   
-- name: Project Expo / Judging<br>Lunch
+- name: Project Expo / Judging
   day:  2
   time: "12:00 pm"
-  
+
+- name: Lunch
+  day:  2
+  time: "12:00 pm"
+
 - name: Closing Ceremonies
   day:  2
   time: "2:30 pm"
