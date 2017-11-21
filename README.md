@@ -1,10 +1,14 @@
 # HackCU2017
 
 
-## To use the site:
-* `bower install` to add all dependencies
-* `php -S 127.0.0.1:8000` to run the website locally
-* Go to `localhost:8000`
+## Development
+Requirements: Jekyll
+
+- `jekyll serve --watch`
+- There's no 2
+
+## Production
+Use
 
 ## To add new logo images for sponsors and partners:
 1. After editing (removing background, adding whitespace, etc.), resize the image to `600 x 400 px`

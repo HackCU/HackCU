@@ -4,7 +4,7 @@ workspace.xml
 Thumbs.db
 .idea/*
 
-/bower_components
+.sass-cache/
 node_modules/*
 /npm-debug.log
 .DS_STORE

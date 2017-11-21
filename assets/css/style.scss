@@ -1,0 +1,41 @@
+---
+---
+
+@import "../_sass/mixins";
+
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: Biko;
+  src: url('../fonts/Biko_Regular.otf');
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: Biko, sans-serif;
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  header {
+    padding-top: 20vh;
+    img {
+      width: 240px;
+    }
+  }
+}
+
