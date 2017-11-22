@@ -3,8 +3,8 @@ workspace.xml
 *.swp
 Thumbs.db
 .idea/*
-
-/bower_components
+_site/*
+.sass-cache/
 node_modules/*
 /npm-debug.log
 .DS_STORE

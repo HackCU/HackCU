@@ -1,0 +1,55 @@
+<footer class="text-center-xs">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-6">
+                <ul class="list-inline">
+                    {% for link in site.data.footer_links %}
+                    {%if link.line_break%}<br/>{%endif%}
+                    <li>{%if link.url%}
+                        <a class="text-imp" target="_blank" href="{{ link.url }}">
+                            {%endif%}
+                            {{ link.name|upcase }}{%if link.url%}</a>{%endif%}
+                    </li>
+
+                    {%endfor%}
+                </ul>
+            </div>
+            <div class="social-icons col-sm-6 text-right text-center-xs">
+                <a class="btns" target="_blank" href="https://www.instagram.com/hackcu/?hl=en">
+                    <i aria-hidden="true" class="fa fa-instagram fa-lg"></i>
+                </a>
+                <a class="btns" target="_blank" href="http://fb.com/hackcu">
+                    <i aria-hidden="true" class="fa fa-facebook fa-lg"></i>
+                </a>
+                <a class="btns" target="_blank" href="mailto:contact@hackcu.org">
+                    <i aria-hidden="true" class="fa fa-envelope-o fa-lg"></i>
+                </a>
+                <a class="btns" target="_blank" href="https://twitter.com/hackcu">
+                    <i aria-hidden="true" class="fa fa-twitter fa-lg"></i>
+                </a>
+                <a class="btns" target="_blank" href="https://github.com/hackcu/">
+                    <i aria-hidden="true" class="fa fa-github fa-lg"></i>
+                </a>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>Made with <i class="fa fa-laptop" aria-hidden="true"></i> by HackCU</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                {% unless site.original_repo == null %}
+                <a href="{{site.original_repo}}" target="_blank">
+                    <small>Last updated: {{site.time | date:"%b %-d %Y %H:%M" }}</small>
+                </a>
+                {%endunless%}
+            </div>
+        </div>
+    </div>
+
+</footer>

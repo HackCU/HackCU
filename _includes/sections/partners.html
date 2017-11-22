@@ -1,0 +1,23 @@
+<section id="partners">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Partners</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="partners ">
+                {% for partner in site.data.partners  %}
+                <li>
+                    <a href="{{partner.url}}" target="_blank">
+                        <img src="{{partner.image-url}}" alt="{{partner.name}} logo">
+                    </a>
+                </li>
+                {%endfor%}
+            </ul>
+        </div>
+    </div>
+</section>

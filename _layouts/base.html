@@ -1,0 +1,77 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Information -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <!-- for Google -->
+    <meta name="description"
+          content="Apply now! HackCU is a 24 hour hackathon organized annually at the University of Colorado Boulder. The event provides the space and the resources for you to express your creativity, ingenuity, and determination to create anything you want to. We welcome any and all students to apply."/>
+    <meta name="keywords" content="HackCU, hackathon, CU Boulder, Boulder, Idea Forge, MLH"/>
+    <meta name="author" content="HackCU"/>
+    <meta name="theme-color" content="#22292c">
+    <meta name="copyright" content="HackCU"/>
+    <meta name="application-name" content="HackCU IV | February 2018 | Boulder, CO"/>
+
+    <!-- for Facebook -->
+    <meta property="og:title" content="HackCU IV | February 2018 | Boulder, CO"/>
+    <meta property="og:image" content="https://hackcu.org/assets/images/ogimage870x450.png"/>
+    <meta property="og:image:secure_url" content="https://hackcu.org/assets/images/ogimage870x450.png">
+    <meta property="og:url" content="https://hackcu.org"/>
+    <meta property="og:description"
+          content="Apply now! HackCU is a 24 hour hackathon organized annually at the University of Colorado Boulder. The event provides the space and the resources for you to express your creativity, ingenuity, and determination to create anything you want to. We welcome any and all students to apply."/>
+
+    <!-- for Twitter -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="HackCU IV | February 2018 | Boulder, CO"/>
+    <meta name="twitter:site" content="@hackcu">
+    <meta name="twitter:creator" content="@hackcu">
+    <meta name="twitter:description"
+          content="Apply now! HackCU is a 24 hour hackathon organized annually at the University of Colorado Boulder. The event provides the space and the resources for you to express your creativity, ingenuity, and determination to create anything you want to. We welcome any and all students to apply.">
+    <meta name="twitter:image" content="https://hackcu.org/assets/images/ogimage870x450.png"/>
+
+    <title>{%if page.title %}{{page.title}} | {%endif%}HackCU IV</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="assets/lib/font-awesome.min.css">
+
+    <!-- Our own CSS, yay! -->
+    <link rel="stylesheet" href="assets/css/style.css?_={{ site.time |  date: '%s' }}">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+
+</head>
+
+<body>
+<a id="mlh-trust-badge"
+   style="display:block;max-width:100px;min-width:60px;position:absolute;right:50px;top:0;width:10%;z-index:10000"
+   href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=gray"
+   target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/gray.svg"
+                        alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+{{content}}
+{% include footer.html %}
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="assets/lib/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.0/pixi.min.js"></script>
+<script src="assets/js/space.js?_={{ site.time |  date: '%s' }}"></script>
+<script src="assets/lib/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

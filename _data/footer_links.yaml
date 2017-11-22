@@ -1,0 +1,15 @@
+- name: "Previous editions:"
+- name: 2017
+  url: https://2017.hackcu.org/
+- name: 2016
+  url: https://2016.hackcu.org/
+- name: "More events:"
+  line_break: True
+- name: LHD 2017
+  url: https://local.hackcu.org/
+- name: LHD 2016
+  url: https://localday2016.hackcu.org/
+- name: S2S
+  url: https://startups2students.org/
+- name: CU Workshops
+  url: https://events.hackcu.org/

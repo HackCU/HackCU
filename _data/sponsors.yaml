@@ -1,0 +1,9 @@
+- name: Twitter
+  tier: gold
+  image-url: /assets/images/sponsors/twitter.png
+  url: https://twitter.com
+
+- name: Seagate
+  tier: bronze
+  image-url: /assets/images/sponsors/seagate.png
+  url: https://seagate.com

@@ -1,0 +1,5 @@
+original_repo: https://github.com/hackcu/hackcu
+
+sass:
+    sass_dir: assets/_sass
+    style: compressed

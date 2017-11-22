@@ -1,18 +1,26 @@
-## Description
+<!--  Thanks for sending a pull request!  Here are some tips for you:
+1. If this is your first time, read our contributor guidelines  https://github.com/hackcu/hackcu/blob/master/.github/CONTRIBUTING.md
+-->
+
+## What this PR does / why we need it
+
 A few sentences describing the overall goals of the pull request's commits.
 
 ## Related Issues
-Link to any issues that are relevant to this PR. This could be an issue this PR fixes.
+<!--(optional) Fixes #<issue number>(, fixes #<issue_number>, ...) format, will close the issue(s) when PR gets merged)-->
+
+Fixes #
 
 ## Some questions
-1. Did you read the contributing guidelines?
-	(Your answer)
-2. Did you edit any CSS or JS file?
-	(Your answer)
-3. If you answered yes, did you update the version number on `index.html`?
-	(Your answer)
-If you answered No to question 1, go back and read the [instructions](.github/CONTRIBUTING.md) carefully.
-If you answered Yes to question 2 and No to question 3, go back and update the version number.
+<!-- You can leave this and check them once the PR has been created. -->
+
+- [ ] I have read the contributing guidelines
+- [ ] I abide by this repository Code of Conduct
+
+## Special notes for your reviewer
+
+(optional)
 
 ## Additional Notes
+
 Do you want to add anything else? We :heart: to hear your opinions!

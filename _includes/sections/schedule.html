@@ -1,0 +1,57 @@
+<section id="schedule" class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Event Schedule <br>
+                        <small>Subject to change.</small>
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Day 1</h3>
+                    <table class="table lead table-hover text-center schedule-table">
+                        <thead>
+                        <tr>
+                            <th class="text-center">Time</th>
+                            <th class="text-center">Event</th>
+                        </tr>
+                        </thead>
+                        {% assign day1 = site.data.schedule | where:"day","1" %}
+                        {% for event in day1 %}
+                        <tr>
+                            <td>{{ event.time }}</td>
+                            <td>{{ event.name }}</td>
+                        </tr>
+                        {%endfor%}
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>Day 2</h3>
+                    <table class="table lead table-hover text-center schedule-table">
+                        <thead>
+                        <tr>
+                            <th class="text-center">Time</th>
+                            <th class="text-center">Event</th>
+                        </tr>
+                        </thead>
+                        {% assign day2 = site.data.schedule | where:"day","2" %}
+                        {% for event in day2 %}
+                        <tr>
+                            <td>{{ event.time }}</td>
+                            <td>{{ event.name }}</td>
+                        </tr>
+                        {%endfor%}
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <p>Oh! We've also got lots of workshops, tech talks, and games planned along the way!</p>
+            </div>
+        </div>
+    </div>
+</section>

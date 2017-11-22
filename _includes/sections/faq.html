@@ -1,0 +1,42 @@
+<section id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>FAQ <br>
+                        <small>All the important questions. Answered.</small>
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 question">
+
+            {% for faq in site.data.faq %}
+            {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+            {% if modulo == '0' %}
+            <h3>{{faq.question}}</h3>
+            {{faq.answer | markdownify }}
+            {% endif %}
+            {%endfor%}
+        </div>
+        <div class="col-md-4 question">
+            {% for faq in site.data.faq %}
+            {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+            {% if modulo == '1' %}
+            <h3>{{faq.question}}</h3>
+            {{faq.answer | markdownify }}
+            {% endif %}
+            {%endfor%}
+        </div>
+        <div class="col-md-4 question">
+            {% for faq in site.data.faq %}
+            {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+            {% if modulo == '2' %}
+            <h3>{{faq.question}}</h3>
+            {{faq.answer | markdownify }}
+            {% endif %}
+            {%endfor%}
+        </div>
+    </div>
+</section>
