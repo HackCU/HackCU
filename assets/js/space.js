@@ -1,11 +1,11 @@
 // Based mainly on https://codepen.io/Amaj/pen/azXvXY?q=space%20animation&order=popularity&depth=everything&show_forks=false
 // Coded by Gerard Casas - @casassg for HackCU 2018
 
-
+var renderer = null;
 $(function () {
-    var renderer = PIXI.autoDetectRenderer(800, 600, {antialias: true, transparent: true});
-    renderer.view.style.width = "100%";
-    renderer.view.style.height = "100%";
+
+    renderer = PIXI.autoDetectRenderer(800, 400, {transparent: true});
+
     document.body.insertBefore(renderer.view, document.body.childNodes[0]);
 
     var stage = new PIXI.Container();
@@ -16,51 +16,43 @@ $(function () {
     var logo_animation = $('#logo-animation');
     var center_x = logo_animation.offset().left + (logo_animation.width() / 2) - 10;
     var center_y = logo_animation.offset().top + (logo_animation.height() / 2) - 8;
+    var max_radius = 0;
 
+    var numMoons = 500;
 
-    // Constants
-    var numFlakes = 2000;
-    var doc_height = $(document).height();
 
     // circle radius
-    var circleRadius = logo_animation.width() / 2;
-
-    // Init flakes
-    var flakes = [];
-    for (var i = 0; i < numFlakes; i++) {
-        var f = createFlake();
-        flakes.push(f);
-        stage.addChild(f);
-    }
-    renderer.render(stage);
+    var circleRadius = 0;
 
 
     function update(dt) {
 
-        var W = renderer.view.width;
-        var H = doc_height;
 
-        for (var i = 0; i < numFlakes; i++) {
-            var flake = flakes[i];
+        for (var i = 0; i < numMoons; i++) {
+            var moon = moons[i];
+            var inc_angle = 2 * dt / 30.0;
 
-            if (flake != undefined) {
-                if (i % 10 > 3) {
-                    flake.angle += ((2 - flake.weight) / 30.0) * dt;
-                    flake.radius = Math.max(flake.radius - (flake.weight / 15), circleRadius);
+            if (moon != undefined) {
+                // 70% of moons move around, the rest stay where they are
+                if (i % 10 > 2) {
+                    moon.angle += (moon.weight * dt / 30.0) - inc_angle;
+                    moon.radius = Math.max(moon.radius - (moon.weight / 15.0), circleRadius);
                 }
-                flake.y = Math.cos(flake.angle) * flake.radius + center_y;
-                flake.x = Math.sin(flake.angle) * flake.radius + center_x;
+                moon.y = (Math.sin(moon.angle) * moon.radius) + center_y;
+                moon.x = (Math.cos(moon.angle) * moon.radius) + center_x;
 
-                // Sending flakes back from the top when it exits
-                // Lets make it a bit more organic and let flakes enter from the left and right also.
-                if (flake.radius === circleRadius) {
-                    if (i % 6 > 3) {
-                        if (Math.random() < 0.005) /* 10% possibility of restart */ {
-                            flake.radius += Math.max(W / 2, H / 2);
+                // if moon get to the circle, restart some of them
+                if (moon.radius === circleRadius) {
+                    if (i % 2 > 0) /* 50% possibility of restart */ {
+                        if (Math.random() < 0.005) {
+                            moon.radius += max_radius;
                         }
                     }
-                } else if (flake.radius < circleRadius) {
-                    flake.radius += Math.max(W / 2, H / 2);
+                    //    If moon inside the circle, move away!
+                } else if (moon.radius < circleRadius) {
+                    moon.radius += circleRadius;
+                    moon.y = (Math.sin(moon.angle) * moon.radius) + center_y;
+                    moon.x = (Math.cos(moon.angle) * moon.radius) + center_x;
                 }
             }
         }
@@ -69,20 +61,18 @@ $(function () {
 
     function mainLoop(timestamp) {
 
-        requestAnimationFrame(function (ts) {
-            mainLoop(ts)
-        });
+        requestAnimationFrame(mainLoop);
 
         if (startTime == null) startTime = timestamp;
         var dt = (timestamp - startTime) / 700;
-        // If user has been away then dt increases to over 3 in most cases. In that case we want to avoid dt so high as all the flakes will
-        // be restarted from the top
+        // If user has been away then dt increases to over 3 in most cases. In that case we want to avoid dt so high as
+        // and stop background animation
         if (dt > 3) {
             dt = 0;
         }
         startTime = timestamp;
-        renderer.render(stage);
         update(dt);
+        renderer.render(stage);
     }
 
 // Sprite constructors
@@ -98,45 +88,47 @@ $(function () {
 
 
 // Element constructors
-    function createFlake() {
-        var f = new PIXI.Sprite(circle);
-        var W = renderer.width;
 
-        var max_rad = Math.sqrt(Math.pow(W, 2) + Math.pow(doc_height, 2));
+    function createMoon() {
+        var moon = new PIXI.Sprite(circle);
+        max_radius = Math.sqrt(Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2));
         var angle = Math.random() * 2 * Math.PI;
-        var rad = Math.max(Math.random() * max_rad, circleRadius);
-        f.radius = rad;
-        f.angle = angle;
-        f.position.x = Math.cos(angle) * rad + center_x;
-        f.position.y = Math.sin(angle) * rad + center_y;
-        f.alpha = 0.7;
+        var rad = Math.max(Math.random() * max_radius, circleRadius);
+        moon.radius = rad;
+        moon.angle = angle;
+        moon.x = Math.cos(angle) * rad + center_x;
+        moon.y = Math.sin(angle) * rad + center_y;
+        moon.alpha = 0.7;
         var scale = Math.random() + 0.2;
-        f.weight = scale * 4;
-        f.scale.x = scale;
-        f.scale.y = scale;
-        return f;
+        moon.weight = scale * 4;
+        moon.scale.x = scale;
+        moon.scale.y = scale;
+        return moon;
     }
 
+    // Resize renderer and recalculate variable
     function resize() {
-        doc_height = $(document).height();
-        renderer.resize(window.innerWidth, doc_height);
-        renderer.view.style.height = doc_height +"px";
-        recenter();
-        circleRadius = logo_animation.width() / 2;
-    }
-
-    function recenter() {
+        renderer.resize(window.innerWidth, window.innerHeight + $('#about').height() * 2);
         center_x = logo_animation.offset().left + (logo_animation.width() / 2) - 10;
-        center_y = logo_animation.offset().top + (logo_animation.height() / 2) - 8 ;
+        center_y = logo_animation.offset().top + (logo_animation.height() / 2) - 8;
+        circleRadius = Math.floor(logo_animation.width() / 2);
+        max_radius = Math.sqrt(Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2));
+
     }
 
     window.addEventListener('resize', resize, false);
 
     resize();
+    // Init moons
+    var moons = [];
+    for (var i = 0; i < numMoons; i++) {
+        var f = createMoon();
+        moons.push(f);
+        stage.addChild(f);
+    }
+    // THE GAME IS ON!
+    renderer.render(stage);
+    requestAnimationFrame(mainLoop);
 
-    requestAnimationFrame(function (ts) {
-        mainLoop(ts)
-    });
 
-
-})
+});
