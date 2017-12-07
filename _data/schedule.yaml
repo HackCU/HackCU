@@ -16,7 +16,7 @@
 
 - name: Hacking Begins!
   day:  1
-  time: "12:00 pm"
+  time: "11:30 am"
 
 - name: Lunch Served
   day:  1
@@ -36,7 +36,7 @@
 
 - name: Hacking Ends
   day:  2
-  time: "11:49 am"
+  time: "11:30 am"
   
 - name: Project Expo / Judging
   day:  2
