@@ -1,22 +1,22 @@
 - question: Who can attend?
-  answer: "We welcome any student 18 or older to participate! You don’t have to be a programmer and you certainly don’t have to be majoring in Computer Science."
-- question: Do I need a team? How large can my team be?
+  answer: "We welcome any student 18 or older to participate!"
+- question: Do I need a team? How large are teams?
   answer: "Don't have a team? We got you covered. We will have time before hacking begins for hackers to get together and form teams. You can have a maximum of 4 members on your team."
 - question: What is a hackathon?
   answer: "A hackathon is best described as an “invention marathon”. Anyone who has an interest in technology attends a hackathon to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere."
 - question: How much does HackCU cost?
-  answer: "Free. 0. Gratis. HackCU is absolutely free to attend. We also provide all meals, snacks, and refreshments!"
+  answer: "HackCU is absolutely free to attend. We will also provide meals, snacks, and refreshments!"
 - question: Will there be food?
-  answer: "Yes, lots! We will provide three meals a day as well as snacks, drinks, and caffeine."
-- question: What do I bring?
-  answer: "A laptop, laptop charger, phone, chargers, headphones, a pillow, toiletries, an extra set of clothes, and a water bottle."
+  answer: "Plenty, we will provide three meals a day as well as snacks, drinks, and caffeine."
+- question: What should I bring?
+  answer: "In order to check-in, you must have a government-issued ID. But, you should also bring your laptop, laptop charger, phone, chargers, headphones, a pillow, toiletries, an extra set of clothes, and a reusable water bottle."
 - question: Will you offer travel reimbursement?
-  answer: "YES! Stay tuned for more details"
+  answer: "Yes! Travel reimbursement will be based on a case-by-case basis. Stay tuned for more details!"
 - question: What if I am not a student?
   answer: "Be a volunteer or mentor! More information coming soon!"
 - question: Do I have to be a programmer?
-  answer: "Absolutely not! It doesn’t matter if you are a designer, a writer, or a chemistry major. There is a place for you here. There will be a team formation session at the beginning of the event to help form teams."
+  answer: "Absolutely not! It doesn’t matter if you are a designer, a writer, or a chemist. There is a place for you here. Prior to hacking, there will be a team formation session at the beginning of the event to help form teams."
 - question: Can I reuse a previous project?
-  answer: "You can **NOT** use anything that you have started prior to the event. You can think of ideas for your project, but you need to start from scratch when you arrive."
+  answer: "You can **NOT** use anything that you have started prior to the event. You can think of ideas for your project, but you must start from scratch when you arrive."
 - question: What if I have another question?
   answer: "Tweet us at [@hackcu](https://twitter.com/hackcu) or drop us a line at [contact@hackcu.org](mailto:contact@hackcu.org)"
