@@ -215,6 +215,9 @@ header {
 
 #about {
   @include box-shadow(inset 0px -3px 8px 0px rgba(0, 0, 0, 0.2));
+  p {
+    font-family: Biko;
+  }
 }
 
 #faq {
