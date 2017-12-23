@@ -103,7 +103,7 @@ section {
     z-index: 99;
     position: relative;
     @include box-shadow( 0px 0px 2px 2px rgba(0, 0, 0, 0.2));
-    h2, h3, a {
+    h2, h3, a, small {
       color: white;
     }
     hr {
@@ -215,6 +215,9 @@ header {
 
 #about {
   @include box-shadow(inset 0px -3px 8px 0px rgba(0, 0, 0, 0.2));
+  p {
+    font-family: Biko;
+  }
 }
 
 #faq {
