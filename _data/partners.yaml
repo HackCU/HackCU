@@ -5,3 +5,7 @@
 - name: CU Engineering
   image-url: /assets/images/partners/engineering.png
   url: http://www.colorado.edu/engineering/
+
+- name: SendGrid
+  image-url: /assets/images/partners/sendgrid.png
+  url: https://sendgrid.com/
