@@ -1,4 +1,10 @@
+- name: "Code of conduct:"
+- name: MLH
+  url: https://static.mlh.io/docs/mlh-code-of-conduct.pdf
+- name: HackCU
+  url: https://my.hackcu.org/code_conduct/
 - name: "Previous editions:"
+  line_break: True
 - name: 2017
   url: https://2017.hackcu.org/
 - name: 2016
