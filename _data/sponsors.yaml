@@ -12,3 +12,13 @@
   tier: bronze
   image-url: /assets/images/sponsors/deloitte.png
   url: http://www.deloitte.com/
+
+- name: Zayo
+  tier: gold
+  image-url: /assets/images/sponsors/zayo.png
+  url: https://www.zayo.com/
+
+- name: NEO
+  tier: gold
+  image-url: /assets/images/sponsors/neo.png
+  url: https://www.neo.org/
