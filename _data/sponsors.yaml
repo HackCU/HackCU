@@ -22,3 +22,8 @@
   tier: gold
   image-url: /assets/images/sponsors/neo.png
   url: https://www.neo.org/
+
+- name: ASSG
+  tier: diamond
+  image-url: /assets/images/partners/assg.png
+  url: https://www.colorado.edu/studentgroups/assg/

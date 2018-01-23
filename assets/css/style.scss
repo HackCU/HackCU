@@ -35,6 +35,9 @@ h1, h2, h3, h4, h5 {
 h1.title {
   font-size: 50px;
   padding-bottom: 2vh;
+  a {
+    text-decoration: none;
+  }
 }
 
 body {
@@ -239,7 +242,7 @@ header {
   .diamond {
     // background-color: rgba(185, 242, 255, 0.12);
     img {
-      max-height: 42vh;
+      max-height: 50vh;
       max-width: 100%;
     }
   }
@@ -247,7 +250,7 @@ header {
   .gold {
     // background-color: rgba(212, 175, 55, 0.12);
     img {
-      max-height: 35vh;
+      max-height: 30vh;
       max-width: 100%;
     }
   }
