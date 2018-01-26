@@ -32,3 +32,8 @@
   tier: bronze
   image-url: /assets/images/sponsors/fotodiox.png
   url: https://fotodioxpro.com/
+
+- name: GitHub
+  tier: bronze
+  image-url: /assets/images/sponsors/github.png
+  url: https://github.com/
