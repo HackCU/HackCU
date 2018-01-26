@@ -9,3 +9,7 @@
 - name: SendGrid
   image-url: /assets/images/partners/sendgrid.png
   url: https://sendgrid.com/
+
+- name: StickerGiant
+  image-url: /assets/images/partners/stickergiant.png
+  url: https://www.stickergiant.com
