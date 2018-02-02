@@ -37,3 +37,8 @@
   tier: bronze
   image-url: /assets/images/sponsors/github.png
   url: https://education.github.com/
+
+- name: OppenheimerFunds
+  tier: silver
+  image-url: /assets/images/sponsors/oppenheimerfunds.png
+  url: https://www.oppenheimerfunds.com/
