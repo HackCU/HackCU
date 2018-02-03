@@ -42,3 +42,13 @@
   tier: silver
   image-url: /assets/images/sponsors/oppenheimerfunds.png
   url: https://www.oppenheimerfunds.com/
+
+- name: Alteryx
+  tier: gold
+  image-url: /assets/images/sponsors/alteryx.png
+  url: https://www.alteryx.com/
+
+- name: Beacon.io
+  tier: startup
+  image-url: /assets/images/sponsors/beaconio.png
+  url: https://www.beacon.io/
