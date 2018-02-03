@@ -57,6 +57,18 @@
                 {%endfor%}
             </ul>
         </div>
+         <div class="row">
+            <ul class="sponsors startup">
+                {% assign startup = site.data.sponsors | where:"tier","startup" %}
+                {% for sponsor in startup | where:"tier","startup" %}
+                <li>
+                    <a href="{{sponsor.url}}" target="_blank">
+                        <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
+                    </a>
+                </li>
+                {%endfor%}
+            </ul>
+        </div>
         <div class="buttons reverse title">
             <!--Inspired by https://github.com/HackCU/HackCU-Temp by Alex Walling-->
             <div class="svg-wrapper ">
