@@ -239,13 +239,22 @@ header {
     margin: 10px;
   }
 
-  .diamond {
+  .powered {
     // background-color: rgba(185, 242, 255, 0.12);
     img {
       max-height: 50vh;
       max-width: 100%;
     }
   }
+
+  .diamond {
+    // background-color: rgba(185, 242, 255, 0.12);
+    img {
+      max-height: 30vh;
+      max-width: 100%;
+    }
+  }
+
 
   .gold {
     // background-color: rgba(212, 175, 55, 0.12);
@@ -277,6 +286,10 @@ header {
       max-height: 10vh;
       max-width: 100%;
     }
+  }
+
+  .row {
+    padding-bottom: 10px;
   }
 
 }
