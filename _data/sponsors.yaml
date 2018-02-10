@@ -52,3 +52,9 @@
   tier: startup
   image-url: /assets/images/sponsors/beaconio.png
   url: https://www.beacon.io/
+
+
+- name: FreeWave Technologies Inc
+  tier: silver
+  image-url: /assets/images/sponsors/freewave.png
+  url: https://www.freewave.com
