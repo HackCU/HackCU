@@ -24,7 +24,7 @@
   url: https://www.neo.org/
 
 - name: ASSG
-  tier: diamond
+  tier: powered
   image-url: /assets/images/partners/assg.png
   url: https://www.colorado.edu/studentgroups/assg/
 
@@ -49,12 +49,38 @@
   url: https://www.alteryx.com/
 
 - name: Beacon.io
-  tier: startup
+  tier: bronze
   image-url: /assets/images/sponsors/beaconio.png
   url: https://www.beacon.io/
+
+- name: AUVSI
+  tier: gold
+  image-url: /assets/images/sponsors/auvsi.png
+  url: http://www.auvsi.org/
+
+- name: MD5
+  tier: diamond
+  image-url: /assets/images/sponsors/md5.png
+  url: https://community.md5.net/md5/landing
+
+- name: Dish Networks
+  tier: silver
+  image-url: /assets/images/sponsors/dish.png
+  url: https://www.dish.com/
+
+- name: IHS Markit
+  tier: bronze
+  image-url: /assets/images/sponsors/ihs.png
+  url: https://ihsmarkit.com/index.html
+
+- name: HackDFW
+  tier: bronze
+  image-url: /assets/images/sponsors/hackdfw.png
+  url: https://www.hackdfw.com/
 
 
 - name: FreeWave Technologies Inc
   tier: silver
   image-url: /assets/images/sponsors/freewave.png
   url: https://www.freewave.com
+
