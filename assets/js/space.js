@@ -91,7 +91,7 @@ $(function () {
 
     function createMoon() {
         var moon = new PIXI.Sprite(circle);
-        max_radius = Math.sqrt(Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2));
+        max_radius = Math.sqrt(Math.pow(document.body.clientWidth, 2) + Math.pow(window.innerHeight, 2));
         var angle = Math.random() * 2 * Math.PI;
         var rad = Math.max(Math.random() * max_radius, circleRadius);
         moon.radius = rad;
@@ -108,11 +108,11 @@ $(function () {
 
     // Resize renderer and recalculate variable
     function resize() {
-        renderer.resize(window.innerWidth, window.innerHeight + $('#about').height() * 2);
+        renderer.resize(document.body.clientWidth, window.innerHeight + $('#about').height() * 2);
         center_x = logo_animation.offset().left + (logo_animation.width() / 2) - 10;
         center_y = logo_animation.offset().top + (logo_animation.height() / 2) - 8;
         circleRadius = Math.floor(logo_animation.width() / 2);
-        max_radius = Math.sqrt(Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2));
+        max_radius = Math.sqrt(Math.pow(document.body.clientWidth, 2) + Math.pow(window.innerHeight, 2));
 
     }
 
