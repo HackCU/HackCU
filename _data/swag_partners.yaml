@@ -1,0 +1,7 @@
+- name: Discord
+  image-url: /assets/images/partners/discord.png
+  url: https://discordapp.com/
+
+- name: Google
+  image-url: /assets/images/partners/google.png
+  url: https://google.com
