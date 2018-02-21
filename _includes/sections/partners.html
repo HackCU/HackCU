@@ -19,5 +19,16 @@
                 {%endfor%}
             </ul>
         </div>
+        <div class="row">
+            <ul class="swag-partners partners">
+                {% for partner in site.data.swag_partners  %}
+                <li>
+                    <a href="{{partner.url}}" target="_blank">
+                        <img src="{{partner.image-url}}" alt="{{partner.name}} logo">
+                    </a>
+                </li>
+                {%endfor%}
+            </ul>
+        </div>
     </div>
 </section>
