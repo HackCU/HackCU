@@ -82,7 +82,7 @@ $cloud-color:#E4EFF3;
   left: 0px;
   bottom:-5px;
   width:100%;
-  height:5%;
+  height:50px;
   z-index:200;
 }
 
@@ -221,7 +221,7 @@ $cloud-color:#E4EFF3;
 @media only screen and (max-device-width: 1280px) {
    
     .snow{
-        height:4%;
+      height:30px;
     }
 }
 /* Small phone screen sizes */
@@ -242,7 +242,7 @@ $cloud-color:#E4EFF3;
     transform: scale(0.4) 
   }
   .snow{
-    height:3%;
+    height:30px;
   }
 }	
 /* Large tablet screen sizes */	
@@ -251,6 +251,6 @@ $cloud-color:#E4EFF3;
     transform: scale(0.6) 
   }
   .snow{
-    height:3%;
+    height:40px;
 }
 }
