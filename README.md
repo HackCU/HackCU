@@ -1,7 +1,7 @@
 
 <br>
 <p align="center">
-  <img alt="HackCU IV" src="https://github.com/HackCU/splash-page/blob/master/img/hackcu_black.png" width="200"/>
+  <img alt="HackCU V" src="https://github.com/HackCU/splash-page/blob/master/img/hackcu_black.png" width="200"/>
 </p>
 <br>
 
