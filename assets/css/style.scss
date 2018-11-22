@@ -208,8 +208,13 @@ header {
 
     }
     .shape {
-      fill: $main-color;
-      stroke: lighten($accent-color, 10%);
+      fill: $accent-color;
+      stroke: lighten($main-color, 10%);
+    }
+    &:hover .shape {
+      stroke: $main-color;
+      stroke-dasharray: 50 0;
+      stroke-dashoffset: 0;
     }
 
   }
