@@ -8,82 +8,76 @@
   image-url: /assets/images/sponsors/seagate.png
   url: https://seagate.com
 
-- name: Deloitte
-  tier: bronze
-  image-url: /assets/images/sponsors/deloitte.png
-  url: http://www.deloitte.com/
+# - name: Deloitte
+#   tier: bronze
+#   image-url: /assets/images/sponsors/deloitte.png
+#   url: http://www.deloitte.com/
 
 - name: Zayo
   tier: gold
   image-url: /assets/images/sponsors/zayo.png
   url: https://www.zayo.com/
 
-- name: NEO
-  tier: gold
-  image-url: /assets/images/sponsors/neo.png
-  url: https://www.neo.org/
 
-- name: ASSG
-  tier: powered
-  image-url: /assets/images/partners/assg.png
-  url: https://www.colorado.edu/studentgroups/assg/
 
-- name: Fotodiox
-  tier: bronze
-  image-url: /assets/images/sponsors/fotodiox.png
-  url: https://fotodioxpro.com/
+# - name: ASSG
+#   tier: powered
+#   image-url: /assets/images/partners/assg.png
+#   url: https://www.colorado.edu/studentgroups/assg/
 
-- name: GitHub
-  tier: bronze
-  image-url: /assets/images/sponsors/github.png
-  url: https://education.github.com/
 
-- name: OppenheimerFunds
-  tier: silver
-  image-url: /assets/images/sponsors/oppenheimerfunds.png
-  url: https://www.oppenheimerfunds.com/
 
-- name: Alteryx
-  tier: gold
-  image-url: /assets/images/sponsors/alteryx.png
-  url: https://www.alteryx.com/
+# - name: GitHub
+#   tier: bronze
+#   image-url: /assets/images/sponsors/github.png
+#   url: https://education.github.com/
 
-- name: Beacon.io
-  tier: bronze
-  image-url: /assets/images/sponsors/beaconio.png
-  url: https://www.beacon.io/
+# - name: OppenheimerFunds
+#   tier: silver
+#   image-url: /assets/images/sponsors/oppenheimerfunds.png
+#   url: https://www.oppenheimerfunds.com/
 
-- name: AUVSI
-  tier: gold
-  image-url: /assets/images/sponsors/auvsi.png
-  url: http://www.auvsi.org/
+# - name: Alteryx
+#   tier: gold
+#   image-url: /assets/images/sponsors/alteryx.png
+#   url: https://www.alteryx.com/
 
-- name: MD5
-  tier: gold
-  image-url: /assets/images/sponsors/md5.png
-  url: https://community.md5.net/md5/landing
+# - name: Beacon.io
+#   tier: bronze
+#   image-url: /assets/images/sponsors/beaconio.png
+#   url: https://www.beacon.io/
 
-- name: Dish Networks
-  tier: silver
-  image-url: /assets/images/sponsors/dish2.png
-  url: https://www.dish.com/
+# - name: AUVSI
+#   tier: gold
+#   image-url: /assets/images/sponsors/auvsi.png
+#   url: http://www.auvsi.org/
 
-- name: IHS Markit
-  tier: bronze
-  image-url: /assets/images/sponsors/ihs.png
-  url: https://ihsmarkit.com/index.html
+# - name: MD5
+#   tier: gold
+#   image-url: /assets/images/sponsors/md5.png
+#   url: https://community.md5.net/md5/landing
 
-- name: HackDFW
-  tier: bronze
-  image-url: /assets/images/sponsors/hackdfw.png
-  url: https://www.hackdfw.com/
+# - name: Dish Networks
+#   tier: silver
+#   image-url: /assets/images/sponsors/dish2.png
+#   url: https://www.dish.com/
 
-- name: FreeWave Technologies Inc
-  tier: silver
-  image-url: /assets/images/sponsors/freewave.png
-  url: https://www.freewave.com
+# - name: IHS Markit
+#   tier: bronze
+#   image-url: /assets/images/sponsors/ihs.png
+#   url: https://ihsmarkit.com/index.html
 
-- name: Trimble
-  tier: gold
-  image-url: /assets/images/sponsors/trimble.png
-  url: http://www.trimble.com/
+# - name: HackDFW
+#   tier: bronze
+#   image-url: /assets/images/sponsors/hackdfw.png
+#   url: https://www.hackdfw.com/
+
+# - name: FreeWave Technologies Inc
+#   tier: silver
+#   image-url: /assets/images/sponsors/freewave.png
+#   url: https://www.freewave.com
+
+# - name: Trimble
+#   tier: gold
+#   image-url: /assets/images/sponsors/trimble.png
+#   url: http://www.trimble.com/
