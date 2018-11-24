@@ -1,5 +1,6 @@
 ---
 ---
+@import "../_sass/mixins";
 $cloud-color:#E4EFF3;
 
 #background{
@@ -129,7 +130,7 @@ $cloud-color:#E4EFF3;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
     font-size:1.25em;
-    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75);
+    @include box-shadow(0px 5px 10px 1px rgba(0,0,0,0.5));
     z-index:14;
     &-list{
       margin:0;
