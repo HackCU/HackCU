@@ -47,9 +47,6 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
 
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="assets/lib/font-awesome.min.css">
-
     <!-- Our own CSS, yay! -->
     <link rel="stylesheet" href="assets/css/style.css?_={{ site.time |  date: '%s' }}">
     <link rel="stylesheet" href="assets/css/mountains.css?_={{ site.time |  date: '%s' }}">
@@ -79,11 +76,12 @@
 
 <!-- Bootstrap Core JavaScript -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
-<script src="assets/js/flakes.js?_={{ site.time |  date: '%s' }}"></script>
-<script src="assets/lib/bootstrap.min.js"></script>
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
+<script defer src="assets/js/flakes.js?_={{ site.time |  date: '%s' }}"></script>
 
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="assets/lib/font-awesome.min.css">
 <!-- Facebook Pixel Code -->
 <!-- <script>
   !function(f,b,e,v,n,t,s)
