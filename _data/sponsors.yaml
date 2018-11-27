@@ -19,6 +19,11 @@
   image-url: /assets/images/sponsors/seagate.png
   url: https://seagate.com
 
+- name: Typeform
+  tier: bronze
+  image-url: /assets/images/sponsors/typeform.png
+  url: https://typeform.com
+
 # - name: Deloitte
 #   tier: bronze
 #   image-url: /assets/images/sponsors/deloitte.png
