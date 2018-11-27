@@ -3,16 +3,15 @@
   image-url: /assets/images/sponsors/namecom.png
   url: https://name.com
 
+- name: Splunk
+  tier: gold
+  image-url: /assets/images/sponsors/splunk.png
+  url: https://splunk.com
 
 - name: Twitter
   tier: gold
   image-url: /assets/images/sponsors/twitter.png
   url: https://twitter.com
-
-- name: Splunk
-  tier: gold
-  image-url: /assets/images/sponsors/splunk.png
-  url: https://splunk.com
 
 - name: Seagate
   tier: bronze
