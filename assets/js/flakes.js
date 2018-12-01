@@ -94,7 +94,7 @@ $(function () {
   }
 
   function resize() {
-    renderer.resize(window.innerWidth, window.innerHeight);
+    renderer.resize(document.body.clientWidth, window.innerHeight);
     var parent = $('#parent');
     var background = $('#background');
     background.height(parent.height());
