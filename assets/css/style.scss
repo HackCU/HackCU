@@ -5,8 +5,8 @@
 @import "../_sass/mixins";
 
 $footer-text: #666666;
-$main-color: rgb(34, 41, 44);
-$accent-color: #22b573;
+$main-color: #1AA8FF;
+$accent-color: #22292c;
 //$main-color: #161616;
 
 * {
@@ -43,7 +43,8 @@ h1.title {
 body {
   height: 100%;
   width: 100%;
-  background-color: $main-color;
+  background: $main-color;
+  
   font-family: Roboto, sans-serif;
 }
 
@@ -57,7 +58,6 @@ hr {
 
 canvas {
   position: absolute;
-  background-color: $main-color;
   top: 0;
   left: 0;
   z-index: -1;
@@ -101,7 +101,7 @@ section {
   }
 
   &.section-accent {
-    background-color: darken($accent-color, 10%);
+    background-color: $accent-color;
     color: white;
     z-index: 99;
     position: relative;
@@ -117,7 +117,7 @@ section {
 }
 
 header {
-  min-height: 100%;
+  height: 100%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -127,13 +127,17 @@ header {
     padding-bottom: 30px;
   }
 
+  h1, h2, h3, h4, p {
+    text-shadow: 0px 0px 4px $accent-color;
+  }
+
 }
 
 .buttons {
 
   &.title {
     padding-top: 10vh;
-    padding-bottom: 3vh;
+    padding-bottom: 6vh;
   }
   
 
@@ -148,7 +152,7 @@ header {
     border-radius: 3px;
 
     a {
-      color: $main-color;
+      color: $accent-color;
       text-decoration: none;
 
       padding: 5px 10px;
@@ -175,7 +179,7 @@ header {
 
     .text {
       margin-top: -40px;
-      color: $main-color;
+      color: $accent-color;
       font-size: 1.5em;
       text-align: center;
     }
@@ -208,8 +212,13 @@ header {
 
     }
     .shape {
-      fill: $main-color;
-      stroke: lighten($accent-color, 10%);
+      fill: $accent-color;
+      stroke: lighten($main-color, 10%);
+    }
+    &:hover .shape {
+      stroke: $main-color;
+      stroke-dasharray: 50 0;
+      stroke-dashoffset: 0;
     }
 
   }
@@ -217,7 +226,9 @@ header {
 }
 
 #about {
-  @include box-shadow(inset 0px -3px 8px 0px rgba(0, 0, 0, 0.2));
+
+  @include box-shadow(inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2));
+  
   p {
     line-height: 1.7em;
   }
@@ -236,7 +247,7 @@ header {
   li {
     list-style-type: none;
     display: inline-block;
-    margin: 10px;
+    margin: 30px;
   }
 
 
@@ -261,7 +272,7 @@ header {
   .gold {
     // background-color: rgba(212, 175, 55, 0.12);
     img {
-      max-height: 30vh;
+      max-height: 25vh;
       max-width: 100%;
     }
   }
@@ -404,12 +415,13 @@ footer {
       padding-top: 10vh;
     }
     img {
-      width: 200px;
+      width: 160px;
       padding-bottom: 20px;
     }
 
-    h1 {
+    h1.title {
       font-size: 30px;
+      padding-bottom: 1vh;
     }
     h3 {
       font-size: 20px;

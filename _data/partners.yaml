@@ -6,14 +6,14 @@
   image-url: /assets/images/partners/engineering.png
   url: http://www.colorado.edu/engineering/
 
-- name: Buurridge Center for Finance
-  image-url: /assets/images/partners/Burridge.png
-  url: http://burridgecenter.colorado.edu/html/index.html
+# - name: Buurridge Center for Finance
+#   image-url: /assets/images/partners/Burridge.png
+#   url: http://burridgecenter.colorado.edu/html/index.html
 
-- name: SendGrid
-  image-url: /assets/images/partners/sendgrid.png
-  url: https://sendgrid.com/
+# - name: SendGrid
+#   image-url: /assets/images/partners/sendgrid.png
+#   url: https://sendgrid.com/
 
-- name: StickerGiant
-  image-url: /assets/images/partners/stickergiant.png
-  url: https://www.stickergiant.com
+# - name: StickerGiant
+#   image-url: /assets/images/partners/stickergiant.png
+#   url: https://www.stickergiant.com

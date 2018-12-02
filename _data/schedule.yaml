@@ -16,7 +16,7 @@
 
 - name: Hacking Begins!
   day:  1
-  time: "12:00 am"
+  time: "12:00 pm"
 
 - name: Lunch Served
   day:  1
@@ -36,7 +36,7 @@
 
 - name: Hacking Ends
   day:  2
-  time: "12:00 am"
+  time: "12:00 pm"
   
 - name: Lunch
   day:  2
