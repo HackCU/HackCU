@@ -13,6 +13,9 @@
   image-url: /assets/images/sponsors/twitter.png
   url: https://twitter.com
 
+
+
+
 - name: Seagate
   tier: bronze
   image-url: /assets/images/sponsors/seagate.png
@@ -34,6 +37,10 @@
   url: https://www.zayo.com/
 
 
+- name: Twilio
+  tier: gold
+  image-url: /assets/images/sponsors/twilio.png
+  url: https://twilio.com
 
 # - name: ASSG
 #   tier: powered
