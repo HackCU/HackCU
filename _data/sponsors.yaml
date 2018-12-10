@@ -42,6 +42,11 @@
   image-url: /assets/images/sponsors/twilio.png
   url: https://twilio.com
 
+# - name: Workday
+#   tier: bronze
+#   image-url: /assets/images/sponsors/workday.png
+#   url: https://workday.com
+
 # - name: ASSG
 #   tier: powered
 #   image-url: /assets/images/partners/assg.png
