@@ -108,8 +108,3 @@
 #   tier: gold
 #   image-url: /assets/images/sponsors/trimble.png
 #   url: http://www.trimble.com/
-
-- name: Engineering Excellence Fund
-  tier: bronze
-  image-url: /assets/images/sponsors/eef.png
-  url: http://eef.colorado.edu/

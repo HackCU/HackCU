@@ -6,6 +6,10 @@
   image-url: /assets/images/partners/engineering.png
   url: http://www.colorado.edu/engineering/
 
+- name: Engineering Excellence Fund
+  image-url: /assets/images/partners/eef.png
+  url: http://eef.colorado.edu/
+
 # - name: Buurridge Center for Finance
 #   image-url: /assets/images/partners/Burridge.png
 #   url: http://burridgecenter.colorado.edu/html/index.html
