@@ -14,7 +14,10 @@
   url: https://twitter.com
 
 
-
+- name: Workday
+  tier: silver
+  image-url: /assets/images/sponsors/workday.png
+  url: https://www.workday.com
 
 - name: Seagate
   tier: bronze
@@ -42,6 +45,11 @@
   image-url: /assets/images/sponsors/twilio.png
   url: https://twilio.com
 
+# - name: Doist
+#   tier: bronze
+#   image-url: /assets/images/sponsors/doist.png
+#   url: https://doist.com
+
 # - name: Workday
 #   tier: bronze
 #   image-url: /assets/images/sponsors/workday.png
@@ -52,7 +60,10 @@
   image-url: /assets/images/partners/assg.png
   url: https://www.colorado.edu/studentgroups/assg/
 
-
+- name: RapidAPI
+  tier: silver
+  image-url: /assets/images/sponsors/rapidapi.png
+  url: https://rapidapi.com
 
 # - name: GitHub
 #   tier: bronze
