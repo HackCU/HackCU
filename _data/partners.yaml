@@ -14,9 +14,9 @@
 #   image-url: /assets/images/partners/Burridge.png
 #   url: http://burridgecenter.colorado.edu/html/index.html
 
-# - name: SendGrid
-#   image-url: /assets/images/partners/sendgrid.png
-#   url: https://sendgrid.com/
+- name: SendGrid
+  image-url: /assets/images/partners/sendgrid.png
+  url: https://sendgrid.com/
 
 # - name: StickerGiant
 #   image-url: /assets/images/partners/stickergiant.png
