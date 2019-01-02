@@ -18,6 +18,6 @@
   image-url: /assets/images/partners/sendgrid.png
   url: https://sendgrid.com/docs/for-developers/?utm_source=hackcu2018&utm_medium=website&utm_campaign=devrel&utm_content=link
 
-# - name: StickerGiant
-#   image-url: /assets/images/partners/stickergiant.png
-#   url: https://www.stickergiant.com
+- name: StickerGiant
+  image-url: /assets/images/partners/stickergiant.png
+  url: https://www.stickergiant.com
