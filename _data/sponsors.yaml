@@ -45,10 +45,10 @@
   image-url: /assets/images/sponsors/twilio.png
   url: https://twilio.com
 
-# - name: Doist
-#   tier: bronze
-#   image-url: /assets/images/sponsors/doist.png
-#   url: https://doist.com
+- name: Doist
+  tier: bronze
+  image-url: /assets/images/sponsors/doist.png
+  url: https://doist.com
 
 # - name: Workday
 #   tier: bronze
