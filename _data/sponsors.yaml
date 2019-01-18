@@ -65,10 +65,10 @@
   image-url: /assets/images/sponsors/rapidapi.png
   url: https://rapidapi.com
 
-# - name: GitHub
-#   tier: bronze
-#   image-url: /assets/images/sponsors/github.png
-#   url: https://education.github.com/
+- name: GitHub
+  tier: bronze
+  image-url: /assets/images/sponsors/github.png
+  url: https://education.github.com/
 
 # - name: OppenheimerFunds
 #   tier: silver
