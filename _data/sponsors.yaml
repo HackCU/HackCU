@@ -95,10 +95,10 @@
 #   image-url: /assets/images/sponsors/md5.png
 #   url: https://community.md5.net/md5/landing
 
-# - name: Dish Networks
-#   tier: silver
-#   image-url: /assets/images/sponsors/dish2.png
-#   url: https://www.dish.com/
+- name: Dish Networks
+  tier: gold
+  image-url: /assets/images/sponsors/dish.png
+  url: https://www.dish.com/
 
 # - name: IHS Markit
 #   tier: bronze
