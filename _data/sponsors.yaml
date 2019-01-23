@@ -115,10 +115,10 @@
 #   image-url: /assets/images/sponsors/freewave.png
 #   url: https://www.freewave.com
 
-# - name: Trimble
-#   tier: gold
-#   image-url: /assets/images/sponsors/trimble.png
-#   url: http://www.trimble.com/
+- name: Trimble
+  tier: silver
+  image-url: /assets/images/sponsors/trimble.png
+  url: http://www.trimble.com/
 
 - name: University of Colorado, Interdisciplinary Telecom Program
   tier: silver
