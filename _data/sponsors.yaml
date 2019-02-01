@@ -50,10 +50,10 @@
   image-url: /assets/images/sponsors/doist.png
   url: https://doist.com
 
-# - name: Workday
-#   tier: bronze
-#   image-url: /assets/images/sponsors/workday.png
-#   url: https://workday.com
+- name: Specialized Bikes
+  tier: diamond
+  image-url: /assets/images/sponsors/specialized.png
+  url: https://www.specialized.com/us/en
 
 - name: ASSG
   tier: powered
