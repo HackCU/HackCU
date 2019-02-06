@@ -21,3 +21,7 @@
 - name: StickerGiant
   image-url: /assets/images/partners/stickergiant.png
   url: https://www.stickergiant.com
+
+- name: Glider
+  image-url: /assets/images/partners/glider.png
+  url: https://www.glider.com
