@@ -10,9 +10,9 @@
   image-url: /assets/images/partners/eef.png
   url: http://eef.colorado.edu/
 
-# - name: Buurridge Center for Finance
-#   image-url: /assets/images/partners/Burridge.png
-#   url: http://burridgecenter.colorado.edu/html/index.html
+- name: Burridge Center for Finance
+  image-url: /assets/images/partners/Burridge.png
+  url: http://burridgecenter.colorado.edu/html/index.html
 
 - name: SendGrid
   image-url: /assets/images/partners/sendgrid.png
