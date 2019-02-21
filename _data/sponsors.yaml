@@ -124,3 +124,8 @@
   tier: gold
   image-url: /assets/images/sponsors/tcp.png
   url: https://www.colorado.edu/itp/
+
+- name: Clkim
+  tier: startup
+  image-url: /assets/images/sponsors/clkim.png
+  url: https://clkim.com/
