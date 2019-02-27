@@ -25,3 +25,7 @@
 - name: Glider
   image-url: /assets/images/partners/glider.png
   url: https://www.glider.com
+
+- name: Topo Designs
+  image-url: /assets/images/partners/topo.png
+  url: https://www.topodesigns.com
