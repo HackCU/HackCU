@@ -4,7 +4,6 @@
 - name: HackCU
   url: https://pages.hackcu.org/code_conduct/
 
-
 - name: "More events:"
   url: https://events.hackcu.org/
   line_break: True
@@ -12,8 +11,6 @@
   url: https://2018.hackcu.org/
 - name: LHD
   url: https://local.hackcu.org/
-- name: Phase
-  url: https://phase.hackcu.org/
 - name: S2S
   url: https://startups2students.org/
   
