@@ -5,17 +5,19 @@
 @import "../_sass/mixins";
 
 $footer-text: #666666;
-$main-color: #1AA8FF;
-$accent-color: #22292c;
-//$main-color: #161616;
+$main-color: rgb(1, 22, 39);
+$accent-color: #315b7f;
+$white-color: white;
 
 * {
   margin: 0;
 }
 
 @font-face {
-  font-family: Biko;
-  src: url('../fonts/Biko_Regular.otf');
+  font-family: 'Noto Sans TC', sans-serif;
+  src: url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -28,32 +30,37 @@ ul, menu, dir {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: Biko, sans-serif;
-
+  font-family: 'Noto Sans TC', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1.title {
-  font-size: 50px;
+  font-size: 60px;
   padding-bottom: 2vh;
   small {
-    color: white;
+    font-size: 30px;
+    color: $white-color;
   }
   a {
     text-decoration: none;
-    color: white;
+    color: $white-color;
   }
 }
 
 body {
   height: 100%;
   width: 100%;
-  background: $main-color;
-  
-  font-family: Roboto, sans-serif;
+  background: url(../images/bliss_illustrated.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Noto Sans TC', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 hr {
-  background-color: white;
+  background-color: $white-color;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 20px;
@@ -61,7 +68,8 @@ hr {
 }
 
 canvas {
-  position: absolute;
+  position: fixed;
+  background-color: transparent;
   top: 0;
   left: 0;
   z-index: -1;
@@ -75,13 +83,18 @@ a {
     color: darken($accent-color, 10%);
   }
 }
+#apply {
+  :hover {
+    opacity: 0.5;
+    transition: opacity 1s ease-in;
+  }
+}
 
 section {
   padding-top: 5vh;
   padding-bottom: 5vh;
   text-align: center;
-  background-color: white;
-  @include box-shadow(0px 0px 0px 0px rgba(0, 0, 0, 0.2));
+  background-color: #0803FF;
 
   p {
     font-size: 16px;
@@ -93,25 +106,19 @@ section {
 
   &.section-reverse {
     background-color: transparent;
-    color: white;
-    @include box-shadow(inset 0px 0px 8px 3px rgba(0, 0, 0, 0.2));
-    h2, h3, a {
-      color: lighten($accent-color, 10%);
-    }
     hr {
       background-color: transparent;
-      border-color: rgba(darken($accent-color,20%),.5);
     }
   }
 
   &.section-accent {
-    background-color: $accent-color;
-    color: white;
+    background-color: darken($accent-color, 10%);
+    color: $white-color;
     z-index: 99;
     position: relative;
     @include box-shadow( 0px 0px 2px 2px rgba(0, 0, 0, 0.2));
     h2, h3, a, small {
-      color: white;
+      color: $white-color;
     }
     hr {
       background-color: transparent;
@@ -121,8 +128,8 @@ section {
 }
 
 header {
-  height: 100%;
-  color: white;
+  min-height: 100%;
+  color: $white-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,20 +138,15 @@ header {
     padding-bottom: 30px;
   }
 
-  h1, h2, h3, h4, p {
-    text-shadow: 0px 0px 4px $accent-color;
-  }
-
 }
 
 .buttons {
 
   &.title {
     padding-top: 10vh;
-    padding-bottom: 6vh;
+    padding-bottom: 3vh;
   }
   
-
   .svg-wrapper {
     margin-top: 0;
     position: relative;
@@ -156,7 +158,7 @@ header {
     border-radius: 3px;
 
     a {
-      color: $accent-color;
+      color: $main-color;
       text-decoration: none;
 
       padding: 5px 10px;
@@ -171,20 +173,31 @@ header {
       }
 
     }
+
     .shape {
       stroke-width: 8px;
-      fill: white;
+      fill: $white-color;
       stroke: lighten($accent-color, 10%);
       stroke-dasharray: 150 400;
       stroke-dashoffset: -190;
       @include transition(1s all ease);
 
     }
+    .big-button.shape {
+      stroke-width: 8px;
+      fill: $white-color;
+      stroke: lighten($accent-color, 10%);
+      stroke-dasharray: 290 400;
+      stroke-dashoffset: -330;
+      @include transition(1s all ease);
+
+    }
+
 
     .text {
       margin-top: -40px;
-      color: $accent-color;
-      font-size: 1.5em;
+      color: $main-color;
+      font-size: 1em;
       text-align: center;
     }
 
@@ -195,6 +208,7 @@ header {
     }
 
   }
+
 
   &.accent {
 
@@ -212,27 +226,69 @@ header {
 
   &.reverse {
     a {
-      color: white;
+      color: $white-color;
 
     }
     .shape {
-      fill: $accent-color;
-      stroke: lighten($main-color, 10%);
-    }
-    &:hover .shape {
-      stroke: $main-color;
-      stroke-dasharray: 50 0;
-      stroke-dashoffset: 0;
+      fill: $main-color;
+      stroke: lighten($accent-color, 10%);
     }
 
   }
 
 }
 
-#about {
+.icons {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2vh;
+  position: fixed;
+}
+.icons > div {
+  margin-left: 2vh;
+  line-height: 8vh;
+}
+.hoverIcons {
+  opacity: 0.8;
+}
+.hoverIcons:hover {
+  opacity: 1;
+}
 
-  @include box-shadow(inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2));
-  
+
+.side {
+  flex: 65%;
+  padding: 20px;
+}
+.main {
+  flex: 35%;
+  padding: 20px;
+}
+
+.sideInfo {
+  display: flex;
+  flex-direction: column
+}
+.sideInfo > div {
+  line-height: 8vh;
+}
+
+.sponsorsIcon {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2vh;
+  align-self: right;
+}
+.sponsorsIcon > div {
+  margin-left: 0;
+  line-height: 15vh;
+}
+
+.single-window {
+  justify-content: center;
+}
+
+#about {
   p {
     line-height: 1.7em;
   }
@@ -244,63 +300,73 @@ header {
     color: #777;
 
   }
-
 }
 
 #sponsors {
   li {
     list-style-type: none;
     display: inline-block;
-    margin: 30px;
+    margin: 10px;
   }
 
+  .powered-by {
+    h2 {
+      color: black;
 
-
-  .powered {
-    // background-color: rgba(185, 242, 255, 0.12);
-    img {
-      max-height: 50vh;
-      max-width: 100%;
     }
-  }
-
-  .diamond {
-    // background-color: rgba(185, 242, 255, 0.12);
     img {
       max-height: 35vh;
       max-width: 100%;
     }
   }
 
+  .diamond {
+    h2 {
+      color: lightblue;
 
-  .gold {
-    // background-color: rgba(212, 175, 55, 0.12);
+    }
     img {
-      max-height: 24vh;
+      max-height: 30vh;
       max-width: 100%;
     }
   }
 
-  .silver {
-    // background-color: rgba(192, 192, 192, 0.18);
+  .gold {
+    h2 {
+      color: rgb(173, 157, 67);
+    }
     img {
-      max-height: 18vh;
+      max-height: 25vh;
+      max-width: 100%;
+    }
+  }
+
+  .silver {   
+    h2 {
+      color: white;
+    } 
+    img {
+      max-height: 20vh;
       max-width: 100%;
     }
   }
 
   .bronze {
-    // background-color: rgba(205, 127, 50, 0.12);
+    h2 {
+      color: brown;
+    }
     img {
-      max-height: 11vh;
+      max-height: 15vh;
       max-width: 100%;
     }
   }
 
   .startup {
-    // background-color: rgba(205, 127, 50, 0.12);
+    h2 {
+      color: blue;
+    }
     img {
-      max-height: 11vh;
+      max-height: 13vh;
       max-width: 100%;
     }
   }
@@ -312,15 +378,9 @@ header {
   h3 {
     color: $main-color;
   }
-
 }
 
 #partners {
-  li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 10px;
-  }
   img {
     max-height: 20vh;
     max-width: 100%;
@@ -330,21 +390,30 @@ header {
     max-height: 15vh;
     max-width: 100%;
   }
+
+  text-align:center;
+  margin:0 auto;
+
+  .col-lg-3{
+   display:inline-block;
+   vertical-align: middle;
+   float: none;
+  }
 }
 
 #contact {
   li a {
     font-size: 2em;
-    color: white;
+    color: $white-color;
     padding: 0.4em;
     @include transition(0.5s ease);
 
     &:hover {
-      color: darken(white, 40%);
+      color: darken($white-color, 10%);
     }
 
     &:active, &:focus {
-      color: white;
+      color: $white-color;
     }
   }
 }
@@ -352,7 +421,7 @@ header {
 footer {
   padding-top: 2em;
   width: 100%;
-  background-color: white;
+  background-color: $white-color;
   p {
     color: $footer-text;
     opacity: 0.5;
@@ -373,10 +442,12 @@ footer {
     color: $footer-text;
     @include transition(0.5s ease);
     font-size: 70%;
+    text-decoration: none;
 
     &:hover {
       opacity: 0.9;
       color: $footer-text;
+      text-decoration: none;
     }
 
     &:active, &:focus {
@@ -419,18 +490,109 @@ footer {
       padding-top: 10vh;
     }
     img {
-      width: 160px;
+      width: 200px;
       padding-bottom: 20px;
     }
 
-    h1.title {
+    h1 {
       font-size: 30px;
-      padding-bottom: 1vh;
     }
     h3 {
       font-size: 20px;
     }
-
   }
 }
 
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    #about-window {
+      width: 40%;
+      height: auto;
+    }
+    .extra {
+      display: none;
+    }
+    .content-svg {
+      position: relative !important;
+      left: 0px !important;
+      width: 90%;
+      height: auto;
+    }
+    .schedule-windows {
+      display: initial !important;
+    }
+}
+
+.banner-svgs {
+  display: flex;
+  justify-content: center;
+}
+
+.container-svg {
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 40px;
+  font-family: Roboto Mono;
+  line-height: 47px;
+}
+
+.about-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  padding-bottom: 20px;
+}
+
+.padding {
+  padding-top: 200px;
+}
+
+.schedule-windows {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-window {
+  display: flex;
+  justify-content: center;
+}
+
+.window-text-white {
+  color: white;
+}
+
+.contactUsIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contactUsIcons > div {
+  flex: 1 1 1 1px;
+  display: flex;
+  align-items: center;
+}
+
+.contactUsIconCaption {
+  color: black;
+}
+
+.contactUsIconCaption:hover {
+  text-decoration: none !important;
+}
+
+.btn-darker {
+  background: grey;
+  color: white !important;
+}

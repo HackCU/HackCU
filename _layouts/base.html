@@ -4,39 +4,43 @@
 <html lang="en">
 
 <head>
-
     <!-- Meta Information -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-
     <!-- for Google -->
-    <meta name="description"
-          content="Register now! HackCU is a 24 hour hackathon organized annually at the University of Colorado Boulder. The event provides the space and the resources for you to express your creativity, ingenuity, and determination to create anything you want to. We welcome any and all students to apply."/>
-    <meta name="keywords" content="HackCU, hackathon, CU Boulder, Boulder, Idea Forge, MLH"/>
-    <meta name="author" content="HackCU"/>
-    <meta name="theme-color" content="#1a8cff">
+    <meta name="description" content="{{site.description}}"/>
+    <meta name="keywords" content="Local Hack Day, HackCU, makeathon, hackathon, CU Boulder, Boulder, Idea Forge, MLH"/>
+    <metadds d s ds name="author" content="HackCU"/>
+    <meta name="theme-color" content="#315b7f">
     <meta name="copyright" content="HackCU"/>
-    <meta name="application-name" content="HackCU V | February 23rd - 24th | Boulder, CO"/>
+    <meta name="application-name" content="{{site.title}}"/>
 
     <!-- for Facebook -->
-    <meta property="og:title" content="HackCU V | February 23rd - 24th | Boulder, CO"/>
-    <meta property="og:image" content="https://hackcu.org/assets/images/ogimage870x450.png"/>
-    <meta property="og:image:secure_url" content="https://hackcu.org/assets/images/ogimage870x450.png">
-    <meta property="og:url" content="https://hackcu.org"/>
-    <meta property="og:description"
-          content="Register now! HackCU is a 24 hour hackathon organized annually at the University of Colorado Boulder. The event provides the space and the resources for you to express your creativity, ingenuity, and determination to create anything you want to. We welcome any and all students to apply."/>
-
+    <meta property="og:title" content="{{site.title}}"/>
+    <meta property="og:image" content="https://local.hackcu.org/assets/images/ogimage870x450.png"/>
+    <meta property="og:image:secure_url" content="https://local.hackcu.org/assets/images/ogimage870x450.png">
+    <meta property="og:url" content="https://local.hackcu.org"/>
+    <meta property="og:description" content="{{site.description}}"/>
     <!-- for Twitter -->
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="HackCU V | February 23rd - 24th | Boulder, CO"/>
+    <meta name="twitter:title" content="{{site.title}}"/>
     <meta name="twitter:site" content="@hackcu">
     <meta name="twitter:creator" content="@hackcu">
-    <meta name="twitter:description"
-          content="Register now! HackCU is a 24 hour hackathon organized annually at the University of Colorado Boulder. The event provides the space and the resources for you to express your creativity, ingenuity, and determination to create anything you want to. We welcome any and all students to apply.">
-    <meta name="twitter:image" content="https://hackcu.org/assets/images/ogimage870x450.png"/>
+    <meta name="twitter:description" content="{{site.description}}"/>
+    <meta name="twitter:image" content="https://local.hackcu.org/assets/images/ogimage870x450.png"/>
 
-    <title>{%if page.title %}{{page.title}} | {%endif%}HackCU V</title>
+    <title>{%if page.title %}{{page.title}} | {%endif%}{{site.title}}</title>
+
+    <!-- For the myComputer and recycleBin icons -->
+    <div class="icons">
+      <div class="hoverIcons">
+        <img src="assets/images/myComputer.png" height="50px"/>
+      </div>
+      <div class="hoverIcons">
+        <img src="assets/images/recycleBin.png" height="50px"/>
+      </div>
+    </div>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -47,60 +51,41 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
 
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="assets/lib/font-awesome.min.css">
+
     <!-- Our own CSS, yay! -->
     <link rel="stylesheet" href="assets/css/style.css?_={{ site.time |  date: '%s' }}">
-    <link rel="stylesheet" href="assets/css/mountains.css?_={{ site.time |  date: '%s' }}">
+    <link rel="stylesheet" href="assets/css/taskbar.css?_={{ site.time | date: '%s' }}">
+    <link rel="stylesheet" href="assets/css/window.css?_={{ site.time | date: '%s' }}">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111588130-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-111588130-1');
-    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129304904-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-129304904-1');
+  </script>
+
+  <script src="assets/lib/vue.min.js"></script>
 </head>
 
 <body>
-<a id="mlh-trust-badge"
-   style="display:block;max-width:100px;min-width:60px;position:absolute;right:50px;top:0;width:10%;z-index:10000"
-   href="https://mlh.io/seasons/na-2019/events?utm_source=na-2019&utm_medium=TrustBadge&utm_campaign=na-2019&utm_content=gray"
-   target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-gray.svg"
-                        alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
-                        
 {{content}}
-{% include footer.html %}
+
+{% include taskbar.html %}
 
 <!-- Bootstrap Core JavaScript -->
 
-<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
-<script defer src="assets/js/flakes.js?_={{ site.time |  date: '%s' }}"></script>
-
-  <!-- Font awesome -->
-  <link rel="stylesheet" href="assets/lib/font-awesome.min.css">
-<!-- Facebook Pixel Code -->
-<!-- <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1863346293699752');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1863346293699752&ev=PageView&noscript=1"
-/></noscript> -->
-<!-- End Facebook Pixel Code -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
+<script src="assets/js/tabs.js?_={{ site.time |  date: '%s' }}"></script>
+<script src="assets/lib/bootstrap.min.js"></script>
 
 </body>
-
 </html>

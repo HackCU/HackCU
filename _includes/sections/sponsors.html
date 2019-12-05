@@ -1,113 +1,116 @@
-<section id="sponsors">
+<section id="sponsors" class="section-reverse">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <div class="section-heading">
-                    <h2>Sponsors</h2>
-                    <hr>
+        <div class="row single-window">
+            <div class="col-md-12 window">
+                <div class="head">
+                    <div class="barcont">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="title">Sponsors</div>
+                    <div class="buttons">
+                        <span class="dot" style="background:#5AC05A;"></span>
+                        <span class="dot" style="background:#FDD800;"></span>
+                        <span class="dot" style="background:#ED594A;"></span>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="powered-by">
+                        {% assign powered = site.data.sponsors | where:"tier","powered" %}
+                        {% if powered[0] %}
+                        <h2>Powered by</h2>
+                        {% endif %}
+                        <ul class="sponsors powered">
+                            {% for sponsor in powered %}
+                            <li>
+                                <a href="{{sponsor.url}}" target="_blank">
+                                    <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
+                                </a>
+                            </li>
+                            {%endfor%}
+                        </ul>
+                    </div>
+                    <div class="diamond">{% assign diamond = site.data.sponsors | where:"tier","diamond" %}
+                        {% if diamond[0] %}
+                        <h2>Diamond sponsors</h2>
+                        {% endif %}
+                        <ul class="sponsors diamond">
+                            {% for sponsor in diamond %}
+                            <li>
+                                <a href="{{sponsor.url}}" target="_blank">
+                                    <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
+                                </a>
+                            </li>
+                            {%endfor%}
+                        </ul>
+                    </div>
+                    <div class="gold">{% assign gold = site.data.sponsors | where:"tier","gold" %}
+                        {% if gold[0] %}
+                        <h2>Gold sponsors</h2>
+                        {% endif %}
+                        <ul class="sponsors gold">
+                            {% for sponsor in gold %}
+                            <li>
+                                <a href="{{sponsor.url}}" target="_blank">
+                                    <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo"
+                                        style="object-fit: cover;">
+                                </a>
+                            </li>
+                            {%endfor%}
+                        </ul>
+                    </div>
+                    <div class="silver">{% assign silver = site.data.sponsors | where:"tier","silver" %}
+                        {% if silver[0] %}
+                        <h2>Silver sponsors</h2>
+                        {% endif %}
+                        <ul class="sponsors silver">
+                            {% for sponsor in silver%}
+                            <li>
+                                <a href="{{sponsor.url}}" target="_blank">
+                                    <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
+                                </a>
+                            </li>
+                            {%endfor%}
+                        </ul>
+                    </div>
+                    <div class="bronze">{% assign bronze = site.data.sponsors | where:"tier","bronze" %}
+                        {% if bronze[0] %}
+                        <h2>Bronze Sponsors</h2>
+                        {% endif %}
+                        <ul class="sponsors bronze">
+                            {% for sponsor in bronze | where:"tier","bronze" %}
+                            <li>
+                                <a href="{{sponsor.url}}" target="_blank">
+                                    <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
+                                </a>
+                            </li>
+                            {%endfor%}
+                        </ul>
+                    </div>
+                    <div class="startup">{% assign startup = site.data.sponsors | where:"tier","startup" %}
+                        {% if startup[0] %}
+                        <h2>Startup sponsors</h2>
+                        {% endif %}
+                        <ul class="sponsors startup">
+                            {% for sponsor in startup | where:"tier","startup" %}
+                            <li>
+                                <a href="{{sponsor.url}}" target="_blank">
+                                    <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
+                                </a>
+                            </li>
+                            {%endfor%}
+                        </ul>
+                    </div>
+                    <div class="buttons reverse title">
+                        <div class="ye">
+                            <a class="btn btn-lg btn-darker"
+                                href="https://www.youtube.com/watch?v=ChT3ewZXTfM">Sponsor</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-         <div class="row">
-            {% assign powered = site.data.sponsors | where:"tier","powered" %}
-            {% if powered[0] %}
-                <h3>Powered by</h3>
-            {% endif %}
-            <ul class="sponsors powered">
-                {% for sponsor in powered %}
-                <li>
-                    <a href="{{sponsor.url}}" target="_blank">
-                        <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
-                    </a>
-                </li>
-                {%endfor%}
-            </ul>
-        </div>
-        <div class="row">
-            {% assign diamond = site.data.sponsors | where:"tier","diamond" %}
-            {% if diamond[0] %}
-                <h3>Diamond sponsors</h3>
-            {% endif %}
-            <ul class="sponsors diamond">
-                {% for sponsor in diamond %}
-                <li>
-                    <a href="{{sponsor.url}}" target="_blank">
-                        <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
-                    </a>
-                </li>
-                {%endfor%}
-            </ul>
-        </div>
-        <div class="row">
-            {% assign gold = site.data.sponsors | where:"tier","gold" %}
-            {% if gold[0] %}
-                <h3>Gold sponsors</h3>
-            {% endif %}
-            <ul class="sponsors gold">
-                {% for sponsor in gold %}
-                <li>
-                    <a href="{{sponsor.url}}" target="_blank">
-                        <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
-                    </a>
-                </li>
-                {%endfor%}
-            </ul>
-        </div>
-        <div class="row">
-            {% assign silver = site.data.sponsors | where:"tier","silver" %}
-            {% if silver[0] %}
-                <h3>Silver sponsors</h3>
-            {% endif %}
-            <ul class="sponsors silver">
-                {% for sponsor in silver%}
-                <li>
-                    <a href="{{sponsor.url}}" target="_blank">
-                        <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
-                    </a>
-                </li>
-                {%endfor%}
-            </ul>
-        </div>
-        <div class="row">
-            {% assign bronze = site.data.sponsors | where:"tier","bronze" %}
-            {% if bronze[0] %}
-                <h3>Bronze sponsors</h3>
-            {% endif %}
-            <ul class="sponsors bronze">
-                {% for sponsor in bronze | where:"tier","bronze" %}
-                <li>
-                    <a href="{{sponsor.url}}" target="_blank">
-                        <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
-                    </a>
-                </li>
-                {%endfor%}
-            </ul>
-        </div>
-         <div class="row">
-            {% assign startup = site.data.sponsors | where:"tier","startup" %}
-            {% if startup[0] %}
-                <h3>Startup sponsors</h3>
-            {% endif %}
-            <ul class="sponsors startup">
-                {% for sponsor in startup | where:"tier","startup" %}
-                <li>
-                    <a href="{{sponsor.url}}" target="_blank">
-                        <img src="{{sponsor.image-url}}" alt="{{sponsor.name}} logo">
-                    </a>
-                </li>
-                {%endfor%}
-            </ul>
-        </div>
-        <div class="buttons reverse title">
-            <!--Inspired by https://github.com/HackCU/HackCU-Temp by Alex Walling-->
-            <div class="svg-wrapper ">
-                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
-                    <rect class="shape" height="40" width="150"/>
-                    <div class="text">
-                        <a href="mailto:sponsor@hackcu.org" target="_blank">Sponsor us</a>
-                    </div>
-                </svg>
-            </div>
-        </div>
-
+    </div>
+    </div>
 </section>

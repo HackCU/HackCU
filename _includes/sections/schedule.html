@@ -1,27 +1,29 @@
-<section id="schedule" class="text-center">
+<section id="schedule" class="section-reverse">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <h2>Event Schedule <br>
-                        <small>Subject to change.</small>
-                    </h2>
-                    <hr>
+            <div class="col-md-6 window">
+                <div class="head">
+                    <div class="barcont">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="title">Event Schedule</div>
+                    <div class="buttons">
+                        <span class="dot" style="background:#5AC05A;"></span>
+                        <span class="dot" style="background:#FDD800;"></span>
+                        <span class="dot" style="background:#ED594A;"></span>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Day 1</h3>
+                <div class="content">
                     <table class="table lead table-hover text-center schedule-table">
                         <thead>
-                        <tr>
-                            <th class="text-center">Time</th>
-                            <th class="text-center">Event</th>
-                        </tr>
+                            <tr>
+                                <th class="text-center">Time</th>
+                                <th class="text-center">Event</th>
+                            </tr>
                         </thead>
-                        {% assign day1 = site.data.schedule | where:"day","1" %}
+                        {% assign day1 = site.data.schedule | where:"day","one" %}
                         {% for event in day1 %}
                         <tr>
                             <td>{{ event.time }}</td>
@@ -30,16 +32,31 @@
                         {%endfor%}
                     </table>
                 </div>
-                <div class="col-md-6">
-                    <h3>Day 2</h3>
+            </div>
+
+            <div class="col-md-6 window">
+                <div class="head">
+                    <div class="barcont">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="title">Subject to Change.</div>
+                    <div class="buttons">
+                        <span class="dot" style="background:#5AC05A;"></span>
+                        <span class="dot" style="background:#FDD800;"></span>
+                        <span class="dot" style="background:#ED594A;"></span>
+                    </div>
+                </div>
+                <div class="content">
                     <table class="table lead table-hover text-center schedule-table">
                         <thead>
-                        <tr>
-                            <th class="text-center">Time</th>
-                            <th class="text-center">Event</th>
-                        </tr>
+                            <tr>
+                                <th class="text-center">Time</th>
+                                <th class="text-center">Event</th>
+                            </tr>
                         </thead>
-                        {% assign day2 = site.data.schedule | where:"day","2" %}
+                        {% assign day2 = site.data.schedule | where:"day","two" %}
                         {% for event in day2 %}
                         <tr>
                             <td>{{ event.time }}</td>
@@ -49,9 +66,5 @@
                     </table>
                 </div>
             </div>
-            <div class="row">
-                <p>Oh! We've also got lots of workshops, tech talks, and games planned along the way!</p>
-            </div>
         </div>
-    </div>
 </section>

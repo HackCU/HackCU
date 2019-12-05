@@ -1,51 +1,43 @@
-- name: Arrival and Check-In
-  day:  1
+- name: Arrival and Check-in
+  day:  one
+  time: "8:00 am"
+
+- name: Breakfast
+  day:  one
   time: "8:00 am"
 
 - name: Opening Ceremonies
-  day:  1
-  time: "10:00 am"
-
-- name: Team Formation
-  day:  1
-  time: "11:00 am"
-
-- name: Career Fair
-  day:  1
-  time: "11:00 am"
+  day:  one
+  time: "8:30 am"
 
 - name: Hacking Begins!
-  day:  1
+  day:  one
+  time: "9:00 am"
+
+- name: Team formation
+  day:  one
+  time: "9:00 am"
+
+- name: Lunch
+  day: one
   time: "12:00 pm"
 
-- name: Lunch Served
-  day:  1
-  time: "12:00 pm"
-
-- name: Dinner Served
-  day:  1
+- name: Dinner
+  day:  two
   time: "6:00 pm"
   
 - name: Desserts
-  day:  1
-  time: "11:00 pm"
-
-- name: Breakfast
-  day:  2
-  time: "7:30 am"
+  day:  two
+  time: "8:00 pm"
 
 - name: Hacking Ends
-  day:  2
-  time: "12:00 pm"
-  
-- name: Lunch
-  day:  2
-  time: "12:00 pm"
-  
-- name: Project Expo / Judging
-  day:  2
-  time: "12:30 pm"
+  day:  two
+  time: "9:00 pm"
 
-- name: Closing Ceremonies
-  day:  2
-  time: "3:00 pm"
+- name: Project Expo
+  day:  two
+  time: "9:00 pm"
+
+- name: End of event
+  day:  two
+  time: "10:00 pm"

@@ -1,12 +1,4 @@
-- name: Name.com
-  tier: gold
-  image-url: /assets/images/sponsors/namecom.png
-  url: https://name.com
 
-- name: Splunk
-  tier: gold
-  image-url: /assets/images/sponsors/splunk.png
-  url: https://splunk.com
 
 - name: Twitter
   tier: gold
@@ -24,10 +16,7 @@
   image-url: /assets/images/sponsors/seagate.png
   url: https://seagate.com
 
-- name: Typeform
-  tier: bronze
-  image-url: /assets/images/sponsors/typeform.png
-  url: https://typeform.com
+
 
 # - name: Deloitte
 #   tier: bronze
@@ -39,31 +28,10 @@
 #   image-url: /assets/images/sponsors/zayo.png
 #   url: https://www.zayo.com/
 
-
-- name: Twilio
-  tier: gold
-  image-url: /assets/images/sponsors/twilio.png
-  url: https://twilio.com
-
-- name: Doist
-  tier: bronze
-  image-url: /assets/images/sponsors/doist.png
-  url: https://doist.com
-
-- name: Specialized Bikes
-  tier: diamond
-  image-url: /assets/images/sponsors/specialized.png
-  url: https://www.specialized.com/us/en
-
 - name: ASSG
   tier: powered
   image-url: /assets/images/partners/assg.png
   url: https://www.colorado.edu/studentgroups/assg/
-
-- name: RapidAPI
-  tier: silver
-  image-url: /assets/images/sponsors/rapidapi.png
-  url: https://rapidapi.com
 
 - name: GitHub
   tier: bronze
@@ -95,10 +63,6 @@
 #   image-url: /assets/images/sponsors/md5.png
 #   url: https://community.md5.net/md5/landing
 
-- name: Dish Networks
-  tier: gold
-  image-url: /assets/images/sponsors/dish.png
-  url: https://www.dish.com/
 
 # - name: IHS Markit
 #   tier: bronze
@@ -124,8 +88,3 @@
   tier: gold
   image-url: /assets/images/sponsors/tcp.png
   url: https://www.colorado.edu/itp/
-
-- name: Clkim
-  tier: startup
-  image-url: /assets/images/sponsors/clkim.png
-  url: https://clkim.com/
