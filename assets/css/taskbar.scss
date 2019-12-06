@@ -159,7 +159,7 @@ $scalar: $bar-height/30;
     transition: all 0.2s linear;
   }
 
-  @media only screen and (max-device-width: 800px) {
+  @media only screen and (max-device-width: 1400px) {
     .footer__window.cover {
       display: none;
     } 

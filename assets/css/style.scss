@@ -480,7 +480,7 @@ footer {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .text-center-xs {
     text-align: center;
   }
@@ -512,7 +512,7 @@ footer {
 }
 
 
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-device-width: 1000px) {
     #about-window {
       width: 40%;
       height: auto;
