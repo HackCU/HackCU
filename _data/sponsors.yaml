@@ -43,11 +43,6 @@
   image-url: /assets/images/sponsors/splunk.png
   url: https://www.splunk.com
 
-- name: Twitter
-  tier: gold
-  image-url: /assets/images/sponsors/twitter.png
-  url: https://twitter.com/
-
 - name: Workiva
   tier: bronze
   image-url: /assets/images/sponsors/workiva.png
