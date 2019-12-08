@@ -511,7 +511,9 @@ footer {
   text-align: center;
 }
 
-
+// .ima {
+//   max-width:100%;
+// }
 @media only screen and (max-device-width: 1000px) {
     #about-window {
       width: 40%;
@@ -524,14 +526,15 @@ footer {
       position: relative !important;
       left: 0px !important;
       width: 90%;
-      height: auto;
+      height: 1%;
     }
     .schedule-windows {
       display: initial !important;
     }
-    .content-svg {
-      height: 1%;
-    }
+}
+
+.mlh {
+  height: 100%;
 }
 
 .banner-svgs {
