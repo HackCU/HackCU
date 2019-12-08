@@ -5,11 +5,3 @@
 - name: CU Engineering
   image-url: /assets/images/partners/engineering.png
   url: http://www.colorado.edu/engineering/
-
-- name: Burridge Center for Finance
-  image-url: /assets/images/partners/Burridge.png
-  url: http://burridgecenter.colorado.edu/html/index.html
-
-- name: SendGrid
-  image-url: /assets/images/partners/sendgrid.png
-  url: https://sendgrid.com/docs/for-developers/?utm_source=hackcu2018&utm_medium=website&utm_campaign=devrel&utm_content=link
