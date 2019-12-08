@@ -35,7 +35,7 @@ var onsize = function() {
     var box = document.getElementById("mydiv");
     var box1 = document.getElementById("blank_window_1");
     var box2 = document.getElementById("blank_window_2");
-    var box3 = document.getElementById("blank_window_3")
+    var box3 = document.getElementById("blank_window_3");
     if (width <=1000) 
     {
         box1.style.display = 'none';
@@ -56,7 +56,6 @@ var onsize = function() {
     var init_top = 150;
     var init_left = width/2 - 400;
 
-
     box1.style.top = String(init_top - 20) + "px";
     box1.style.left = String(init_left - 20) + "px";
     box2.style.top = String(init_top - 40) + "px";
@@ -65,6 +64,22 @@ var onsize = function() {
     box3.style.left = String(init_left - 60) + "px";
     box.style.top = String(init_top) + "px";
     box.style.left = String(init_left) + "px";
+
+    var bars = document.getElementsByClassName("footer__window");
+    var i;
+    if (width <= 1400)
+    {
+        for (i = 0; i < bars.length; i++) {
+            bars[i].style.display = "none";
+          }     
+    }
+    else {
+        for (i = 0; i < bars.length; i++) {
+            bars[i].style.display = "";
+          } 
+
+    }
+    console.log(width);
 
 };
 
