@@ -36,6 +36,18 @@ var onsize = function() {
     var box1 = document.getElementById("blank_window_1");
     var box2 = document.getElementById("blank_window_2");
     var box3 = document.getElementById("blank_window_3")
+    if (width <=1000) 
+    {
+        box1.style.display = 'none';
+        box2.style.display = 'none';
+        box3.style.display = 'none';
+    }
+    else
+    {
+        box1.style.display = '';
+        box2.style.display = '';
+        box3.style.display = '';
+    }
     box.style.zIndex = 100;
     box1.style.zIndex = 99;
     box2.style.zIndex = 98;
