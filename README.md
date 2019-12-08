@@ -14,7 +14,7 @@ Needs: Ruby
 
 ## Local 
 
-1. `git clone  https://github.com/HackCU/HackCU.git`
+1. `git clone  https://github.com/HackCU/HackCU.git && cd HackCU`
 2. `gem install jekyll`
 3. `jekyll serve --watch`
 
