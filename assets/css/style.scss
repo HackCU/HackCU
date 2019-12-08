@@ -53,7 +53,7 @@ body {
   width: 100%;
   background: url(../images/bliss_illustrated.jpg);
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   font-family: 'Noto Sans TC', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -529,6 +529,9 @@ footer {
     .schedule-windows {
       display: initial !important;
     }
+    .content-svg {
+      height: 1%;
+    }
 }
 
 .banner-svgs {
@@ -601,3 +604,5 @@ footer {
   padding-bottom: 10px;
   color: #23415a;
 }
+
+
