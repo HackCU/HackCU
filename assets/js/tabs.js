@@ -79,7 +79,6 @@ var onsize = function() {
           } 
 
     }
-    console.log(width);
 
 };
 
