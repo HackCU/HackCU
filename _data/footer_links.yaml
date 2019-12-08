@@ -1,14 +1,11 @@
 - name: "Code of conduct:"
 - name: MLH
   url: https://static.mlh.io/docs/mlh-code-of-conduct.pdf
-- name: HackCU
+- name: "HackCU"
   url: https://pages.hackcu.org/code_conduct/
-
 - name: "More events:"
   url: https://events.hackcu.org/
   line_break: True
-- name: HackCU IV
-  url: https://2018.hackcu.org/
 - name: LHD
   url: https://local.hackcu.org/
 - name: S2S

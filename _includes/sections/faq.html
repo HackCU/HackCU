@@ -1,42 +1,169 @@
-<section id="faq">
+<section id="faq" class="section-reverse">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <h2>FAQ <br>
-                        <small>All the important questions. Answered.</small>
-                    </h2>
+            <div class="col-md-6 window">
+                <div class="head">
+                    <div class="barcont">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="title">FAQ</div>
+                    <div class="buttons">
+                        <span class="dot">
+                            <div class="min">
+                                <div class="minbar"></div>
+                            </div>
+                        </span>
+                        <span class="dot">
+                            <div class="max">
+                                <div class="maxbox"></div>
+                            </div>
+                        </span>
+                        <span class="dot">
+                            <div class="close">
+                                <div class="x1"></div>
+                                <div class="x2"></div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h3>What is a hackathon?</h3>
+                    <p class="lead">A hackathon is best described as an “invention marathon”. Anyone who has an interest
+                        in technology attends a hackathon to learn, build & share their creations over the course of a
+                        weekend in a relaxed and welcoming atmosphere.</p>
                     <hr>
+                    <h3>Who can attend?</h3>
+                    <p class="lead">We welcome any student 18 or older to participate!</p>
+                    <hr>
+                    <h3>Do I need a team? How large are teams?</h3>
+                    <p class="lead">Don’t have a team? We got you covered. We will have time before hacking begins for
+                        hackers to get together and form teams. You can have a maximum of 4 members on your team.</p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 question">
+            <div class="col-md-6 window">
+                <div class="head">
+                    <div class="barcont">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="title">FAQ</div>
+                    <div class="buttons">
+                        <span class="dot">
+                            <div class="min">
+                                <div class="minbar"></div>
+                            </div>
+                        </span>
+                        <span class="dot">
+                            <div class="max">
+                                <div class="maxbox"></div>
+                            </div>
+                        </span>
+                        <span class="dot">
+                            <div class="close">
+                                <div class="x1"></div>
+                                <div class="x2"></div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>How much does HackCU cost?</h3>
+                    <p class="lead">HackCU is absolutely free to attend. We will also provide meals, snacks, and
+                        refreshments!</p>
+                    <hr>
+                    <h3>Will you offer travel reimbursement?</h3>
+                    <p class="lead">Reimbursement applications are now closed!</p>
+                    <hr>
+                    <h3>Will there be food?</h3>
+                    <p class="lead">Plenty, we will provide three meals a day as well as snacks, drinks, and caffeine.
+                    </p>
+                </div>
+            </div>
 
-            {% for faq in site.data.faq %}
-            {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
-            {% if modulo == '0' %}
-            <h3>{{faq.question}}</h3>
-            {{faq.answer | markdownify }}
-            {% endif %}
-            {%endfor%}
-        </div>
-        <div class="col-md-4 question">
-            {% for faq in site.data.faq %}
-            {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
-            {% if modulo == '1' %}
-            <h3>{{faq.question}}</h3>
-            {{faq.answer | markdownify }}
-            {% endif %}
-            {%endfor%}
-        </div>
-        <div class="col-md-4 question">
-            {% for faq in site.data.faq %}
-            {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
-            {% if modulo == '2' %}
-            <h3>{{faq.question}}</h3>
-            {{faq.answer | markdownify }}
-            {% endif %}
-            {%endfor%}
+            <div class="col-md-6 window">
+                <div class="head">
+                    <div class="barcont">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="title">FAQ</div>
+                    <div class="buttons">
+                        <span class="dot">
+                            <div class="min">
+                                <div class="minbar"></div>
+                            </div>
+                        </span>
+                        <span class="dot">
+                            <div class="max">
+                                <div class="maxbox"></div>
+                            </div>
+                        </span>
+                        <span class="dot">
+                            <div class="close">
+                                <div class="x1"></div>
+                                <div class="x2"></div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>What should I bring?</h3>
+                    <p class="lead">In order to check-in, you must have a government-issued ID. But, you should also
+                        bring your laptop, laptop charger, phone, chargers, headphones, a pillow, toiletries, an extra
+                        set of clothes, and a reusable water bottle.</p>
+                    <hr>
+                    <h3>What if I have another question?</h3>
+                    <p class="lead">Tweet us at <a href="https://www.twitter.com/hackcu">@hackcu</a> or drop us a line
+                        at <a href="mailto:contact@hackcu.org">contact@hackcu.org</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-6 window">
+                <div class="head">
+                    <div class="barcont">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="title">FAQ</div>
+                    <div class="buttons">
+                        <span class="dot">
+                            <div class="min">
+                                <div class="minbar"></div>
+                            </div>
+                        </span>
+                        <span class="dot">
+                            <div class="max">
+                                <div class="maxbox"></div>
+                            </div>
+                        </span>
+                        <span class="dot">
+                            <div class="close">
+                                <div class="x1"></div>
+                                <div class="x2"></div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>What if I am not a student?</h3>
+                    <p class="lead">Be a volunteer or mentor! More information coming soon!</p>
+                    <hr>
+                    <h3>Can I reuse a previous project?</h3>
+                    <p class="lead">You can NOT use anything that you have started prior to the event. You can think of
+                        ideas for your project, but you must start from scratch when you arrive.</p>
+                    <hr>
+                    <h3>Do I have to be a programmer?</h3>
+                    <p class="lead">Absolutely not! It doesn’t matter if you are a designer, a writer, or a chemist.
+                        There is a place for you here. Prior to hacking, there will be a team formation session to help
+                        form teams.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>

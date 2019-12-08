@@ -1,0 +1,167 @@
+---
+---
+
+@charset "utf-8";
+@import "../_sass/mixins";
+$bar-height: 45;
+$scalar: $bar-height/30;
+
+.taskbar{
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+
+  height: $bar-height + px;
+  position: fixed;
+  width: 100%;
+  z-index: 99999999;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom,
+    #1f2f86 0,
+    #3165c4 3%,
+    #3682e5 6%,
+    #4490e6 10%,
+    #3883e5 12%,
+    #2b71e0 15%,
+    #2663da 18%,
+    #235bd6 20%,
+    #2258d5 23%,
+    #2157d6 38%,
+    #245ddb 54%,
+    #2562df 86%,
+    #245fdc 89%,
+    #2158d4 92%,
+    #1d4ec0 95%,
+    #1941a5 98%
+  );
+  display: flex;
+  .footer__items.left {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+  }
+  .footer__items.right {
+    background-color: #0b77e9;
+    flex-shrink: 0;
+    background: linear-gradient(
+      to bottom,
+      #0c59b9 1%,
+      #139ee9 6%,
+      #18b5f2 10%,
+      #139beb 14%,
+      #1290e8 19%,
+      #0d8dea 63%,
+      #0d9ff1 81%,
+      #0f9eed 88%,
+      #119be9 91%,
+      #1392e2 94%,
+      #137ed7 97%,
+      #095bc9 100%
+    );
+    border-left: $scalar*1 + px solid #1042af;
+    box-shadow: inset $scalar*1 + px 0 $scalar*1 + px #18bbff;
+    padding: 0 $scalar*10 + px;
+    margin-left: $scalar*10 + px;
+  }
+  .footer__items {
+    display: flex;
+    align-items: center;
+  }
+  .footer__start {
+    height: 100%;
+    margin-right: $scalar*10 + px;
+    position: relative;
+    &:hover {
+      filter: brightness(105%);
+    }
+    &:active {
+      pointer-events: none;
+      filter: brightness(85%);
+    }
+  }
+  .footer__window {
+    flex: 1;
+    max-width: $scalar*150 + px;
+    color: #fff;
+    border-radius: $scalar*2 + px;
+    margin-top: $scalar*2 + px;
+    padding: 0 $scalar*8 + px;
+    height: $scalar*22 + px;
+    font-size: $scalar*11 + px;
+    background-color: #3c81f3;
+    box-shadow: inset $scalar*(-1) + px 0px rgba(0, 0, 0, 0.3),
+      inset $scalar*1 + px $scalar*1 + px $scalar*1 + px rgba(255, 255, 255, 0.2);
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .footer__icon {
+    height: $scalar*15 + px;
+    width: $scalar*15 + px;
+  }
+  .footer__text {
+    position: relative;
+    left: $scalar*27 + px;
+    right: $scalar*8 + px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .footer__window.cover:hover {
+    text-decoration: none;
+    background-color: #53a3ff;
+    box-shadow: $scalar*1 + px 0px $scalar*1 + px rgba(0, 0, 0, 0.2),
+      inset $scalar*1 + px $scalar*1 + px $scalar*1 + px rgba(255, 255, 255, 0.3);
+  }
+  .footer__window.cover:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: $scalar*(-2) + px;
+    top: $scalar*(-2) + px;
+    width: $scalar*10 + px;
+    height: $scalar*1 + px;
+    border-bottom-right-radius: 50%;
+    box-shadow: $scalar*2 + px $scalar*2 + px $scalar*3 + px rgba(255, 255, 255, 0.5);
+  }
+  .footer__window.cover:hover:active {
+    background-color: #1e52b7;
+    box-shadow: inset 0 0 $scalar*1 + px $scalar*1 + px rgba(0, 0, 0, 0.3),
+      inset $scalar*1 + px 0 $scalar*1 + px rgba(0, 0, 0, 0.7);
+  }
+  .footer__window.focus:hover {
+    text-decoration: none;
+    background-color: #3576f3;
+  }
+  .footer__window.focus:hover:active {
+    text-decoration: none;
+    background-color: #1e52b7;
+  }
+  .footer__window.focus {
+    background-color: #1e52b7;
+    box-shadow: inset 0 0 $scalar*1 + px $scalar*1 + px rgba(0, 0, 0, 0.2),
+      inset $scalar*1 + px 0 $scalar*1 + px rgba(0, 0, 0, 0.7);
+  }
+  .footer__time {
+    margin: 0 $scalar*5 + px;
+    color: #fff;
+    font-size: $scalar*11 + px;
+    font-weight: lighter;
+    text-shadow: none;
+  }
+  .pager-link {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s linear;
+  }
+
+  @media only screen and (max-device-width: 1400px) {
+    .footer__window.cover {
+      display: none;
+    } 
+  }
+}

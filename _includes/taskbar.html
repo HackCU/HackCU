@@ -1,0 +1,103 @@
+{% raw %}
+<div class="taskbar">
+    <div class="footer__items left">
+        <img src="assets/images/startButton.png" alt="start" class="footer__start">
+        <div class="footer__window cover">
+            <a href="#parent" class="pager-link">
+                <div class="footer__text">
+                    Home
+                </div>
+            </a>
+        </div>
+        <div class="footer__window cover">
+            <a href="#about_tab" class="pager-link">
+                <div class="footer__text">
+                    HackCU
+                </div>
+            </a>
+        </div>
+        <div class="footer__window cover">
+            <a href="#faq" class="pager-link">
+                <div class="footer__text">
+                    FAQ
+                </div>
+            </a>
+        </div>
+        <div class="footer__window cover">
+            <a href="#schedule" class="pager-link">
+                <div class="footer__text">
+                    Schedule
+                </div>
+            </a>
+        </div>
+        <div class="footer__window cover">
+            <a href="#volunteer_mentor" class="pager-link">
+                <div class="footer__text">
+                    Volunteer
+                </div>
+            </a>
+        </div>
+        <div class="footer__window cover">
+            <a href="#sponsors" class="pager-link">
+                <div class="footer__text">
+                    Sponsors
+                </div>
+            </a>
+        </div>
+        <div class="footer__window cover">
+            <a href="#location" class="pager-link">
+                <div class="footer__text">
+                    Location
+                </div>
+            </a>
+        </div>
+        <div class="footer__window cover">
+            <a href="#contact" class="pager-link">
+                <div class="footer__text">
+                    Contact
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="footer__items right">
+        <div class="footer__time" id="timebar">{{ time }}</div>
+    </div>
+</div>
+{% endraw %}
+
+<script>
+    var clock = new Vue({
+        el: '#timebar',
+        data: {
+            time: ''
+        }
+    });
+
+    var timerID = setInterval(updateTime, 1000);
+    updateTime();
+
+    function updateTime() {
+        var cd = new Date();
+        hours = zeroPadding(cd.getHours(), 2)
+        period = ""
+
+        if (hours >= 12) {
+            if (hours != 12) {
+                hours = hours % 12
+            }
+            period = " PM"
+        } else {
+            period = " AM"
+        }
+
+        clock.time = hours + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2) + period;
+    };
+
+    function zeroPadding(num, digit) {
+        var zero = '';
+        for (var i = 0; i < digit; i++) {
+            zero += '0';
+        }
+        return (zero + num).slice(-digit);
+    }
+</script>

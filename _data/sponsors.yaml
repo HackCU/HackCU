@@ -1,33 +1,22 @@
-- name: Name.com
-  tier: gold
-  image-url: /assets/images/sponsors/namecom.png
-  url: https://name.com
-
-- name: Splunk
-  tier: gold
-  image-url: /assets/images/sponsors/splunk.png
-  url: https://splunk.com
-
-- name: Twitter
-  tier: gold
-  image-url: /assets/images/sponsors/twitter.png
-  url: https://twitter.com
 
 
-- name: Workday
-  tier: silver
-  image-url: /assets/images/sponsors/workday.png
-  url: https://www.workday.com
+# - name: Twitter
+#   tier: gold
+#   image-url: /assets/images/sponsors/twitter.png
+#   url: https://twitter.com
 
-- name: Seagate
-  tier: bronze
-  image-url: /assets/images/sponsors/seagate.png
-  url: https://seagate.com
 
-- name: Typeform
-  tier: bronze
-  image-url: /assets/images/sponsors/typeform.png
-  url: https://typeform.com
+# - name: Workday
+#   tier: silver
+#   image-url: /assets/images/sponsors/workday.png
+#   url: https://www.workday.com
+
+# - name: Seagate
+#   tier: bronze
+#   image-url: /assets/images/sponsors/seagate.png
+#   url: https://seagate.com
+
+
 
 # - name: Deloitte
 #   tier: bronze
@@ -39,41 +28,25 @@
 #   image-url: /assets/images/sponsors/zayo.png
 #   url: https://www.zayo.com/
 
-
-- name: Twilio
-  tier: gold
-  image-url: /assets/images/sponsors/twilio.png
-  url: https://twilio.com
-
-- name: Doist
-  tier: bronze
-  image-url: /assets/images/sponsors/doist.png
-  url: https://doist.com
-
-- name: Specialized Bikes
-  tier: diamond
-  image-url: /assets/images/sponsors/specialized.png
-  url: https://www.specialized.com/us/en
-
-- name: ASSG
-  tier: powered
-  image-url: /assets/images/partners/assg.png
-  url: https://www.colorado.edu/studentgroups/assg/
-
-- name: RapidAPI
+- name: NSA
   tier: silver
-  image-url: /assets/images/sponsors/rapidapi.png
-  url: https://rapidapi.com
+  image-url: /assets/images/sponsors/nsa.png
+  url: https://www.nsa.gov/
 
-- name: GitHub
-  tier: bronze
-  image-url: /assets/images/sponsors/github.png
-  url: https://education.github.com/
-
-- name: OppenheimerFunds
+- name: University of Colorado, Technology, Cybersecurity and Policy Program
   tier: gold
-  image-url: /assets/images/sponsors/oppenheimerfunds.png
-  url: https://www.oppenheimerfunds.com/
+  image-url: /assets/images/sponsors/tcp.png
+  url: https://www.colorado.edu/itp/
+
+- name: Splunk
+  tier: gold
+  image-url: /assets/images/sponsors/splunk.png
+  url: https://www.splunk.com
+
+- name: Workiva
+  tier: bronze
+  image-url: /assets/images/sponsors/workiva.png
+  url: https://www.workiva.com/
 
 # - name: Alteryx
 #   tier: gold
@@ -95,10 +68,6 @@
 #   image-url: /assets/images/sponsors/md5.png
 #   url: https://community.md5.net/md5/landing
 
-- name: Dish Networks
-  tier: gold
-  image-url: /assets/images/sponsors/dish.png
-  url: https://www.dish.com/
 
 # - name: IHS Markit
 #   tier: bronze
@@ -115,17 +84,8 @@
 #   image-url: /assets/images/sponsors/freewave.png
 #   url: https://www.freewave.com
 
-- name: Trimble
-  tier: silver
-  image-url: /assets/images/sponsors/trimble.png
-  url: http://www.trimble.com/
+# - name: Trimble
+#   tier: silver
+#   image-url: /assets/images/sponsors/trimble.png
+#   url: http://www.trimble.com/
 
-- name: University of Colorado, Technology, Cybersecurity and Policy Program
-  tier: gold
-  image-url: /assets/images/sponsors/tcp.png
-  url: https://www.colorado.edu/itp/
-
-- name: Clkim
-  tier: startup
-  image-url: /assets/images/sponsors/clkim.png
-  url: https://clkim.com/

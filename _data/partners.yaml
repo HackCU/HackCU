@@ -5,27 +5,3 @@
 - name: CU Engineering
   image-url: /assets/images/partners/engineering.png
   url: http://www.colorado.edu/engineering/
-
-- name: Engineering Excellence Fund
-  image-url: /assets/images/partners/eef.png
-  url: http://eef.colorado.edu/
-
-- name: Burridge Center for Finance
-  image-url: /assets/images/partners/Burridge.png
-  url: http://burridgecenter.colorado.edu/html/index.html
-
-- name: SendGrid
-  image-url: /assets/images/partners/sendgrid.png
-  url: https://sendgrid.com/docs/for-developers/?utm_source=hackcu2018&utm_medium=website&utm_campaign=devrel&utm_content=link
-
-- name: StickerGiant
-  image-url: /assets/images/partners/stickergiant.png
-  url: https://www.stickergiant.com
-
-- name: Glider
-  image-url: /assets/images/partners/glider.png
-  url: https://www.glider.com
-
-- name: Topo Designs
-  image-url: /assets/images/partners/topo.png
-  url: https://www.topodesigns.com

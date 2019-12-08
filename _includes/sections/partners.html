@@ -1,34 +1,60 @@
-<section id="partners">
+<section id="sponsors" class="section-reverse">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <h2>Partners</h2>
-                    <hr>
+        <div class="row single-window">
+            <div class="col-md-12 window">
+                <div class="head">
+                    <div class="barcont">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="title">Partners</div>
+                    <div class="buttons">
+                        <span class="dot">
+                            <div class="min">
+                                <div class="minbar"></div>
+                            </div>
+                        </span>
+                        <span class="dot">
+                            <div class="max">
+                                <div class="maxbox"></div>
+                            </div>
+                        </span>
+                        <span class="dot">
+                            <div class="close">
+                                <div class="x1"></div>
+                                <div class="x2"></div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="powered-by">
+                        <ul class="partners ">
+                            {% for partner in site.data.partners  %}
+                            <li>
+                                <a href="{{partner.url}}" target="_blank">
+                                    <img src="{{partner.image-url}}" alt="{{partner.name}} logo">
+                                </a>
+                            </li>
+                            {%endfor%}
+                        </ul>
+                    </div>
+                    <div class="diamond">
+                        <ul class="swag-partners partners">
+                            {% for partner in site.data.swag_partners  %}
+                            <li>
+                                <a href="{{partner.url}}" target="_blank">
+                                    <img src="{{partner.image-url}}" alt="{{partner.name}} logo">
+                                </a>
+                            </li>
+                            {%endfor%}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <ul class="partners ">
-                {% for partner in site.data.partners  %}
-                <li>
-                    <a href="{{partner.url}}" target="_blank">
-                        <img src="{{partner.image-url}}" alt="{{partner.name}} logo">
-                    </a>
-                </li>
-                {%endfor%}
-            </ul>
-        </div>
-        <div class="row">
-            <ul class="swag-partners partners">
-                {% for partner in site.data.swag_partners  %}
-                <li>
-                    <a href="{{partner.url}}" target="_blank">
-                        <img src="{{partner.image-url}}" alt="{{partner.name}} logo">
-                    </a>
-                </li>
-                {%endfor%}
-            </ul>
-        </div>
+    </div>
+    </div>
     </div>
 </section>
