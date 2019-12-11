@@ -28,10 +28,6 @@
 #   image-url: /assets/images/sponsors/zayo.png
 #   url: https://www.zayo.com/
 
-- name: NSA
-  tier: silver
-  image-url: /assets/images/sponsors/nsa.png
-  url: https://www.nsa.gov/
 
 - name: University of Colorado, Technology, Cybersecurity and Policy Program
   tier: gold
