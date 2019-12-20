@@ -2,7 +2,9 @@
 1. If this is your first time, read our contributor guidelines  https://github.com/hackcu/hackcu/blob/master/.github/CONTRIBUTING.md
 -->
 
-<!-- ## PR Description and Purpose -->
+## PR Description and Purpose
+
+<!-- What this PR does / why we need it -->
 
 A few sentences describing the overall goals of the pull request's commits.
 
