@@ -2,7 +2,7 @@
 1. If this is your first time, read our contributor guidelines  https://github.com/hackcu/hackcu/blob/master/.github/CONTRIBUTING.md
 -->
 
-## PR Description and Purpose
+<!-- ## PR Description and Purpose -->
 
 A few sentences describing the overall goals of the pull request's commits.
 
@@ -12,12 +12,10 @@ A few sentences describing the overall goals of the pull request's commits.
 Fixes #
 
 
-<!-- You can leave this and check them once the PR has been created. -->
-
-
 ## Miscellaneous
 
 - [ ] I have read the contributing guidelines
 - [ ] I abide by this repository Code of Conduct
+<!-- You can leave this and check them once the PR has been created. -->
 
 Do you want to add anything else? We :heart: to hear your opinions!
