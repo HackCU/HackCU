@@ -58,7 +58,7 @@
                             {%endfor%}
                         </ul>
                     </div>
-                    <div class="gold">{% assign gold = site.data.sponsors | where:"tier","gold" %}
+                    <div class="gold sponsor-group">{% assign gold = site.data.sponsors | where:"tier","gold" %}
                         {% if gold[0] %}
                         <h2>Gold sponsors</h2>
                         {% endif %}
@@ -73,7 +73,7 @@
                             {%endfor%}
                         </ul>
                     </div>
-                    <div class="silver">{% assign silver = site.data.sponsors | where:"tier","silver" %}
+                    <div class="silver sponsor-group">{% assign silver = site.data.sponsors | where:"tier","silver" %}
                         {% if silver[0] %}
                         <h2>Silver sponsors</h2>
                         {% endif %}
@@ -87,7 +87,7 @@
                             {%endfor%}
                         </ul>
                     </div>
-                    <div class="bronze">{% assign bronze = site.data.sponsors | where:"tier","bronze" %}
+                    <div class="bronze sponsor-group">{% assign bronze = site.data.sponsors | where:"tier","bronze" %}
                         {% if bronze[0] %}
                         <h2>Bronze Sponsors</h2>
                         {% endif %}
@@ -101,7 +101,7 @@
                             {%endfor%}
                         </ul>
                     </div>
-                    <div class="startup">{% assign startup = site.data.sponsors | where:"tier","startup" %}
+                    <div class="startup sponsor-group">{% assign startup = site.data.sponsors | where:"tier","startup" %}
                         {% if startup[0] %}
                         <h2>Startup sponsors</h2>
                         {% endif %}
