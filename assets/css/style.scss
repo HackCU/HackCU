@@ -149,7 +149,6 @@ header {
 .buttons {
 
   &.title {
-    padding-top: 10vh;
     padding-bottom: 3vh;
   }
   
@@ -309,6 +308,9 @@ header {
 }
 
 #sponsors {
+  .sponsor-group {
+    padding-bottom: 1.2vh;
+  }
   li {
     list-style-type: none;
     display: inline-block;
@@ -321,7 +323,7 @@ header {
 
     }
     img {
-      max-height: 35vh;
+      max-height: 30vh;
       max-width: 100%;
     }
   }
@@ -332,7 +334,7 @@ header {
 
     }
     img {
-      max-height: 30vh;
+      max-height: 25vh;
       max-width: 100%;
     }
   }
@@ -342,7 +344,7 @@ header {
       color: rgb(173, 157, 67);
     }
     img {
-      max-height: 25vh;
+      max-height: 20vh;
       max-width: 100%;
     }
   }
@@ -352,7 +354,7 @@ header {
       color: #999999;
     } 
     img {
-      max-height: 20vh;
+      max-height: 15vh;
       max-width: 100%;
     }
   }
@@ -362,7 +364,7 @@ header {
       color: brown;
     }
     img {
-      max-height: 15vh;
+      max-height: 10vh;
       max-width: 100%;
     }
   }
@@ -372,7 +374,7 @@ header {
       color: blue;
     }
     img {
-      max-height: 13vh;
+      max-height: 7vh;
       max-width: 100%;
     }
   }
