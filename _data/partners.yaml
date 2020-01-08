@@ -9,3 +9,8 @@
 - name: Wolfram
   image-url: /assets/images/partners/wolfram.png
   url: https://www.wolfram.com/hackathons/
+
+
+- name: RippleMatch
+  image-url: /assets/images/partners/ripplematch.png
+  url: https://ripplematch.com/

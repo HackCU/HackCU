@@ -390,7 +390,7 @@ header {
 
 #partners {
   img {
-    max-height: 20vh;
+    max-height: 25vh;
     max-width: 100%;
   }
 
@@ -402,10 +402,10 @@ header {
   text-align:center;
   margin:0 auto;
 
-  .col-lg-3{
-   display:inline-block;
-   vertical-align: middle;
-   float: none;
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
   }
 }
 
