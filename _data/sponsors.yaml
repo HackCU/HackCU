@@ -44,6 +44,11 @@
   image-url: /assets/images/sponsors/workiva.png
   url: https://www.workiva.com/
 
+- name: Ricoh
+  tier: bronze
+  image-url: /assets/images/sponsors/ricoh.png
+  url: https://www.ricoh-usa.com/en
+
 # - name: Alteryx
 #   tier: gold
 #   image-url: /assets/images/sponsors/alteryx.png
