@@ -103,7 +103,7 @@
             }
         }
 
-        .close {
+        .x {
             border-radius: 4px;
             border: 1px solid #fff;
             height: 25px;
@@ -117,30 +117,17 @@
             #ffccb2 90%,
             white 100%,);
             opacity:100%;
-            cursor: zoom-in;
 
-            .x1 {
-                content: '';
-                position: relative;
-                transform: rotate(45deg);
-                top: 20%;
-                left: 50%;
-                height: 16px;
-                width: 2px;
-                background-color: white;
-            }
-            
-            .x2 {
-                content: '';
-                position: relative;
-                transform: rotate(-45deg);
-                top: -50%;
-                left: 50%;
-                height: 16px;
-                width: 2px;
-                background-color: white;
-            }
+            display: flex;            
+            align-items: center;
+            justify-content: center;
         }
+        .x:after {
+            content: "\d7";
+            color: #FFF;
+            font-size: 2em;
+        }
+
     }
 
     .bar {
