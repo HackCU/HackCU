@@ -1,72 +1,76 @@
 <section id="schedule" class="section-reverse">
-    <div class="container window">
-        <div class="head">
-            <div class="barcont">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <div class="title">Event Schedule</div>
-            <div class="buttons">
-                <span class="dot">
-                    <div class="min">
-                        <div class="minbar"></div>
+    <div class="container">
+        <div class="row">
+            <div class="container window">
+                <div class="head">
+                    <div class="barcont">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
                     </div>
-                </span>
-                <span class="dot">
-                    <div class="max">
-                        <div class="maxbox"></div>
+                    <div class="title">Event Schedule</div>
+                    <div class="buttons">
+                        <span class="dot">
+                            <div class="min">
+                                <div class="minbar"></div>
+                            </div>
+                        </span>
+                        <span class="dot">
+                            <div class="max">
+                                <div class="maxbox"></div>
+                            </div>
+                        </span>
+                        <span class="dot">
+                            <div class="x">
+                            </div>
+                        </span>
                     </div>
-                </span>
-                <span class="dot">
-                    <div class="x">
-                    </div>
-                </span>
-            </div>
-        </div>
-        <div class="container content">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="day-label">
-                    Day 1
-                    </div>
-                    <table class="table lead table-hover text-center schedule-table">
-                        <thead>
-                            <tr>
-                                <th class="text-center">Time</th>
-                                <th class="text-center">Event</th>
-                            </tr>
-                        </thead>
-                        {% assign day1 = site.data.schedule | where:"day","one" %}
-                        {% for event in day1 %}
-                        <tr>
-                            <td>{{ event.time }}</td>
-                            <td>{{ event.name }}</td>
-                        </tr>
-                        {%endfor%}
-                    </table>
                 </div>
+                <div class="container content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="day-label">
+                                Day 1
+                            </div>
+                            <table class="table lead table-hover text-center schedule-table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Time</th>
+                                        <th class="text-center">Event</th>
+                                    </tr>
+                                </thead>
+                                {% assign day1 = site.data.schedule | where:"day","one" %}
+                                {% for event in day1 %}
+                                <tr>
+                                    <td>{{ event.time }}</td>
+                                    <td>{{ event.name }}</td>
+                                </tr>
+                                {%endfor%}
+                            </table>
+                        </div>
 
-                <div class="col-md-6">
-                    <div class="day-label">
-                    Day 2
+                        <div class="col-md-6">
+                            <div class="day-label">
+                                Day 2
+                            </div>
+
+                            <table class="table lead table-hover text-center schedule-table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Time</th>
+                                        <th class="text-center">Event</th>
+                                    </tr>
+                                </thead>
+                                {% assign day2 = site.data.schedule | where:"day","two" %}
+                                {% for event in day2 %}
+                                <tr>
+                                    <td>{{ event.time }}</td>
+                                    <td>{{ event.name }}</td>
+                                </tr>
+                                {%endfor%}
+                            </table>
+                        </div>
                     </div>
-                    
-                    <table class="table lead table-hover text-center schedule-table">
-                        <thead>
-                            <tr>
-                                <th class="text-center">Time</th>
-                                <th class="text-center">Event</th>
-                            </tr>
-                        </thead>
-                        {% assign day2 = site.data.schedule | where:"day","two" %}
-                        {% for event in day2 %}
-                        <tr>
-                            <td>{{ event.time }}</td>
-                            <td>{{ event.name }}</td>
-                        </tr>
-                        {%endfor%}
-                    </table>
                 </div>
             </div>
         </div>
