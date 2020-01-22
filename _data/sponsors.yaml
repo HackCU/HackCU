@@ -1,33 +1,17 @@
+- name: Dish
+  tier: gold
+  image-url: /assets/images/sponsors/dish.png
+  url: https://www.dish.com/
 
+- name: Twitter
+  tier: gold
+  image-url: /assets/images/sponsors/twitter.png
+  url: https://twitter.com
 
-# - name: Twitter
-#   tier: gold
-#   image-url: /assets/images/sponsors/twitter.png
-#   url: https://twitter.com
-
-
-# - name: Workday
-#   tier: silver
-#   image-url: /assets/images/sponsors/workday.png
-#   url: https://www.workday.com
-
-# - name: Seagate
-#   tier: bronze
-#   image-url: /assets/images/sponsors/seagate.png
-#   url: https://seagate.com
-
-
-
-# - name: Deloitte
-#   tier: bronze
-#   image-url: /assets/images/sponsors/deloitte.png
-#   url: http://www.deloitte.com/
-
-# - name: Zayo
-#   tier: gold
-#   image-url: /assets/images/sponsors/zayo.png
-#   url: https://www.zayo.com/
-
+- name: Sectionio
+  tier: gold
+  image-url: /assets/images/sponsors/sectionio.png
+  url: https://www.section.io/
 
 - name: University of Colorado, Technology, Cybersecurity and Policy Program
   tier: gold
@@ -38,6 +22,26 @@
   tier: gold
   image-url: /assets/images/sponsors/splunk.png
   url: https://www.splunk.com
+
+- name: Keysight
+  tier: silver
+  image-url: /assets/images/sponsors/keysight.png
+  url: https://www.keysight.com/us/en/home.html
+
+- name: EEF
+  tier: silver
+  image-url: /assets/images/sponsors/eef.png
+  url: http://eef.colorado.edu/
+
+- name: NSA
+  tier: silver
+  image-url: /assets/images/sponsors/nsa.png
+  url: https://www.nsa.gov/
+
+- name: Heroku
+  tier: silver
+  image-url: /assets/images/sponsors/heroku.png
+  url: https://www.heroku.com/
 
 - name: Workiva
   tier: bronze
@@ -90,3 +94,22 @@
 #   image-url: /assets/images/sponsors/trimble.png
 #   url: http://www.trimble.com/
 
+# - name: Workday
+#   tier: silver
+#   image-url: /assets/images/sponsors/workday.png
+#   url: https://www.workday.com
+
+# - name: Seagate
+#   tier: bronze
+#   image-url: /assets/images/sponsors/seagate.png
+#   url: https://seagate.com
+
+# - name: Deloitte
+#   tier: bronze
+#   image-url: /assets/images/sponsors/deloitte.png
+#   url: http://www.deloitte.com/
+
+# - name: Zayo
+#   tier: gold
+#   image-url: /assets/images/sponsors/zayo.png
+#   url: https://www.zayo.com/
