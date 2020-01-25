@@ -13,3 +13,19 @@
 - name: RippleMatch
   image-url: /assets/images/partners/ripplematch.png
   url: https://ripplematch.com/
+
+- name: DeepSource
+  image-url: /assets/images/partners/deepsource.png
+  url: https://deepsource.io/
+
+- name: DigitalOcean
+  image-url: /assets/images/partners/digitalocean.png
+  url: https://www.digitalocean.com/
+
+- name: Trident
+  image-url: /assets/images/partners/trident.png
+  url: https://www.tridentcafe.com/
+
+- name: Flatiron Coffee
+  image-url: /assets/images/partners/flatironcoffee.png
+  url: https://www.flatironcoffee.com/
