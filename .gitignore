@@ -10,3 +10,4 @@ node_modules/*
 .DS_STORE
 .vs/
 vendor/
+.jekyll-cache/**
