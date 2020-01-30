@@ -33,6 +33,11 @@
   image-url: /assets/images/sponsors/eef.png
   url: http://eef.colorado.edu/
 
+- name: Adobe
+  tier: silver
+  image-url: /assets/images/sponsors/adobe.svg
+  url: https://www.adobe.com/
+
 - name: NSA
   tier: silver
   image-url: /assets/images/sponsors/nsa.png
