@@ -35,7 +35,7 @@
 
 - name: Adobe
   tier: silver
-  image-url: /assets/images/sponsors/adobe.svg
+  image-url: /assets/images/sponsors/adobe.png
   url: https://www.adobe.com/
 
 - name: NSA
