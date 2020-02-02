@@ -43,11 +43,6 @@
   image-url: /assets/images/sponsors/nsa.png
   url: https://www.nsa.gov/
 
-- name: Heroku
-  tier: silver
-  image-url: /assets/images/sponsors/heroku.png
-  url: https://www.heroku.com/
-
 - name: Workiva
   tier: bronze
   image-url: /assets/images/sponsors/workiva.png
