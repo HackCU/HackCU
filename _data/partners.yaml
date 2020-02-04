@@ -29,3 +29,7 @@
 - name: Flatiron Coffee
   image-url: /assets/images/partners/flatironcoffee.png
   url: https://www.flatironcoffee.com/
+
+- name: StickerGiant
+  image-url: /assets/images/partners/stickergiant.png
+  url: https://www.stickergiant.com/
