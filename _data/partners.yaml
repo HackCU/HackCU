@@ -33,3 +33,7 @@
 - name: StickerGiant
   image-url: /assets/images/partners/stickergiant.png
   url: https://www.stickergiant.com/
+
+- name: StickerGiant
+  image-url: /assets/images/partners/stickermule.svg
+  url: https://hackp.ac/mlh-stickermule-hackathons 
