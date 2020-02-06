@@ -37,3 +37,7 @@
 - name: StickerGiant
   image-url: /assets/images/partners/stickermule.svg
   url: https://hackp.ac/mlh-stickermule-hackathons 
+
+- name: Insomnia Cookies
+  image-url: /assets/images/partners/insomnia.png
+  url: https://insomniacookies.com/ 
