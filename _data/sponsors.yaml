@@ -58,6 +58,12 @@
   image-url: /assets/images/sponsors/ricoh.png
   url: https://www.ricoh-usa.com/en
 
+
+- name: TapWithUs
+  tier: bronze
+  image-url: /assets/images/sponsors/tapwithus.png
+  url: https://www.tapwithus.com/
+
 # - name: Alteryx
 #   tier: gold
 #   image-url: /assets/images/sponsors/alteryx.png
