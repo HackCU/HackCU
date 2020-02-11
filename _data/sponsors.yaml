@@ -43,6 +43,11 @@
   image-url: /assets/images/sponsors/nsa.png
   url: https://www.nsa.gov/
 
+- name: The Hillman Group
+  tier: silver
+  image-url: /assets/images/sponsors/hillmanword_black.png
+  url: https://hillmangroup.com/us/en
+
 - name: Workiva
   tier: bronze
   image-url: /assets/images/sponsors/workiva.png
