@@ -41,3 +41,7 @@
 - name: Insomnia Cookies
   image-url: /assets/images/partners/insomnia.png
   url: https://insomniacookies.com/ 
+
+- name: Ozo Coffee
+  image-url: /assets/images/partners/ozo.png
+  url: https://ozocoffee.com/
