@@ -8,6 +8,11 @@
   image-url: /assets/images/sponsors/twitter.png
   url: https://twitter.com
 
+- name: Splunk
+  tier: gold
+  image-url: /assets/images/sponsors/splunk.png
+  url: https://www.splunk.com/
+
 - name: Sectionio
   tier: gold
   image-url: /assets/images/sponsors/sectionio.png
