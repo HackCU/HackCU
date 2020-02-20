@@ -2,27 +2,31 @@
   day: one
   time: "8:00 am"
 
+- name: Breakfast 1
+  day: one
+  time: "8:00 am"
+
+- name: Career Fair
+  day: one
+  time: "9:00 am"
+
 - name: Opening Ceremonies
   day: one
   time: "11:00 am"
 
 - name: Team Formation
   day: one
-  time: "11:00 am"
-
-- name: Career Fair
-  day: one
-  time: "11:00 am"
+  time: "12:00 pm"
 
 - name: Hacking Begins!
   day: one
   time: "12:00 pm"
 
-- name: Lunch Served   
+- name: Lunch 1  
   day: one
   time: "12:00 pm"
 
-- name: Dinner Served   
+- name: Dinner 1  
   day: one
   time: "6:00 pm"
 
@@ -30,13 +34,17 @@
   day: one
   time: "11:00 pm"
 
-- name: Breakfast 
+- name: Breakfast 2
   day: two
-  time: "7:30 am"
+  time: "8:00 am"
 
 - name: Hacking Ends 
   day: two
   time: "12:00 pm"
+
+- name: Lunch 2
+  day: two
+  time: "12:00 pm" 
 
 - name: Project Expo / Judging 
   day: two
