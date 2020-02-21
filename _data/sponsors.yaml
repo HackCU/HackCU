@@ -69,6 +69,11 @@
   image-url: /assets/images/sponsors/tapwithus.png
   url: https://www.tapwithus.com/
 
+- name: Payfone
+  tier: bronze
+  image-url: /assets/images/sponsors/payfone.png
+  url: https://www.payfone.com/
+
 # - name: Alteryx
 #   tier: gold
 #   image-url: /assets/images/sponsors/alteryx.png
