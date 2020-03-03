@@ -6,9 +6,10 @@
 <br>
 
 
-HackCU hosted by HackCU website.
+# HackCU
+HackCU's main website!
 
-# Run project
+## Run project
 
 Needs: Ruby
 
